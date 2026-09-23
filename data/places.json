@@ -4,7 +4,8 @@
     "name": "邯郸东站",
     "short_name": "邯郸东",
     "category": "TRANSPORT",
-    "poi_id": "B01360NO40",
+    "city": "邯郸",
+    "address": "峰峰接驳枢纽：东站↔全季≈47.3km/57min（国庆预留75–90；夜到90–110）",
     "coordinates": {
       "lat": 36.6258,
       "lng": 114.537,
@@ -12,71 +13,35 @@
       "provider": "amap",
       "status": "NOTE_APPROX"
     },
-    "address": "峰峰接驳枢纽：东站↔全季≈47.3km/57min（国庆预留75–90；夜到90–110）",
-    "times": {
-      "arrive": "G904 17:44；G2076 21:54（夜）",
-      "leave": "G1832 19:47；G689 11:51（单人）",
-      "planned_start": "11:51",
-      "planned_end": "14:58",
-      "planned": "11:51-14:58"
-    },
-    "duration_min": null,
-    "weather": {
-      "date": "2026-09-27",
-      "summary": "多云转雷阵雨 29/19℃",
-      "gear": "折叠伞/薄雨衣；短袖+傍晚薄外套可选",
-      "tags": []
-    },
     "images": [],
-    "description": "峰峰接驳枢纽：东站↔全季≈47.3km/57min（国庆预留75–90；夜到90–110）",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "B01360NO40",
     "source_links": [
       {
         "label": "AMap",
         "url": "https://uri.amap.com/marker?position=114.537,36.6258"
       }
     ],
-    "next_place_id": "st-wuhan",
-    "days": [
-      "2026-09-27",
-      "2026-10-01",
-      "2026-10-03",
-      "2026-10-04"
-    ],
+    "opening_hours": null,
+    "description": "峰峰接驳枢纽：东站↔全季≈47.3km/57min（国庆预留75–90；夜到90–110）",
+    "price": null,
+    "rating_summary": null,
     "locked": true,
     "role": "STATION_HD_EAST",
-    "city": "邯郸",
-    "order": 1
+    "duration_min": null
   },
   {
     "place_id": "hotel-ff-quanyi",
     "name": "全季酒店(邯郸峰峰矿区店)",
     "short_name": "峰峰全季",
     "category": "HOTEL",
-    "poi_id": "B0KRHARPZF",
+    "city": "峰峰",
+    "address": "峰峰主锚酒店；LOCKED；导航只用高德 POI B0KRHARPZF，勿写死门牌",
     "coordinates": {
       "lat": 36.426505,
       "lng": 114.206935,
       "coordinate_system": "GCJ-02",
       "provider": "amap",
       "status": "VERIFIED"
-    },
-    "address": "峰峰主锚酒店；LOCKED；导航只用高德 POI B0KRHARPZF，勿写死门牌",
-    "times": {
-      "arrive": "09-27 ~18:45–19:00；10-03 夜 ~23:30–00:00（G2076）",
-      "leave": "10-01 ≥18:00；10-04 ~09:30–10:00前（单人赶G689）",
-      "planned_start": "08:30",
-      "planned_end": "09:45",
-      "planned": "08:30-09:45"
-    },
-    "duration_min": null,
-    "weather": {
-      "date": "2026-09-27",
-      "summary": "多云转雷阵雨 29/19℃",
-      "gear": "折叠伞/薄雨衣；短袖+傍晚薄外套可选",
-      "tags": []
     },
     "images": [
       {
@@ -125,37 +90,28 @@
         "caption": "早餐台"
       }
     ],
-    "description": "峰峰主锚酒店；LOCKED；导航只用高德 POI B0KRHARPZF，勿写死门牌",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "B0KRHARPZF",
     "source_links": [
       {
         "label": "AMap",
         "url": "https://uri.amap.com/marker?position=114.206935,36.426505"
       }
     ],
-    "next_place_id": "st-handandong",
-    "days": [
-      "2026-09-27",
-      "2026-09-28",
-      "2026-09-29",
-      "2026-09-30",
-      "2026-10-01",
-      "2026-10-03",
-      "2026-10-04"
-    ],
+    "opening_hours": null,
+    "description": "峰峰主锚酒店；LOCKED；导航只用高德 POI B0KRHARPZF，勿写死门牌",
+    "price": null,
+    "rating_summary": null,
     "locked": true,
     "role": "HOTEL_FF",
-    "city": "峰峰",
-    "order": 2
+    "duration_min": null
   },
   {
     "place_id": "food-qianxi",
     "name": "千禧三下锅(磁州窑艺术街区店)",
     "short_name": "千禧三下锅",
     "category": "FOOD",
-    "poi_id": "B013601KHF",
+    "city": "峰峰",
+    "address": "PRIMARY_DINNER LOCKED",
     "coordinates": {
       "lat": 36.421438,
       "lng": 114.18752,
@@ -163,39 +119,24 @@
       "provider": "amap",
       "status": "VERIFIED"
     },
-    "address": "PRIMARY_DINNER LOCKED",
-    "times": {
-      "arrive": "晚餐DEFAULT",
-      "leave": "21:00",
-      "planned_start": "17:40",
-      "planned_end": "19:10",
-      "planned": "17:40-19:10"
-    },
-    "duration_min": null,
-    "weather": {
-      "date": "2026-09-27",
-      "summary": "多云转雷阵雨 29/19℃",
-      "gear": "折叠伞/薄雨衣；短袖+傍晚薄外套可选",
-      "tags": []
-    },
     "images": [
       {
-        "image_file": "assets/food/tiantree_hdl_001_facade.jpg",
-        "thumbnail_file": "assets/food/tiantree_hdl_001_facade.jpg",
+        "image_file": "assets/food/qianxi_001_facade.jpg",
+        "thumbnail_file": "assets/food/qianxi_001_facade.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
-        "caption": "彭东街千禧三下锅门头（金字「彭东街·千禧·三下锅」）"
+        "caption": "千禧三下锅 · 门头"
       },
       {
         "image_file": "assets/food/qianxi_002_interior.jpg",
         "thumbnail_file": "assets/food/qianxi_002_interior.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
-        "caption": "峰峰千禧三下锅厅堂就餐环境（墙面有本店/千禧标识）"
+        "caption": "千禧三下锅 · 厅堂"
       },
       {
         "image_file": "assets/food/qianxi_003_dish.jpg",
@@ -204,7 +145,7 @@
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
-        "caption": "三下锅+老窖馒头（通稿菜品图，未与门头同框）"
+        "caption": "千禧三下锅 · 菜品"
       },
       {
         "image_file": "assets/food/qianxi_004_dish.jpg",
@@ -213,37 +154,31 @@
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
-        "caption": "三下锅浇头特写（丸子/皮渣/馒头篮，通稿图未钉死本店锅口）"
+        "caption": "千禧三下锅 · 菜品特写"
       }
     ],
-    "description": "PRIMARY_DINNER LOCKED",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "B013601KHF",
     "source_links": [
       {
         "label": "AMap",
         "url": "https://uri.amap.com/marker?position=114.18752,36.421438"
       }
     ],
-    "next_place_id": "scenic-nanxiangtang",
-    "days": [
-      "2026-09-27",
-      "2026-09-28",
-      "2026-09-29",
-      "2026-09-30"
-    ],
+    "opening_hours": null,
+    "description": "PRIMARY_DINNER LOCKED",
+    "price": null,
+    "rating_summary": null,
     "locked": true,
     "role": null,
-    "city": "峰峰",
-    "order": 3
+    "duration_min": null
   },
   {
     "place_id": "st-sz-north",
     "name": "深圳北站",
     "short_name": "深圳北",
     "category": "TRANSPORT",
-    "poi_id": "SHENZHENBEI",
+    "city": "深圳",
+    "address": "去程起点 / 单人回程终点",
     "coordinates": {
       "lat": 22.6095,
       "lng": 114.0294,
@@ -251,48 +186,29 @@
       "provider": "amap",
       "status": "NOTE_APPROX"
     },
-    "address": "去程起点 / 单人回程终点",
-    "times": {
-      "arrive": "G399 ≈19:30（单人）",
-      "leave": "G904 ≈09:41",
-      "planned_start": "15:19",
-      "planned_end": "19:30",
-      "planned": "15:19-19:30"
-    },
-    "duration_min": null,
-    "weather": {
-      "date": "2026-09-27",
-      "summary": "多云转雷阵雨 29/19℃",
-      "gear": "折叠伞/薄雨衣；短袖+傍晚薄外套可选",
-      "tags": []
-    },
     "images": [],
-    "description": "去程起点 / 单人回程终点",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "SHENZHENBEI",
     "source_links": [
       {
         "label": "AMap",
         "url": "https://uri.amap.com/marker?position=114.0294,22.6095"
       }
     ],
-    "next_place_id": "food-shunwei",
-    "days": [
-      "2026-09-27",
-      "2026-10-04"
-    ],
+    "opening_hours": null,
+    "description": "去程起点 / 单人回程终点",
+    "price": null,
+    "rating_summary": null,
     "locked": true,
     "role": "STATION_SZ_NORTH",
-    "city": "深圳",
-    "order": 4
+    "duration_min": null
   },
   {
     "place_id": "food-shunwei",
     "name": "顺味三下锅",
     "short_name": "顺味三下锅",
     "category": "FOOD",
-    "poi_id": "B0FFFPS96G",
+    "city": "峰峰",
+    "address": "ALT可试；勿升PRIMARY",
     "coordinates": {
       "lat": 36.420935,
       "lng": 114.188732,
@@ -300,53 +216,39 @@
       "provider": "amap",
       "status": "VERIFIED"
     },
-    "address": "ALT可试；勿升PRIMARY",
-    "times": {
-      "arrive": "ALT晚餐"
-    },
-    "duration_min": null,
-    "weather": {
-      "date": "2026-09-27",
-      "summary": "多云转雷阵雨 29/19℃",
-      "gear": "折叠伞/薄雨衣；短袖+傍晚薄外套可选",
-      "tags": []
-    },
     "images": [
       {
-        "image_file": "assets/food/tiantree_hdl_001_facade.jpg",
-        "thumbnail_file": "assets/food/tiantree_hdl_001_facade.jpg",
+        "image_file": "assets/food/shunwei_001_facade.jpg",
+        "thumbnail_file": "assets/food/shunwei_001_facade.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
-        "caption": "陈家顺味三下锅门头（非遗传承）"
+        "caption": "顺味三下锅 · 顺味门头"
       }
     ],
-    "description": "ALT可试；勿升PRIMARY",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "B0FFFPS96G",
     "source_links": [
       {
         "label": "AMap",
         "url": "https://uri.amap.com/marker?position=114.188732,36.420935"
       }
     ],
-    "next_place_id": null,
-    "days": [
-      "2026-09-27"
-    ],
+    "opening_hours": null,
+    "description": "ALT可试；勿升PRIMARY",
+    "price": null,
+    "rating_summary": null,
     "locked": true,
     "role": null,
-    "city": "峰峰",
-    "order": 5
+    "duration_min": null
   },
   {
     "place_id": "scenic-cizhouyao",
     "name": "滏源里磁州窑文化创意街区",
     "short_name": "磁州窑街区",
     "category": "ATTRACTION",
-    "poi_id": "B0FFJHT9HI",
+    "city": "峰峰",
+    "address": "文创日主景点",
     "coordinates": {
       "lat": 36.422419,
       "lng": 114.187695,
@@ -354,32 +256,12 @@
       "provider": "amap",
       "status": "VERIFIED"
     },
-    "address": "文创日主景点",
-    "times": {
-      "arrive": "09:15",
-      "leave": "17:30前",
-      "planned_start": "13:40",
-      "planned_end": "16:30",
-      "planned": "13:40-16:30"
-    },
-    "duration_min": null,
-    "weather": {
-      "date": "2026-09-28",
-      "summary": "雷阵雨转多云 28/19℃",
-      "gear": "雨具全日随身",
-      "tags": [
-        "WEATHER_SENSITIVE",
-        "INDOOR_FALLBACK",
-        "AVOID_TIME_WINDOW",
-        "WEATHER_CONFLICT"
-      ]
-    },
     "images": [
       {
         "image_file": "assets/attraction/cizhouyao_001_img.jpg",
         "thumbnail_file": "assets/attraction/cizhouyao_001_img.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
         "caption": "艺术坊入口"
@@ -388,7 +270,7 @@
         "image_file": "assets/attraction/cizhouyao_002_img.jpg",
         "thumbnail_file": "assets/attraction/cizhouyao_002_img.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
         "caption": "笼盔墙巷道"
@@ -397,37 +279,34 @@
         "image_file": "assets/attraction/cizhouyao_003_night.jpg",
         "thumbnail_file": "assets/attraction/cizhouyao_003_night.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
         "caption": "东阁夜景"
       }
     ],
-    "description": "文创日主景点",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "B0FFJHT9HI",
     "source_links": [
       {
         "label": "AMap",
         "url": "https://uri.amap.com/marker?position=114.187695,36.422419"
       }
     ],
-    "next_place_id": "food-laoma",
-    "days": [
-      "2026-09-28"
-    ],
+    "opening_hours": null,
+    "description": "文创日主景点",
+    "price": null,
+    "rating_summary": null,
     "locked": false,
     "role": null,
-    "city": "峰峰",
-    "order": 2
+    "duration_min": null
   },
   {
     "place_id": "food-laoma",
     "name": "临漳老马羊汤馆(峰峰分店)",
     "short_name": "老马羊汤",
     "category": "FOOD",
-    "poi_id": "B0FFGX5DJC",
+    "city": "峰峰",
+    "address": "PRIMARY_LUNCH LOCKED",
     "coordinates": {
       "lat": 36.421008,
       "lng": 114.223849,
@@ -435,100 +314,75 @@
       "provider": "amap",
       "status": "VERIFIED"
     },
-    "address": "PRIMARY_LUNCH LOCKED",
-    "times": {
-      "arrive": "午市",
-      "leave": "14:00窗",
-      "planned_start": "12:20",
-      "planned_end": "13:20",
-      "planned": "12:20-13:20"
-    },
-    "duration_min": null,
-    "weather": {
-      "date": "2026-09-28",
-      "summary": "雷阵雨转多云 28/19℃",
-      "gear": "雨具全日随身",
-      "tags": [
-        "WEATHER_SENSITIVE",
-        "INDOOR_FALLBACK",
-        "AVOID_TIME_WINDOW",
-        "WEATHER_CONFLICT"
-      ]
-    },
     "images": [
       {
-        "image_file": "assets/food/tiantree_hdl_001_facade.jpg",
-        "thumbnail_file": "assets/food/tiantree_hdl_001_facade.jpg",
+        "image_file": "assets/food/laoma_001_facade.jpg",
+        "thumbnail_file": "assets/food/laoma_001_facade.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
-        "caption": "临漳老马羊汤门头霓虹"
+        "caption": "老马羊汤 · 门头"
       },
       {
         "image_file": "assets/food/laoma_002_dish.jpg",
         "thumbnail_file": "assets/food/laoma_002_dish.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
-        "caption": "羊脸/羊杂汤浇制（乳白浓汤）"
+        "caption": "老马羊汤 · 菜品"
       },
       {
         "image_file": "assets/food/laoma_003_dish.jpg",
         "thumbnail_file": "assets/food/laoma_003_dish.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
-        "caption": "羊杂汤碗装（葱花+辣椒油）"
+        "caption": "老马羊汤 · 菜品"
       },
       {
         "image_file": "assets/food/laoma_004_dish.jpg",
         "thumbnail_file": "assets/food/laoma_004_dish.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
-        "caption": "羊汤+葱花饼组合"
+        "caption": "老马羊汤 · 菜品"
       },
       {
         "image_file": "assets/food/laoma_005_interior.jpg",
         "thumbnail_file": "assets/food/laoma_005_interior.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
-        "caption": "店内就餐环境（汤+饼同框）"
+        "caption": "老马羊汤 · 店内"
       }
     ],
-    "description": "PRIMARY_LUNCH LOCKED",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "B0FFGX5DJC",
     "source_links": [
       {
         "label": "AMap",
         "url": "https://uri.amap.com/marker?position=114.223849,36.421008"
       }
     ],
-    "next_place_id": "hotel-ff-quanyi",
-    "days": [
-      "2026-09-28",
-      "2026-09-29",
-      "2026-10-01"
-    ],
+    "opening_hours": null,
+    "description": "PRIMARY_LUNCH LOCKED",
+    "price": null,
+    "rating_summary": null,
     "locked": true,
     "role": null,
-    "city": "峰峰",
-    "order": 3
+    "duration_min": null
   },
   {
     "place_id": "scenic-pengdong",
     "name": "彭东街（陶瓷大集主锚）",
     "short_name": "彭东街大集",
     "category": "ACTIVITY",
-    "poi_id": "BZC6PE003N",
+    "city": "峰峰",
+    "address": "陶瓷大集弹性；勿挤10-01傍晚",
     "coordinates": {
       "lat": 36.426132,
       "lng": 114.192238,
@@ -536,50 +390,29 @@
       "provider": "amap",
       "status": "VERIFIED"
     },
-    "address": "陶瓷大集弹性；勿挤10-01傍晚",
-    "times": {
-      "arrive": "午前OPTIONAL"
-    },
-    "duration_min": null,
-    "weather": {
-      "date": "2026-09-28",
-      "summary": "雷阵雨转多云 28/19℃",
-      "gear": "雨具全日随身",
-      "tags": [
-        "WEATHER_SENSITIVE",
-        "INDOOR_FALLBACK",
-        "AVOID_TIME_WINDOW",
-        "WEATHER_CONFLICT"
-      ]
-    },
     "images": [],
-    "description": "陶瓷大集弹性；勿挤10-01傍晚",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "BZC6PE003N",
     "source_links": [
       {
         "label": "AMap",
         "url": "https://uri.amap.com/marker?position=114.192238,36.426132"
       }
     ],
-    "next_place_id": null,
-    "days": [
-      "2026-09-28",
-      "2026-09-29",
-      "2026-09-30"
-    ],
+    "opening_hours": null,
+    "description": "陶瓷大集弹性；勿挤10-01傍晚",
+    "price": null,
+    "rating_summary": null,
     "locked": false,
     "role": null,
-    "city": "峰峰",
-    "order": 5
+    "duration_min": null
   },
   {
     "place_id": "scenic-museum",
     "name": "峰峰博物馆",
     "short_name": "峰峰博物馆",
     "category": "ATTRACTION",
-    "poi_id": "B0H1ZM5QLT",
+    "city": "峰峰",
+    "address": "轻松日上午；周一常规可能闭",
     "coordinates": {
       "lat": 36.43956,
       "lng": 114.226766,
@@ -587,30 +420,12 @@
       "provider": "amap",
       "status": "VERIFIED"
     },
-    "address": "轻松日上午；周一常规可能闭",
-    "times": {
-      "arrive": "09:20",
-      "leave": "11:30开馆段",
-      "planned_start": "09:20",
-      "planned_end": "11:20",
-      "planned": "09:20-11:20"
-    },
-    "duration_min": null,
-    "weather": {
-      "date": "2026-09-29",
-      "summary": "多云 26/15℃",
-      "gear": "防风薄外套",
-      "tags": [
-        "WEATHER_SENSITIVE",
-        "AVOID_TIME_WINDOW"
-      ]
-    },
     "images": [
       {
         "image_file": "assets/attraction/ff_museum_001_facade.jpg",
         "thumbnail_file": "assets/attraction/ff_museum_001_facade.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
         "caption": "博物馆门厅"
@@ -619,37 +434,34 @@
         "image_file": "assets/attraction/ff_museum_002_img.jpg",
         "thumbnail_file": "assets/attraction/ff_museum_002_img.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
         "caption": "梅瓶屏风大厅"
       }
     ],
-    "description": "轻松日上午；周一常规可能闭",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "B0H1ZM5QLT",
     "source_links": [
       {
         "label": "AMap",
         "url": "https://uri.amap.com/marker?position=114.226766,36.43956"
       }
     ],
-    "next_place_id": "food-laoma",
-    "days": [
-      "2026-09-29"
-    ],
+    "opening_hours": null,
+    "description": "轻松日上午；周一常规可能闭",
+    "price": null,
+    "rating_summary": null,
     "locked": false,
     "role": null,
-    "city": "峰峰",
-    "order": 2
+    "duration_min": null
   },
   {
     "place_id": "scenic-qingquan",
     "name": "清泉公园",
     "short_name": "清泉公园",
     "category": "ATTRACTION",
-    "poi_id": "B0FFIC969Z",
+    "city": "峰峰",
+    "address": "散步外拍；赶车日近点",
     "coordinates": {
       "lat": 36.435319,
       "lng": 114.227923,
@@ -657,51 +469,29 @@
       "provider": "amap",
       "status": "VERIFIED"
     },
-    "address": "散步外拍；赶车日近点",
-    "times": {
-      "arrive": "14:40 / 10:00",
-      "leave": "16:40",
-      "planned_start": "10:00",
-      "planned_end": "12:00",
-      "planned": "10:00-12:00"
-    },
-    "duration_min": null,
-    "weather": {
-      "date": "2026-09-29",
-      "summary": "多云 26/15℃",
-      "gear": "防风薄外套",
-      "tags": [
-        "WEATHER_SENSITIVE",
-        "AVOID_TIME_WINDOW"
-      ]
-    },
     "images": [],
-    "description": "散步外拍；赶车日近点",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "B0FFIC969Z",
     "source_links": [
       {
         "label": "AMap",
         "url": "https://uri.amap.com/marker?position=114.227923,36.435319"
       }
     ],
-    "next_place_id": "food-laoma",
-    "days": [
-      "2026-09-29",
-      "2026-10-01"
-    ],
+    "opening_hours": null,
+    "description": "散步外拍；赶车日近点",
+    "price": null,
+    "rating_summary": null,
     "locked": false,
     "role": null,
-    "city": "峰峰",
-    "order": 4
+    "duration_min": null
   },
   {
     "place_id": "scenic-beixiangtang",
     "name": "响堂山风景名胜区北响堂寺",
     "short_name": "北响堂",
     "category": "ATTRACTION",
-    "poi_id": "B01360168B",
+    "city": "峰峰",
+    "address": "半日可选 KEEP_WITH_CAUTION",
     "coordinates": {
       "lat": 36.533648,
       "lng": 114.159455,
@@ -709,30 +499,12 @@
       "provider": "amap",
       "status": "VERIFIED"
     },
-    "address": "半日可选 KEEP_WITH_CAUTION",
-    "times": {
-      "arrive": "08:30",
-      "leave": "12:00",
-      "planned_start": "08:30",
-      "planned_end": "12:00",
-      "planned": "08:30-12:00"
-    },
-    "duration_min": null,
-    "weather": {
-      "date": "2026-09-30",
-      "summary": "超出峰峰7天窗末端→UNKNOWN定性",
-      "gear": "早晚薄外套",
-      "tags": [
-        "WEATHER_SAFE",
-        "RECHECK_REQUIRED"
-      ]
-    },
     "images": [
       {
         "image_file": "assets/attraction/beixiangtang_001_img.jpg",
         "thumbnail_file": "assets/attraction/beixiangtang_001_img.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
         "caption": "北响堂外观"
@@ -741,61 +513,40 @@
         "image_file": "assets/attraction/beixiangtang_002_img.jpg",
         "thumbnail_file": "assets/attraction/beixiangtang_002_img.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
         "caption": "大佛洞"
       }
     ],
-    "description": "半日可选 KEEP_WITH_CAUTION",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "B01360168B",
     "source_links": [
       {
         "label": "AMap",
         "url": "https://uri.amap.com/marker?position=114.159455,36.533648"
       }
     ],
-    "next_place_id": "food-jufulou",
-    "days": [
-      "2026-09-30"
-    ],
+    "opening_hours": null,
+    "description": "半日可选 KEEP_WITH_CAUTION",
+    "price": null,
+    "rating_summary": null,
     "locked": false,
     "role": null,
-    "city": "峰峰",
-    "order": 2
+    "duration_min": null
   },
   {
     "place_id": "food-jufulou",
     "name": "聚福楼(响堂水镇店)",
     "short_name": "聚福楼",
     "category": "FOOD",
-    "poi_id": "B0FFHH906X",
+    "city": "峰峰",
+    "address": "近北响堂可选午餐",
     "coordinates": {
       "lat": 36.529364,
       "lng": 114.126271,
       "coordinate_system": "GCJ-02",
       "provider": "amap",
       "status": "VERIFIED"
-    },
-    "address": "近北响堂可选午餐",
-    "times": {
-      "arrive": "12:30可选",
-      "leave": "14:30午市",
-      "planned_start": "12:30",
-      "planned_end": "13:30",
-      "planned": "12:30-13:30"
-    },
-    "duration_min": null,
-    "weather": {
-      "date": "2026-09-30",
-      "summary": "超出峰峰7天窗末端→UNKNOWN定性",
-      "gear": "早晚薄外套",
-      "tags": [
-        "WEATHER_SAFE",
-        "RECHECK_REQUIRED"
-      ]
     },
     "images": [
       {
@@ -805,34 +556,31 @@
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
-        "caption": "响堂水镇夜景参考"
+        "caption": "聚福楼 · 聚福楼内景"
       }
     ],
-    "description": "近北响堂可选午餐",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "B0FFHH906X",
     "source_links": [
       {
         "label": "AMap",
         "url": "https://uri.amap.com/marker?position=114.126271,36.529364"
       }
     ],
-    "next_place_id": "food-qianxi",
-    "days": [
-      "2026-09-30"
-    ],
+    "opening_hours": null,
+    "description": "近北响堂可选午餐",
+    "price": null,
+    "rating_summary": null,
     "locked": false,
     "role": null,
-    "city": "峰峰",
-    "order": 3
+    "duration_min": null
   },
   {
     "place_id": "scenic-nanxiangtang",
     "name": "南响堂寺",
     "short_name": "南响堂",
     "category": "ATTRACTION",
-    "poi_id": "B0136016SZ",
+    "city": "峰峰",
+    "address": "LOW_ENERGY/雨改近点",
     "coordinates": {
       "lat": 36.426741,
       "lng": 114.195801,
@@ -840,47 +588,29 @@
       "provider": "amap",
       "status": "VERIFIED"
     },
-    "address": "LOW_ENERGY/雨改近点",
-    "times": {
-      "arrive": "备选",
-      "leave": "17:30"
-    },
-    "duration_min": null,
-    "weather": {
-      "date": "2026-09-30",
-      "summary": "超出峰峰7天窗末端→UNKNOWN定性",
-      "gear": "早晚薄外套",
-      "tags": [
-        "WEATHER_SAFE",
-        "RECHECK_REQUIRED"
-      ]
-    },
     "images": [],
-    "description": "LOW_ENERGY/雨改近点",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "B0136016SZ",
     "source_links": [
       {
         "label": "AMap",
         "url": "https://uri.amap.com/marker?position=114.195801,36.426741"
       }
     ],
-    "next_place_id": "scenic-pengdong",
-    "days": [
-      "2026-09-30"
-    ],
+    "opening_hours": null,
+    "description": "LOW_ENERGY/雨改近点",
+    "price": null,
+    "rating_summary": null,
     "locked": false,
     "role": null,
-    "city": "峰峰",
-    "order": 5
+    "duration_min": null
   },
   {
     "place_id": "food-laoguai",
     "name": "老怪扁粉菜(筑城南小区店)",
     "short_name": "老怪扁粉菜",
     "category": "FOOD",
-    "poi_id": "B0FFGKO6FH",
+    "city": "峰峰",
+    "address": "AM_SNACK_ONLY LOCKED",
     "coordinates": {
       "lat": 36.418322,
       "lng": 114.207108,
@@ -888,97 +618,66 @@
       "provider": "amap",
       "status": "VERIFIED"
     },
-    "address": "AM_SNACK_ONLY LOCKED",
-    "times": {
-      "arrive": "午前",
-      "leave": "≤14:30",
-      "planned_start": "08:30",
-      "planned_end": "09:30",
-      "planned": "08:30-09:30"
-    },
-    "duration_min": null,
-    "weather": {
-      "date": "2026-10-01",
-      "summary": "—",
-      "gear": "长袖+薄外套上车可减衣",
-      "tags": [
-        "WEATHER_SAFE",
-        "RECHECK_REQUIRED",
-        "SAME_DAY"
-      ]
-    },
     "images": [
       {
-        "image_file": "assets/food/tiantree_hdl_001_facade.jpg",
-        "thumbnail_file": "assets/food/tiantree_hdl_001_facade.jpg",
+        "image_file": "assets/food/laoguai_001_facade.jpg",
+        "thumbnail_file": "assets/food/laoguai_001_facade.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
-        "caption": "老怪扁粉菜门头（粉灯笼）"
+        "caption": "老怪扁粉菜 · 门头"
       },
       {
         "image_file": "assets/food/laoguai_002_dish.jpg",
         "thumbnail_file": "assets/food/laoguai_002_dish.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
-        "caption": "扁粉菜大锅舀制（粉条/豆腐/血豆腐/青菜）"
+        "caption": "老怪扁粉菜 · 菜品"
       },
       {
         "image_file": "assets/food/laoguai_003_dish.jpg",
         "thumbnail_file": "assets/food/laoguai_003_dish.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
-        "caption": "扁粉菜碗装夹起"
-      },
-      {
-        "image_file": "",
-        "thumbnail_file": "",
-        "image_type": "油饼（通稿提及标配，公开直链缺清晰单品图）",
-        "source_status": "IMAGE_UNCERTAIN",
-        "source_name": "TRIP2609",
-        "source_url": null,
-        "caption": "油饼（通稿提及标配，公开直链缺清晰单品图）"
+        "caption": "老怪扁粉菜 · 菜品"
       },
       {
         "image_file": "assets/food/laoguai_004_interior.jpg",
         "thumbnail_file": "assets/food/laoguai_004_interior.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
-        "caption": "灶台熬制环境"
+        "caption": "老怪扁粉菜 · 店内"
       }
     ],
-    "description": "AM_SNACK_ONLY LOCKED",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "B0FFGKO6FH",
     "source_links": [
       {
         "label": "AMap",
         "url": "https://uri.amap.com/marker?position=114.207108,36.418322"
       }
     ],
-    "next_place_id": "scenic-qingquan",
-    "days": [
-      "2026-10-01"
-    ],
+    "opening_hours": null,
+    "description": "AM_SNACK_ONLY LOCKED",
+    "price": null,
+    "rating_summary": null,
     "locked": true,
     "role": null,
-    "city": "峰峰",
-    "order": 1
+    "duration_min": null
   },
   {
     "place_id": "hotel-jn-hiex",
     "name": "智选假日酒店(济南高新店)",
     "short_name": "高新智选",
     "category": "HOTEL",
-    "poi_id": "B0FFGATOC4",
+    "city": "济南",
+    "address": "济南主锚；演唱会轴酒店；LOCKED B0FFGATOC4",
     "coordinates": {
       "lat": 36.659908,
       "lng": 117.133376,
@@ -989,31 +688,12 @@
       "source": "MAP-COORDS.json",
       "updated_at": "2026-09-23T15:43:21"
     },
-    "address": "济南主锚；演唱会轴酒店；LOCKED B0FFGATOC4",
-    "times": {
-      "arrive": "10-01 晚 G1832 济南西后 ~23:00–23:30",
-      "leave": "10-03 建议 17:20–17:50 离店赴济南东（G2076 19:11）",
-      "planned_start": "15:40",
-      "planned_end": "17:15",
-      "planned": "15:40-17:15"
-    },
-    "duration_min": null,
-    "weather": {
-      "date": "2026-10-01",
-      "summary": "10-02夜场防风外套",
-      "gear": "长袖+薄外套上车可减衣",
-      "tags": [
-        "WEATHER_SAFE",
-        "RECHECK_REQUIRED",
-        "SAME_DAY"
-      ]
-    },
     "images": [
       {
         "image_file": "assets/hotel/jn_hiex_001_facade.jpg",
         "thumbnail_file": "assets/hotel/jn_hiex_001_facade.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
         "caption": "外观夜景"
@@ -1040,39 +720,34 @@
         "image_file": "assets/hotel/jn_hiex_004_dish.jpg",
         "thumbnail_file": "assets/hotel/jn_hiex_004_dish.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
         "caption": "自助早餐台"
       }
     ],
-    "description": "济南主锚；演唱会轴酒店；LOCKED B0FFGATOC4",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "B0FFGATOC4",
     "source_links": [
       {
         "label": "AMap",
         "url": "https://uri.amap.com/marker?position=117.133376,36.659908"
       }
     ],
-    "next_place_id": "scenic-baotu",
-    "days": [
-      "2026-10-01",
-      "2026-10-02",
-      "2026-10-03"
-    ],
+    "opening_hours": null,
+    "description": "济南主锚；演唱会轴酒店；LOCKED B0FFGATOC4",
+    "price": null,
+    "rating_summary": null,
     "locked": true,
     "role": "HOTEL_JN",
-    "city": "济南",
-    "order": 6
+    "duration_min": null
   },
   {
     "place_id": "food-hanyu-haidilao",
     "name": "海底捞火锅(亲子主题汉峪金谷店)",
     "short_name": "汉峪海底捞",
     "category": "FOOD",
-    "poi_id": "B0GRZM90PT",
+    "city": "济南",
+    "address": "抵济夜 DEFAULT 正经晚餐",
     "coordinates": {
       "lat": 36.662295,
       "lng": 117.150586,
@@ -1083,100 +758,66 @@
       "source": "MAP-COORDS.json",
       "updated_at": "2026-09-23T15:43:21"
     },
-    "address": "抵济夜 DEFAULT 正经晚餐",
-    "times": {
-      "arrive": "约23:00后",
-      "leave": "—",
-      "planned_start": "23:30",
-      "planned_end": "01:00",
-      "planned": "23:30-01:00"
-    },
-    "duration_min": null,
-    "weather": {
-      "date": "2026-10-01",
-      "summary": "—",
-      "gear": "长袖+薄外套上车可减衣",
-      "tags": [
-        "WEATHER_SAFE",
-        "RECHECK_REQUIRED",
-        "SAME_DAY"
-      ]
-    },
     "images": [
       {
-        "image_file": "assets/food/tiantree_hdl_001_facade.jpg",
-        "thumbnail_file": "assets/food/tiantree_hdl_001_facade.jpg",
+        "image_file": "assets/food/hanyu_hdl_001_facade.jpg",
+        "thumbnail_file": "assets/food/hanyu_hdl_001_facade.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
-        "caption": "汉峪金谷海底捞门头"
+        "caption": "汉峪海底捞 · 门头"
       },
       {
         "image_file": "assets/food/hanyu_hdl_002_dish.jpg",
         "thumbnail_file": "assets/food/hanyu_hdl_002_dish.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
-        "caption": "汉峪金谷海底捞菜品1"
+        "caption": "汉峪海底捞 · 菜品"
       },
       {
         "image_file": "assets/food/hanyu_hdl_003_dish.jpg",
         "thumbnail_file": "assets/food/hanyu_hdl_003_dish.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
-        "caption": "汉峪金谷海底捞菜品2"
+        "caption": "汉峪海底捞 · 菜品"
       },
       {
         "image_file": "assets/food/hanyu_hdl_004_interior.jpg",
         "thumbnail_file": "assets/food/hanyu_hdl_004_interior.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
-        "caption": "汉峪金谷海底捞店内环境"
+        "caption": "汉峪海底捞 · 店内"
       }
     ],
-    "description": "抵济夜 DEFAULT 正经晚餐",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "B0GRZM90PT",
     "source_links": [
       {
         "label": "AMap",
         "url": "https://uri.amap.com/marker?position=117.145,36.6625"
       }
     ],
-    "next_place_id": "st-jinan-west",
-    "days": [
-      "2026-10-01"
-    ],
+    "opening_hours": null,
+    "description": "抵济夜 DEFAULT 正经晚餐",
+    "price": null,
+    "rating_summary": null,
     "locked": false,
     "role": "ARRIVAL_DEFAULT",
-    "city": "济南",
-    "order": 7,
-    "access": {
-      "drive_from_zhixuan": {
-        "km": 2.6,
-        "min": 9,
-        "status": "VERIFIED"
-      },
-      "drive_from_otc": {
-        "km": 4.0,
-        "min": 12,
-        "status": "VERIFIED"
-      }
-    }
+    "duration_min": null
   },
   {
     "place_id": "st-jinan-west",
     "name": "济南西站",
     "short_name": "济南西",
     "category": "TRANSPORT",
-    "poi_id": "B02130TOED",
+    "city": "济南",
+    "address": "抵济到站；赴高新智选",
     "coordinates": {
       "lat": 36.668846,
       "lng": 116.891331,
@@ -1184,48 +825,29 @@
       "provider": "amap",
       "status": "VERIFIED"
     },
-    "address": "抵济到站；赴高新智选",
-    "times": {
-      "arrive": "G1832 ≈22:27",
-      "leave": "打车→高新智选≈42min/29.1km"
-    },
-    "duration_min": null,
-    "weather": {
-      "date": "2026-10-01",
-      "summary": "夜到；薄外套",
-      "gear": "长袖+薄外套上车可减衣",
-      "tags": [
-        "WEATHER_SAFE",
-        "RECHECK_REQUIRED",
-        "SAME_DAY"
-      ]
-    },
     "images": [],
-    "description": "抵济到站；赴高新智选",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "B02130TOED",
     "source_links": [
       {
         "label": "AMap",
         "url": "https://uri.amap.com/marker?position=116.891331,36.668846"
       }
     ],
-    "next_place_id": null,
-    "days": [
-      "2026-10-01"
-    ],
+    "opening_hours": null,
+    "description": "抵济到站；赴高新智选",
+    "price": null,
+    "rating_summary": null,
     "locked": true,
     "role": "STATION_JN_WEST",
-    "city": "济南",
-    "order": 8
+    "duration_min": null
   },
   {
     "place_id": "photo-qst",
     "name": "曲水亭街",
     "short_name": "曲水亭",
     "category": "PHOTO",
-    "poi_id": "JN.QST",
+    "city": "济南",
+    "address": "短逛拍照；勿排满",
     "coordinates": {
       "lat": 36.6655,
       "lng": 117.022,
@@ -1233,61 +855,39 @@
       "provider": "amap",
       "status": "NOTE_APPROX"
     },
-    "address": "短逛拍照；勿排满",
-    "times": {
-      "arrive": "10:30",
-      "leave": "12:00",
-      "planned_start": "10:20",
-      "planned_end": "11:40",
-      "planned": "10:20-11:40"
-    },
-    "duration_min": null,
-    "weather": {
-      "date": "2026-10-02",
-      "summary": "晴间多云 25.0/15.5℃，降水0，POP_max≈5%",
-      "gear": "防风薄外套必带；折叠伞备份",
-      "tags": [
-        "WEATHER_SENSITIVE",
-        "RECHECK_REQUIRED",
-        "SAME_DAY"
-      ]
-    },
     "images": [
       {
         "image_file": "assets/photo/qushuiting_001_img.jpg",
         "thumbnail_file": "assets/photo/qushuiting_001_img.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
         "caption": "曲水亭街"
       }
     ],
-    "description": "短逛拍照；勿排满",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "JN.QST",
     "source_links": [
       {
         "label": "AMap",
         "url": "https://uri.amap.com/marker?position=117.022,36.6655"
       }
     ],
-    "next_place_id": "photo-bhz",
-    "days": [
-      "2026-10-02"
-    ],
+    "opening_hours": null,
+    "description": "短逛拍照；勿排满",
+    "price": null,
+    "rating_summary": null,
     "locked": false,
     "role": null,
-    "city": "济南",
-    "order": 2
+    "duration_min": null
   },
   {
     "place_id": "photo-bhz",
     "name": "百花洲",
     "short_name": "百花洲",
     "category": "PHOTO",
-    "poi_id": "JN.BHZ",
+    "city": "济南",
+    "address": "同片短逛；OPTIONAL簇有余量可加",
     "coordinates": {
       "lat": 36.669214,
       "lng": 117.024493,
@@ -1298,73 +898,39 @@
       "source": "MAP-COORDS.json",
       "updated_at": "2026-09-23T15:43:21"
     },
-    "address": "同片短逛；OPTIONAL簇有余量可加",
-    "times": {
-      "arrive": "12:00",
-      "leave": "13:00",
-      "planned_start": "11:40",
-      "planned_end": "12:30",
-      "planned": "11:40-12:30"
-    },
-    "duration_min": null,
-    "weather": {
-      "date": "2026-10-02",
-      "summary": "晴间多云 25.0/15.5℃，降水0，POP_max≈5%",
-      "gear": "防风薄外套必带；折叠伞备份",
-      "tags": [
-        "WEATHER_SENSITIVE",
-        "RECHECK_REQUIRED",
-        "SAME_DAY"
-      ]
-    },
     "images": [
       {
         "image_file": "assets/photo/baihuazhou_001_img.jpg",
         "thumbnail_file": "assets/photo/baihuazhou_001_img.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
         "caption": "百花洲"
       }
     ],
-    "description": "同片短逛；OPTIONAL簇有余量可加",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "JN.BHZ",
     "source_links": [
       {
         "label": "AMap",
         "url": "https://uri.amap.com/marker?position=117.0255,36.668"
       }
     ],
-    "next_place_id": "food-mixc",
-    "days": [
-      "2026-10-02"
-    ],
+    "opening_hours": null,
+    "description": "同片短逛；OPTIONAL簇有余量可加",
+    "price": null,
+    "rating_summary": null,
     "locked": false,
     "role": null,
-    "city": "济南",
-    "order": 3,
-    "access": {
-      "drive_from_zhixuan": {
-        "km": 12.4,
-        "min": 37,
-        "status": "VERIFIED"
-      },
-      "drive_from_otc": {
-        "km": 9.4,
-        "min": 34,
-        "status": "VERIFIED"
-      }
-    }
+    "duration_min": null
   },
   {
     "place_id": "food-mixc",
     "name": "济南华润万象城",
     "short_name": "万象城",
     "category": "PHOTO",
-    "poi_id": "JN.MIXC",
+    "city": "济南",
+    "address": "演前短拍≤30–45min；L4楼梯首选",
     "coordinates": {
       "lat": 36.6555,
       "lng": 117.1048,
@@ -1372,31 +938,12 @@
       "provider": "amap",
       "status": "NOTE_APPROX"
     },
-    "address": "演前短拍≤30–45min；L4楼梯首选",
-    "times": {
-      "arrive": "15:20短拍",
-      "leave": "17:25赴奥体",
-      "planned_start": "16:20",
-      "planned_end": "16:35",
-      "planned": "16:20-16:35"
-    },
-    "duration_min": null,
-    "weather": {
-      "date": "2026-10-02",
-      "summary": "晴间多云 25.0/15.5℃，降水0，POP_max≈5%",
-      "gear": "防风薄外套必带；折叠伞备份",
-      "tags": [
-        "WEATHER_SENSITIVE",
-        "RECHECK_REQUIRED",
-        "SAME_DAY"
-      ]
-    },
     "images": [
       {
         "image_file": "assets/photo/mixc_001_img.jpg",
         "thumbnail_file": "assets/photo/mixc_001_img.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
         "caption": "万象城中庭"
@@ -1411,31 +958,28 @@
         "caption": "L4楼梯参考"
       }
     ],
-    "description": "演前短拍≤30–45min；L4楼梯首选",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "JN.MIXC",
     "source_links": [
       {
         "label": "AMap",
         "url": "https://uri.amap.com/marker?position=117.1048,36.6555"
       }
     ],
-    "next_place_id": "food-fengtian",
-    "days": [
-      "2026-10-02"
-    ],
+    "opening_hours": null,
+    "description": "演前短拍≤30–45min；L4楼梯首选",
+    "price": null,
+    "rating_summary": null,
     "locked": false,
     "role": null,
-    "city": "济南",
-    "order": 4
+    "duration_min": null
   },
   {
     "place_id": "food-fengtian",
     "name": "奉天小馆·非遗东北菜(济南万象城店)",
     "short_name": "奉天小馆",
     "category": "FOOD",
-    "poi_id": "B0FFKVYIZG",
+    "city": "济南",
+    "address": "演前PRIMARY LOCKED；国庆排队MED-HIGH",
     "coordinates": {
       "lat": 36.658296,
       "lng": 117.099933,
@@ -1446,100 +990,66 @@
       "source": "MAP-COORDS.json",
       "updated_at": "2026-09-23T15:43:21"
     },
-    "address": "演前PRIMARY LOCKED；国庆排队MED-HIGH",
-    "times": {
-      "arrive": "建议16:00前入座",
-      "leave": "18:30前结账",
-      "planned_start": "15:00",
-      "planned_end": "16:20",
-      "planned": "15:00-16:20"
-    },
-    "duration_min": null,
-    "weather": {
-      "date": "2026-10-02",
-      "summary": "晴间多云 25.0/15.5℃，降水0，POP_max≈5%",
-      "gear": "防风薄外套必带；折叠伞备份",
-      "tags": [
-        "WEATHER_SENSITIVE",
-        "RECHECK_REQUIRED",
-        "SAME_DAY"
-      ]
-    },
     "images": [
       {
-        "image_file": "assets/food/tiantree_hdl_001_facade.jpg",
-        "thumbnail_file": "assets/food/tiantree_hdl_001_facade.jpg",
+        "image_file": "assets/food/fengtian_001_facade.jpg",
+        "thumbnail_file": "assets/food/fengtian_001_facade.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
-        "caption": "奉天小馆万象城门头"
+        "caption": "奉天小馆 · 门头"
       },
       {
         "image_file": "assets/food/fengtian_002_facade.jpg",
         "thumbnail_file": "assets/food/fengtian_002_facade.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
-        "caption": "奉天小馆万象城门头补充"
+        "caption": "奉天小馆 · 外观"
       },
       {
-        "image_file": "assets/food/hanyu_hdl_003_dish.jpg",
-        "thumbnail_file": "assets/food/hanyu_hdl_003_dish.jpg",
+        "image_file": "assets/food/fengtian_003_dish.jpg",
+        "thumbnail_file": "assets/food/fengtian_003_dish.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
-        "caption": "奉天小馆菜品"
+        "caption": "奉天小馆 · 菜品"
       },
       {
-        "image_file": "assets/food/hanyu_hdl_004_interior.jpg",
-        "thumbnail_file": "assets/food/hanyu_hdl_004_interior.jpg",
+        "image_file": "assets/food/fengtian_004_interior.jpg",
+        "thumbnail_file": "assets/food/fengtian_004_interior.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
-        "caption": "奉天小馆店内环境"
+        "caption": "奉天小馆 · 店内"
       }
     ],
-    "description": "演前PRIMARY LOCKED；国庆排队MED-HIGH",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "B0FFKVYIZG",
     "source_links": [
       {
         "label": "AMap",
         "url": "https://uri.amap.com/marker?position=117.1055,36.6558"
       }
     ],
-    "next_place_id": "concert-otc",
-    "days": [
-      "2026-10-02"
-    ],
+    "opening_hours": null,
+    "description": "演前PRIMARY LOCKED；国庆排队MED-HIGH",
+    "price": null,
+    "rating_summary": null,
     "locked": true,
     "role": "PRESHOW_PRIMARY",
-    "city": "济南",
-    "order": 5,
-    "access": {
-      "drive_from_zhixuan": {
-        "km": 3.7,
-        "min": 14,
-        "status": "VERIFIED"
-      },
-      "drive_from_otc": {
-        "km": 2.3,
-        "min": 13,
-        "status": "VERIFIED"
-      }
-    }
+    "duration_min": null
   },
   {
     "place_id": "concert-otc",
     "name": "济南奥体中心体育场",
     "short_name": "济南奥体·演唱会",
     "category": "CONCERT",
-    "poi_id": "B0213079R1",
+    "city": "济南",
+    "address": "HARD：10-02 19:00 西柳体育场；导航 POI B0213079R1；勿去东荷",
     "coordinates": {
       "lat": 36.656612,
       "lng": 117.116351,
@@ -1550,54 +1060,29 @@
       "source": "MAP-COORDS.json",
       "updated_at": "2026-09-23T15:43:21"
     },
-    "address": "HARD：10-02 19:00 西柳体育场；导航 POI B0213079R1；勿去东荷",
-    "times": {
-      "arrive": "建议≈17:00入场（开演前约120分钟指引）",
-      "leave": "散场约21:30后；回程40–90+分钟",
-      "planned_start": "19:00",
-      "planned_end": "22:00",
-      "planned": "19:00-22:00",
-      "show": "2026-10-02 19:00",
-      "doors": "≈17:00"
-    },
-    "duration_min": null,
-    "weather": {
-      "date": "2026-10-02",
-      "summary": "晴间多云 25.0/15.5℃，降水0，POP_max≈5%",
-      "gear": "防风薄外套必带；折叠伞备份",
-      "tags": [
-        "WEATHER_SENSITIVE",
-        "RECHECK_REQUIRED",
-        "SAME_DAY"
-      ],
-      "concert_note": "夜间持续偏南风约21km/h + 体感约17℃ → 防风薄外套/披肩；雨威胁低但仍保留Rain Plan B触发条件"
-    },
     "images": [],
-    "description": "HARD：10-02 19:00 西柳体育场；导航 POI B0213079R1；勿去东荷",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "B0213079R1",
     "source_links": [
       {
         "label": "AMap",
         "url": "https://uri.amap.com/marker?position=117.116351,36.656612"
       }
     ],
-    "next_place_id": "food-huanlian",
-    "days": [
-      "2026-10-02"
-    ],
+    "opening_hours": null,
+    "description": "HARD：10-02 19:00 西柳体育场；导航 POI B0213079R1；勿去东荷",
+    "price": null,
+    "rating_summary": null,
     "locked": true,
     "role": "CONCERT",
-    "city": "济南",
-    "order": 6
+    "duration_min": null
   },
   {
     "place_id": "food-huanlian",
     "name": "环联1904火车夜市",
     "short_name": "环联1904",
     "category": "FOOD",
-    "poi_id": "HUANLIAN_1904",
+    "city": "济南",
+    "address": "散场夜宵 PRIMARY A",
     "coordinates": {
       "lat": 36.695425,
       "lng": 117.093025,
@@ -1608,82 +1093,48 @@
       "source": "MAP-COORDS.json",
       "updated_at": "2026-09-23T15:43:21"
     },
-    "address": "散场夜宵 PRIMARY A",
-    "times": {
-      "arrive": "散场后≈22:15",
-      "leave": "—",
-      "planned_start": "22:15",
-      "planned_end": "23:45",
-      "planned": "22:15-23:45"
-    },
-    "duration_min": null,
-    "weather": {
-      "date": "2026-10-02",
-      "summary": "晴间多云 25.0/15.5℃，降水0，POP_max≈5%",
-      "gear": "防风薄外套必带；折叠伞备份",
-      "tags": [
-        "WEATHER_SENSITIVE",
-        "RECHECK_REQUIRED",
-        "SAME_DAY"
-      ]
-    },
     "images": [
       {
         "image_file": "assets/food/huanlian_001_facade.jpg",
         "thumbnail_file": "assets/food/huanlian_001_facade.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
-        "caption": "环联夜市门头"
+        "caption": "环联1904 · 门头"
       },
       {
         "image_file": "assets/food/huanlian_002_night.jpg",
         "thumbnail_file": "assets/food/huanlian_002_night.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
-        "caption": "摊位夜景"
+        "caption": "环联1904 · 夜景"
       }
     ],
-    "description": "散场夜宵 PRIMARY A",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "HUANLIAN_1904",
     "source_links": [
       {
         "label": "AMap",
         "url": "https://uri.amap.com/marker?position=117.12,36.705"
       }
     ],
-    "next_place_id": "food-tiantree-hdl",
-    "days": [
-      "2026-10-02"
-    ],
+    "opening_hours": null,
+    "description": "散场夜宵 PRIMARY A",
+    "price": null,
+    "rating_summary": null,
     "locked": false,
     "role": "LATE_PRIMARY_A",
-    "city": "济南",
-    "order": 7,
-    "access": {
-      "drive_from_zhixuan": {
-        "km": 7.7,
-        "min": 22,
-        "status": "VERIFIED"
-      },
-      "drive_from_otc": {
-        "km": 6.4,
-        "min": 22,
-        "status": "VERIFIED"
-      }
-    }
+    "duration_min": null
   },
   {
     "place_id": "food-tiantree-hdl",
     "name": "海底捞火锅(龙湖奥体天街店)",
     "short_name": "天街海底捞",
     "category": "FOOD",
-    "poi_id": "B0GKGA63N6",
+    "city": "济南",
+    "address": "散场夜宵 DEFAULT_B；电话确认B馆通道",
     "coordinates": {
       "lat": 36.667655,
       "lng": 117.110558,
@@ -1694,79 +1145,48 @@
       "source": "MAP-COORDS.json",
       "updated_at": "2026-09-23T15:43:21"
     },
-    "address": "散场夜宵 DEFAULT_B；电话确认B馆通道",
-    "times": {
-      "arrive": "散场后",
-      "leave": "—"
-    },
-    "duration_min": null,
-    "weather": {
-      "date": "2026-10-02",
-      "summary": "晴间多云 25.0/15.5℃，降水0，POP_max≈5%",
-      "gear": "防风薄外套必带；折叠伞备份",
-      "tags": [
-        "WEATHER_SENSITIVE",
-        "RECHECK_REQUIRED",
-        "SAME_DAY"
-      ]
-    },
     "images": [
       {
         "image_file": "assets/food/tiantree_hdl_001_facade.jpg",
         "thumbnail_file": "assets/food/tiantree_hdl_001_facade.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
-        "caption": "天街海底捞门头"
+        "caption": "天街海底捞 · 天街海底捞门头"
       },
       {
         "image_file": "assets/food/tiantree_hdl_002_interior.jpg",
         "thumbnail_file": "assets/food/tiantree_hdl_002_interior.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
-        "caption": "店内环境"
+        "caption": "天街海底捞 · 店内"
       }
     ],
-    "description": "散场夜宵 DEFAULT_B；电话确认B馆通道",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "B0GKGA63N6",
     "source_links": [
       {
         "label": "AMap",
         "url": "https://uri.amap.com/marker?position=117.112,36.6585"
       }
     ],
-    "next_place_id": null,
-    "days": [
-      "2026-10-02"
-    ],
+    "opening_hours": null,
+    "description": "散场夜宵 DEFAULT_B；电话确认B馆通道",
+    "price": null,
+    "rating_summary": null,
     "locked": false,
     "role": "LATE_DEFAULT_B",
-    "city": "济南",
-    "order": 8,
-    "access": {
-      "drive_from_zhixuan": {
-        "km": 3.2,
-        "min": 11,
-        "status": "VERIFIED"
-      },
-      "drive_from_otc": {
-        "km": 1.9,
-        "min": 10,
-        "status": "VERIFIED"
-      }
-    }
+    "duration_min": null
   },
   {
     "place_id": "scenic-baotu",
     "name": "趵突泉景区",
     "short_name": "趵突泉",
     "category": "ATTRACTION",
-    "poi_id": "B021305SHC",
+    "city": "济南",
+    "address": "10-03午前主游（G2076晚班后白天窗加宽）；非赶早班日",
     "coordinates": {
       "lat": 36.661087,
       "lng": 117.015893,
@@ -1777,32 +1197,12 @@
       "source": "MAP-COORDS.json",
       "updated_at": "2026-09-23T15:43:21"
     },
-    "address": "10-03午前主游（G2076晚班后白天窗加宽）；非赶早班日",
-    "times": {
-      "arrive": "10-03 约08:20",
-      "leave": "约11:00（午后弹性另计）",
-      "planned_start": "08:20",
-      "planned_end": "11:00",
-      "planned": "08:20-11:00"
-    },
-    "duration_min": null,
-    "weather": {
-      "date": "2026-10-03",
-      "summary": "晴 23.0/16.0℃，POP_max≈10%；上午风速可偏大",
-      "gear": "清晨长袖+薄外套",
-      "tags": [
-        "WEATHER_SAFE",
-        "TRANSPORT_WEATHER_RISK",
-        "RECHECK_REQUIRED",
-        "SAME_DAY"
-      ]
-    },
     "images": [
       {
         "image_file": "assets/attraction/baotu_001_img.jpg",
         "thumbnail_file": "assets/attraction/baotu_001_img.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
         "caption": "趵突泉南门"
@@ -1811,49 +1211,34 @@
         "image_file": "assets/attraction/baotu_002_img.jpg",
         "thumbnail_file": "assets/attraction/baotu_002_img.jpg",
         "image_type": "photo",
-        "source_status": "VERIFIED",
+        "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
         "caption": "主泉池"
       }
     ],
-    "description": "10-03午前主游（G2076晚班后白天窗加宽）；非赶早班日",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "B021305SHC",
     "source_links": [
       {
         "label": "AMap",
         "url": "https://uri.amap.com/marker?position=117.015893,36.661087"
       }
     ],
-    "next_place_id": "st-jinan-east",
-    "days": [
-      "2026-10-03"
-    ],
+    "opening_hours": null,
+    "description": "10-03午前主游（G2076晚班后白天窗加宽）；非赶早班日",
+    "price": null,
+    "rating_summary": null,
     "locked": false,
     "role": null,
-    "city": "济南",
-    "order": 2,
-    "access": {
-      "drive_from_zhixuan": {
-        "km": 12.2,
-        "min": 38,
-        "status": "VERIFIED"
-      },
-      "drive_from_otc": {
-        "km": null,
-        "min": null,
-        "status": "UNVERIFIED"
-      }
-    }
+    "duration_min": null
   },
   {
     "place_id": "st-jinan-east",
     "name": "济南东站",
     "short_name": "济南东",
     "category": "TRANSPORT",
-    "poi_id": "B0FFJZ2Z5Z",
+    "city": "济南",
+    "address": "回峰峰硬轴：G2076 济南东晚班已购",
     "coordinates": {
       "lat": 36.747892,
       "lng": 117.159918,
@@ -1861,52 +1246,29 @@
       "provider": "amap",
       "status": "VERIFIED"
     },
-    "address": "回峰峰硬轴：G2076 济南东晚班已购",
-    "times": {
-      "arrive": "目标≈18:20–18:40到站（国庆晚高峰）",
-      "leave": "G2076 19:11→邯郸东21:54",
-      "planned_start": "17:20",
-      "planned_end": "19:00",
-      "planned": "17:20-19:00"
-    },
-    "duration_min": null,
-    "weather": {
-      "date": "2026-10-03",
-      "summary": "晴 23.0/16.0℃，POP_max≈10%；上午风速可偏大",
-      "gear": "清晨长袖+薄外套",
-      "tags": [
-        "WEATHER_SAFE",
-        "TRANSPORT_WEATHER_RISK",
-        "RECHECK_REQUIRED",
-        "SAME_DAY"
-      ]
-    },
     "images": [],
-    "description": "回峰峰硬轴：G2076 济南东晚班已购",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "B0FFJZ2Z5Z",
     "source_links": [
       {
         "label": "AMap",
         "url": "https://uri.amap.com/marker?position=117.159918,36.747892"
       }
     ],
-    "next_place_id": "st-handandong",
-    "days": [
-      "2026-10-03"
-    ],
+    "opening_hours": null,
+    "description": "回峰峰硬轴：G2076 济南东晚班已购",
+    "price": null,
+    "rating_summary": null,
     "locked": true,
     "role": "STATION_JN_EAST",
-    "city": "济南",
-    "order": 3
+    "duration_min": null
   },
   {
     "place_id": "st-wuhan",
     "name": "武汉站",
     "short_name": "武汉站",
     "category": "TRANSPORT",
-    "poi_id": "WUHAN_STATION",
+    "city": "武汉",
+    "address": "单人同站换乘；TIGHT_TRANSFER",
     "coordinates": {
       "lat": 30.6068,
       "lng": 114.4205,
@@ -1914,47 +1276,29 @@
       "provider": "amap",
       "status": "NOTE_APPROX"
     },
-    "address": "单人同站换乘；TIGHT_TRANSFER",
-    "times": {
-      "arrive": "G689 ≈14:58",
-      "leave": "G399 ≈15:19（缓冲≈21min TIGHT）",
-      "planned_start": "14:58",
-      "planned_end": "15:19",
-      "planned": "14:58-15:19"
-    },
-    "duration_min": null,
-    "weather": {
-      "date": "2026-10-04",
-      "summary": "室内换乘",
-      "gear": null,
-      "tags": []
-    },
     "images": [],
-    "description": "单人同站换乘；TIGHT_TRANSFER",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "WUHAN_STATION",
     "source_links": [
       {
         "label": "AMap",
         "url": "https://uri.amap.com/marker?position=114.4205,30.6068"
       }
     ],
-    "next_place_id": "st-sz-north",
-    "days": [
-      "2026-10-04"
-    ],
+    "opening_hours": null,
+    "description": "单人同站换乘；TIGHT_TRANSFER",
+    "price": null,
+    "rating_summary": null,
     "locked": true,
     "role": "STATION_WUHAN",
-    "city": "武汉",
-    "order": 3
+    "duration_min": null
   },
   {
     "place_id": "jn-map-B02130WMQ6",
     "name": "泉城广场-泉标",
     "short_name": "泉城广场-泉标",
     "category": "ATTRACTION",
-    "poi_id": "B02130WMQ6",
+    "city": "济南",
+    "address": "",
     "coordinates": {
       "lat": 36.661493,
       "lng": 117.021235,
@@ -1964,43 +1308,24 @@
       "amap_poi_id": "B02130WMQ6",
       "source": "MAP-COORDS.json"
     },
-    "address": "",
-    "times": {},
-    "duration_min": null,
-    "weather": null,
     "images": [],
-    "description": "地图向导核验上图点（候选/轻量，未强制入日轴）",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "B02130WMQ6",
     "source_links": [],
-    "next_place_id": null,
-    "days": [],
+    "opening_hours": null,
+    "description": "地图向导核验上图点（候选/轻量，未强制入日轴）",
+    "price": null,
+    "rating_summary": null,
     "locked": false,
     "role": "map_candidate",
-    "city": "济南",
-    "order": 900,
-    "access": {
-      "drive_from_zhixuan": {
-        "km": 12.1,
-        "min": 36,
-        "status": "VERIFIED"
-      },
-      "drive_from_otc": {
-        "km": 10.7,
-        "min": 33,
-        "status": "VERIFIED"
-      }
-    },
-    "include_on_user_map": true,
-    "map_layer": "drive_fill"
+    "duration_min": null
   },
   {
     "place_id": "jn-map-B0GU4CV3ST",
     "name": "济南老东门早市",
     "short_name": "济南老东门早市",
     "category": "FOOD",
-    "poi_id": "B0GU4CV3ST",
+    "city": "济南",
+    "address": "",
     "coordinates": {
       "lat": 36.67442,
       "lng": 117.038827,
@@ -2010,43 +1335,24 @@
       "amap_poi_id": "B0GU4CV3ST",
       "source": "MAP-COORDS.json"
     },
-    "address": "",
-    "times": {},
-    "duration_min": null,
-    "weather": null,
     "images": [],
-    "description": "地图向导核验上图点（候选/轻量，未强制入日轴）",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "B0GU4CV3ST",
     "source_links": [],
-    "next_place_id": null,
-    "days": [],
+    "opening_hours": null,
+    "description": "地图向导核验上图点（候选/轻量，未强制入日轴）",
+    "price": null,
+    "rating_summary": null,
     "locked": false,
     "role": "map_candidate",
-    "city": "济南",
-    "order": 900,
-    "access": {
-      "drive_from_zhixuan": {
-        "km": 12.3,
-        "min": 35,
-        "status": "VERIFIED"
-      },
-      "drive_from_otc": {
-        "km": 9.3,
-        "min": 31,
-        "status": "VERIFIED"
-      }
-    },
-    "include_on_user_map": true,
-    "map_layer": "drive_fill"
+    "duration_min": null
   },
   {
     "place_id": "jn-map-B0FFIOSQ2K",
     "name": "天下第一泉景区",
     "short_name": "天下第一泉景区",
     "category": "ATTRACTION",
-    "poi_id": "B0FFIOSQ2K",
+    "city": "济南",
+    "address": "",
     "coordinates": {
       "lat": 36.660934,
       "lng": 117.015207,
@@ -2056,43 +1362,24 @@
       "amap_poi_id": "B0FFIOSQ2K",
       "source": "MAP-COORDS.json"
     },
-    "address": "",
-    "times": {},
-    "duration_min": null,
-    "weather": null,
     "images": [],
-    "description": "地图向导核验上图点（候选/轻量，未强制入日轴）",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "B0FFIOSQ2K",
     "source_links": [],
-    "next_place_id": null,
-    "days": [],
+    "opening_hours": null,
+    "description": "地图向导核验上图点（候选/轻量，未强制入日轴）",
+    "price": null,
+    "rating_summary": null,
     "locked": false,
     "role": "map_candidate",
-    "city": "济南",
-    "order": 900,
-    "access": {
-      "drive_from_zhixuan": {
-        "km": 12.5,
-        "min": 35,
-        "status": "VERIFIED"
-      },
-      "drive_from_otc": {
-        "km": 9.5,
-        "min": 33,
-        "status": "VERIFIED"
-      }
-    },
-    "include_on_user_map": true,
-    "map_layer": "drive_fill"
+    "duration_min": null
   },
   {
     "place_id": "jn-map-B0L19SFL2F",
     "name": "1903 MIX老商埠",
     "short_name": "1903 MIX老商埠",
     "category": "ATTRACTION",
-    "poi_id": "B0L19SFL2F",
+    "city": "济南",
+    "address": "",
     "coordinates": {
       "lat": 36.662449,
       "lng": 116.992745,
@@ -2102,43 +1389,24 @@
       "amap_poi_id": "B0L19SFL2F",
       "source": "MAP-COORDS.json"
     },
-    "address": "",
-    "times": {},
-    "duration_min": null,
-    "weather": null,
     "images": [],
-    "description": "地图向导核验上图点（候选/轻量，未强制入日轴）",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "B0L19SFL2F",
     "source_links": [],
-    "next_place_id": null,
-    "days": [],
+    "opening_hours": null,
+    "description": "地图向导核验上图点（候选/轻量，未强制入日轴）",
+    "price": null,
+    "rating_summary": null,
     "locked": false,
     "role": "map_candidate",
-    "city": "济南",
-    "order": 900,
-    "access": {
-      "drive_from_zhixuan": {
-        "km": 14.5,
-        "min": 42,
-        "status": "VERIFIED"
-      },
-      "drive_from_otc": {
-        "km": 13.2,
-        "min": 39,
-        "status": "VERIFIED"
-      }
-    },
-    "include_on_user_map": true,
-    "map_layer": "pool"
+    "duration_min": null
   },
   {
     "place_id": "jn-map-B021307RUA",
     "name": "大明湖景区",
     "short_name": "大明湖景区",
     "category": "ATTRACTION",
-    "poi_id": "B021307RUA",
+    "city": "济南",
+    "address": "",
     "coordinates": {
       "lat": 36.672584,
       "lng": 117.016718,
@@ -2148,43 +1416,24 @@
       "amap_poi_id": "B021307RUA",
       "source": "MAP-COORDS.json"
     },
-    "address": "",
-    "times": {},
-    "duration_min": null,
-    "weather": null,
     "images": [],
-    "description": "地图向导核验上图点（候选/轻量，未强制入日轴）",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "B021307RUA",
     "source_links": [],
-    "next_place_id": null,
-    "days": [],
+    "opening_hours": null,
+    "description": "地图向导核验上图点（候选/轻量，未强制入日轴）",
+    "price": null,
+    "rating_summary": null,
     "locked": false,
     "role": "map_candidate",
-    "city": "济南",
-    "order": 900,
-    "access": {
-      "drive_from_zhixuan": {
-        "km": 15.7,
-        "min": 38,
-        "status": "VERIFIED"
-      },
-      "drive_from_otc": {
-        "km": 14.3,
-        "min": 36,
-        "status": "VERIFIED"
-      }
-    },
-    "include_on_user_map": true,
-    "map_layer": "pool"
+    "duration_min": null
   },
   {
     "place_id": "jn-map-B021301E66",
     "name": "山东美术馆",
     "short_name": "山东美术馆",
     "category": "ATTRACTION",
-    "poi_id": "B021301E66",
+    "city": "济南",
+    "address": "",
     "coordinates": {
       "lat": 36.65782,
       "lng": 117.09783,
@@ -2194,43 +1443,24 @@
       "amap_poi_id": "B021301E66",
       "source": "MAP-COORDS.json"
     },
-    "address": "",
-    "times": {},
-    "duration_min": null,
-    "weather": null,
     "images": [],
-    "description": "地图向导核验上图点（候选/轻量，未强制入日轴）",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "B021301E66",
     "source_links": [],
-    "next_place_id": null,
-    "days": [],
+    "opening_hours": null,
+    "description": "地图向导核验上图点（候选/轻量，未强制入日轴）",
+    "price": null,
+    "rating_summary": null,
     "locked": false,
     "role": "map_candidate",
-    "city": "济南",
-    "order": 900,
-    "access": {
-      "drive_from_zhixuan": {
-        "km": 3.6,
-        "min": 12,
-        "status": "VERIFIED"
-      },
-      "drive_from_otc": {
-        "km": 2.3,
-        "min": 10,
-        "status": "VERIFIED"
-      }
-    },
-    "include_on_user_map": true,
-    "map_layer": "pool"
+    "duration_min": null
   },
   {
     "place_id": "jn-map-B021306TJ7",
     "name": "千佛山",
     "short_name": "千佛山",
     "category": "ATTRACTION",
-    "poi_id": "B021306TJ7",
+    "city": "济南",
+    "address": "",
     "coordinates": {
       "lat": 36.639288,
       "lng": 117.036098,
@@ -2240,43 +1470,24 @@
       "amap_poi_id": "B021306TJ7",
       "source": "MAP-COORDS.json"
     },
-    "address": "",
-    "times": {},
-    "duration_min": null,
-    "weather": null,
     "images": [],
-    "description": "地图向导核验上图点（候选/轻量，未强制入日轴）",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "B021306TJ7",
     "source_links": [],
-    "next_place_id": null,
-    "days": [],
+    "opening_hours": null,
+    "description": "地图向导核验上图点（候选/轻量，未强制入日轴）",
+    "price": null,
+    "rating_summary": null,
     "locked": false,
     "role": "map_candidate",
-    "city": "济南",
-    "order": 900,
-    "access": {
-      "drive_from_zhixuan": {
-        "km": 9.8,
-        "min": 20,
-        "status": "VERIFIED"
-      },
-      "drive_from_otc": {
-        "km": 8.2,
-        "min": 16,
-        "status": "VERIFIED"
-      }
-    },
-    "include_on_user_map": true,
-    "map_layer": "light"
+    "duration_min": null
   },
   {
     "place_id": "jn-map-B0FFHYOL74",
     "name": "济南首创奥特莱斯",
     "short_name": "济南首创奥特莱斯",
     "category": "ATTRACTION",
-    "poi_id": "B0FFHYOL74",
+    "city": "济南",
+    "address": "",
     "coordinates": {
       "lat": 36.692228,
       "lng": 117.232419,
@@ -2286,43 +1497,24 @@
       "amap_poi_id": "B0FFHYOL74",
       "source": "MAP-COORDS.json"
     },
-    "address": "",
-    "times": {},
-    "duration_min": null,
-    "weather": null,
     "images": [],
-    "description": "地图向导核验上图点（候选/轻量，未强制入日轴）",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "B0FFHYOL74",
     "source_links": [],
-    "next_place_id": null,
-    "days": [],
+    "opening_hours": null,
+    "description": "地图向导核验上图点（候选/轻量，未强制入日轴）",
+    "price": null,
+    "rating_summary": null,
     "locked": false,
     "role": "map_candidate",
-    "city": "济南",
-    "order": 900,
-    "access": {
-      "drive_from_zhixuan": {
-        "km": 11.2,
-        "min": 25,
-        "status": "VERIFIED"
-      },
-      "drive_from_otc": {
-        "km": 13.5,
-        "min": 30,
-        "status": "VERIFIED"
-      }
-    },
-    "include_on_user_map": true,
-    "map_layer": "light"
+    "duration_min": null
   },
   {
     "place_id": "jn-map-B021307ZAY",
     "name": "山东博物馆",
     "short_name": "山东博物馆",
     "category": "ATTRACTION",
-    "poi_id": "B021307ZAY",
+    "city": "济南",
+    "address": "",
     "coordinates": {
       "lat": 36.658157,
       "lng": 117.095731,
@@ -2332,43 +1524,24 @@
       "amap_poi_id": "B021307ZAY",
       "source": "MAP-COORDS.json"
     },
-    "address": "",
-    "times": {},
-    "duration_min": null,
-    "weather": null,
     "images": [],
-    "description": "地图向导核验上图点（候选/轻量，未强制入日轴）",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "B021307ZAY",
     "source_links": [],
-    "next_place_id": null,
-    "days": [],
+    "opening_hours": null,
+    "description": "地图向导核验上图点（候选/轻量，未强制入日轴）",
+    "price": null,
+    "rating_summary": null,
     "locked": false,
     "role": "map_candidate",
-    "city": "济南",
-    "order": 900,
-    "access": {
-      "drive_from_zhixuan": {
-        "km": 3.6,
-        "min": 13,
-        "status": "VERIFIED"
-      },
-      "drive_from_otc": {
-        "km": 2.3,
-        "min": 11,
-        "status": "VERIFIED"
-      }
-    },
-    "include_on_user_map": true,
-    "map_layer": "light"
+    "duration_min": null
   },
   {
     "place_id": "jn-map-B0FFFGREU0",
     "name": "济南市博物馆",
     "short_name": "济南市博物馆",
     "category": "ATTRACTION",
-    "poi_id": "B0FFFGREU0",
+    "city": "济南",
+    "address": "",
     "coordinates": {
       "lat": 36.645208,
       "lng": 117.026936,
@@ -2378,35 +1551,15 @@
       "amap_poi_id": "B0FFFGREU0",
       "source": "MAP-COORDS.json"
     },
-    "address": "",
-    "times": {},
-    "duration_min": null,
-    "weather": null,
     "images": [],
-    "description": "地图向导核验上图点（候选/轻量，未强制入日轴）",
-    "rating_summary": null,
-    "price": null,
-    "opening_hours": null,
+    "poi_id": "B0FFFGREU0",
     "source_links": [],
-    "next_place_id": null,
-    "days": [],
+    "opening_hours": null,
+    "description": "地图向导核验上图点（候选/轻量，未强制入日轴）",
+    "price": null,
+    "rating_summary": null,
     "locked": false,
     "role": "map_candidate",
-    "city": "济南",
-    "order": 900,
-    "access": {
-      "drive_from_zhixuan": {
-        "km": 10.2,
-        "min": 27,
-        "status": "VERIFIED"
-      },
-      "drive_from_otc": {
-        "km": 8.8,
-        "min": 25,
-        "status": "VERIFIED"
-      }
-    },
-    "include_on_user_map": true,
-    "map_layer": "light"
+    "duration_min": null
   }
 ]

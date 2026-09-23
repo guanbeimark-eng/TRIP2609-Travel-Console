@@ -6,31 +6,28 @@
     "theme": "全程总览",
     "city": "全程",
     "place_ids": [
+      "st-sz-north",
       "st-handandong",
       "hotel-ff-quanyi",
       "food-qianxi",
-      "st-sz-north",
-      "food-shunwei",
       "scenic-cizhouyao",
       "food-laoma",
-      "scenic-pengdong",
       "scenic-museum",
       "scenic-qingquan",
       "scenic-beixiangtang",
       "food-jufulou",
-      "scenic-nanxiangtang",
       "food-laoguai",
+      "st-jinan-west",
       "hotel-jn-hiex",
       "food-hanyu-haidilao",
-      "st-jinan-west",
       "photo-qst",
       "photo-bhz",
       "food-mixc",
       "food-fengtian",
       "concert-otc",
       "food-huanlian",
-      "food-tiantree-hdl",
       "scenic-baotu",
+      "jn-map-B021301E66",
       "st-jinan-east",
       "st-wuhan"
     ]
@@ -40,13 +37,12 @@
     "date": "2026-09-27",
     "label": "09-27",
     "theme": "抵达日 G904→全季→千禧晚饭",
-    "city": "峰峰",
+    "city": "邯郸·峰峰",
     "place_ids": [
+      "st-sz-north",
       "st-handandong",
       "hotel-ff-quanyi",
-      "food-qianxi",
-      "st-sz-north",
-      "food-shunwei"
+      "food-qianxi"
     ],
     "weather_ref": "2026-09-27"
   },
@@ -55,13 +51,12 @@
     "date": "2026-09-28",
     "label": "09-28",
     "theme": "文创日·磁州窑+陶瓷/寻味午前弹性",
-    "city": "峰峰",
+    "city": "邯郸·峰峰",
     "place_ids": [
       "hotel-ff-quanyi",
       "scenic-cizhouyao",
       "food-laoma",
-      "food-qianxi",
-      "scenic-pengdong"
+      "food-qianxi"
     ],
     "weather_ref": "2026-09-28"
   },
@@ -70,14 +65,13 @@
     "date": "2026-09-29",
     "label": "09-29",
     "theme": "轻松日·博物馆+清泉",
-    "city": "峰峰",
+    "city": "邯郸·峰峰",
     "place_ids": [
       "hotel-ff-quanyi",
       "scenic-museum",
       "food-laoma",
       "scenic-qingquan",
-      "food-qianxi",
-      "scenic-pengdong"
+      "food-qianxi"
     ],
     "weather_ref": "2026-09-29"
   },
@@ -86,14 +80,12 @@
     "date": "2026-09-30",
     "label": "09-30",
     "theme": "北响堂半日可选（或市集弹性）",
-    "city": "峰峰",
+    "city": "邯郸·峰峰",
     "place_ids": [
       "hotel-ff-quanyi",
       "scenic-beixiangtang",
       "food-jufulou",
-      "food-qianxi",
-      "scenic-nanxiangtang",
-      "scenic-pengdong"
+      "food-qianxi"
     ],
     "weather_ref": "2026-09-30"
   },
@@ -101,7 +93,7 @@
     "day_id": "d-2026-10-01",
     "date": "2026-10-01",
     "label": "10-01",
-    "theme": "赶车日 G1832→济南",
+    "theme": "赶车日 G1832→高新智选→汉峪晚到餐",
     "city": "峰峰→济南",
     "place_ids": [
       "food-laoguai",
@@ -109,9 +101,9 @@
       "food-laoma",
       "hotel-ff-quanyi",
       "st-handandong",
+      "st-jinan-west",
       "hotel-jn-hiex",
-      "food-hanyu-haidilao",
-      "st-jinan-west"
+      "food-hanyu-haidilao"
     ],
     "weather_ref": "2026-10-01"
   },
@@ -128,8 +120,7 @@
       "food-mixc",
       "food-fengtian",
       "concert-otc",
-      "food-huanlian",
-      "food-tiantree-hdl"
+      "food-huanlian"
     ],
     "weather_ref": "2026-10-02"
   },
@@ -137,11 +128,12 @@
     "day_id": "d-2026-10-03",
     "date": "2026-10-03",
     "label": "10-03",
-    "theme": "全日济南→G2076晚班夜回峰峰",
-    "city": "济南→峰峰",
+    "theme": "全日济南→G2076已购晚班→夜回全季",
+    "city": "济南→邯郸峰峰",
     "place_ids": [
       "hotel-jn-hiex",
       "scenic-baotu",
+      "jn-map-B021301E66",
       "st-jinan-east",
       "st-handandong",
       "hotel-ff-quanyi"
@@ -152,8 +144,8 @@
     "day_id": "d-2026-10-04",
     "date": "2026-10-04",
     "label": "10-04",
-    "theme": "单人 G689+G399 返深",
-    "city": "峰峰→深圳",
+    "theme": "SOLO 回深 G689→武汉紧换乘→G399",
+    "city": "峰峰→武汉→深圳",
     "place_ids": [
       "hotel-ff-quanyi",
       "st-handandong",

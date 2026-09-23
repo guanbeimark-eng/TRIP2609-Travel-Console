@@ -15,10 +15,20 @@
       const box = document.getElementById('mapFallback');
       const msg = document.getElementById('mapFallbackMsg');
       if (msg) msg.textContent = '地图引擎异常，已保留时间线/详情。可点重试或检查 Leaflet/cluster 资源。';
-      if (box) box.hidden = false;
+      if (box) { box.hidden = false; box.removeAttribute('hidden'); }
     }
-    const prefer = data.places.find(p => p.place_id === 'hotel-jn-hiex') || data.places[0];
-    if (prefer) UI.selectPlace(prefer.place_id, 'boot');
+    // P0-02: boot selects first place of default filter (d-all → first visit of trip), NOT hardcoded Jinan hotel
+    const filter = UI.filter || 'd-all';
+    const firstVisits = TripData.visitsForFilter(filter);
+    let firstPlace = null;
+    if (firstVisits.length) {
+      firstPlace = TripData.placeById(firstVisits[0].place_id);
+    }
+    if (!firstPlace) {
+      const list = TripData.placesForFilter(filter);
+      firstPlace = list[0] || data.places[0];
+    }
+    if (firstPlace) UI.selectPlace(firstPlace.place_id, 'boot');
     setTimeout(() => MapModule.invalidateSize && MapModule.invalidateSize(), 200);
     setTimeout(() => MapModule.invalidateSize && MapModule.invalidateSize(), 1000);
   } catch (err) {

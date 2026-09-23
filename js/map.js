@@ -11,6 +11,7 @@ const MapModule = (() => {
   let firstTileTimer = null;
   let listOnly = false;
   let useCluster = true;
+  let attemptToken = 0;
 
   const PROVIDERS = [
     {
@@ -51,13 +52,19 @@ const MapModule = (() => {
     const box = document.getElementById('mapFallback');
     const m = document.getElementById('mapFallbackMsg');
     if (m) m.textContent = msg || '底图加载失败，已进入列表模式。';
-    if (box) box.hidden = false;
+    if (box) {
+      box.hidden = false;
+      box.removeAttribute('hidden');
+    }
     setStatus('列表模式（无底图）', 'err');
   }
   function hideFallback() {
     listOnly = false;
     const box = document.getElementById('mapFallback');
-    if (box) box.hidden = true;
+    if (box) {
+      box.hidden = true;
+      box.setAttribute('hidden', '');
+    }
   }
 
   function init(containerId, selectCb) {
@@ -89,9 +96,11 @@ const MapModule = (() => {
 
   function tryProvider(index) {
     clearTileTimer();
+    const myToken = ++attemptToken;
     hideFallback();
     if (tileLayer) { map.removeLayer(tileLayer); tileLayer = null; }
     if (index >= PROVIDERS.length) {
+      if (myToken !== attemptToken) return;
       tileMode = 'none'; currentProvider = null;
       showFallback('高德 / GeoQ / Carto 均超时或失败。时间线与详情仍可用。');
       return;
@@ -102,14 +111,26 @@ const MapModule = (() => {
     let gotTile = false;
     tileLayer = L.tileLayer(p.url, Object.assign({ crossOrigin: true }, p.options));
     tileLayer.on('tileload', () => {
+      if (myToken !== attemptToken) return;
       if (!gotTile) {
-        gotTile = true; clearTileTimer();
+        gotTile = true;
+        clearTileTimer();
+        hideFallback();
+        const box = document.getElementById('mapFallback');
+        if (box) box.hidden = true;
         setStatus('底图：' + p.label + (p.mode === 'wgs' ? ' · 已GCJ→WGS' : ' · GCJ-02'), 'ok');
         if (window.__tripConsoleRefresh) window.__tripConsoleRefresh();
       }
     });
+    tileLayer.on('tileerror', () => {
+      if (myToken !== attemptToken) return;
+      // ignore individual tile errors; timeout handles failover
+    });
     tileLayer.addTo(map);
-    firstTileTimer = setTimeout(() => { if (!gotTile) tryProvider(index + 1); }, 8000);
+    firstTileTimer = setTimeout(() => {
+      if (myToken !== attemptToken) return;
+      if (!gotTile) tryProvider(index + 1);
+    }, 8000);
   }
 
   function toDisplayLatLng(place) {
@@ -125,8 +146,11 @@ const MapModule = (() => {
   function makeIcon(place, selected) {
     const color = CAT_COLOR[place.category] || '#64748b';
     const glyph = CAT_GLYPH[place.category] || '·';
-    const imgObj = (place.images || []).find(i => i.image_file);
-    const img = imgObj ? imgObj.thumbnail_file || imgObj.image_file : '';
+    // Marker cover: only VERIFIED image_file; else category glyph
+    const imgObj = (place.images || []).find(i =>
+      i.image_file && (i.source_status === 'VERIFIED' || i.status === 'VERIFIED')
+    );
+    const img = imgObj ? (imgObj.thumbnail_file || imgObj.image_file) : '';
     const html = img
       ? `<div class="poi-marker ${selected ? 'selected' : ''}" style="border-color:${color}"><img src="${img}" alt="" onerror="this.remove();this.parentNode.textContent='${glyph}';"/></div>`
       : `<div class="poi-marker ${selected ? 'selected' : ''}" style="background:${color}">${glyph}</div>`;
@@ -147,7 +171,6 @@ const MapModule = (() => {
     clearLayers();
     const latlngs = [];
     const dense = places.length >= 8;
-    // clustering always available; radius already set
 
     places.forEach(place => {
       const ll = toDisplayLatLng(place);
@@ -193,6 +216,7 @@ const MapModule = (() => {
       if (!place) return;
       markerLookup[id].setIcon(makeIcon(place, id === placeId));
     });
+    if (!placeId) return;
     const m = markerLookup[placeId];
     if (m && pan) {
       if (clusterGroup && clusterGroup.zoomToShowLayer) {
@@ -204,6 +228,7 @@ const MapModule = (() => {
       }
     }
   }
+  function clearSelection() { selectedId = null; }
   function focus(placeId) { select(placeId, true); }
   function invalidateSize() { if (map) map.invalidateSize(); }
   function remount(container) {
@@ -213,8 +238,9 @@ const MapModule = (() => {
   }
 
   return {
-    init, update, select, focus, invalidateSize, remount, tryProvider,
+    init, update, select, clearSelection, focus, invalidateSize, remount, tryProvider,
     get listOnly(){return listOnly;}, get provider(){return currentProvider;},
-    get tileMode(){return tileMode;}, get map(){return map;}
+    get tileMode(){return tileMode;}, get map(){return map;},
+    get selectedId(){return selectedId;}
   };
 })();

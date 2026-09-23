@@ -1,0 +1,904 @@
+[
+  {
+    "visit_id": "v-2026-09-27-01-st-sz-north",
+    "date": "2026-09-27",
+    "place_id": "st-sz-north",
+    "sequence": 1,
+    "planned_start": "09:41",
+    "planned_end": "17:44",
+    "optional": false,
+    "weather_ref": "2026-09-27",
+    "route_to_next": {
+      "to_place_id": "st-handandong",
+      "mode": "walk",
+      "distance_km": null,
+      "duration_min": 0,
+      "source": "ROUTE-FINAL transport_from_previous"
+    },
+    "activity": "乘车（时刻RECHECK_12306）",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-09-27-02-st-handandong",
+    "date": "2026-09-27",
+    "place_id": "st-handandong",
+    "sequence": 2,
+    "planned_start": "17:44",
+    "planned_end": "18:00",
+    "optional": false,
+    "weather_ref": "2026-09-27",
+    "route_to_next": {
+      "to_place_id": "hotel-ff-quanyi",
+      "mode": "taxi",
+      "distance_km": 47.3,
+      "duration_min": 57,
+      "source": "管家接驳复核"
+    },
+    "activity": "出站打车赴峰峰全季",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-09-27-03-hotel-ff-quanyi",
+    "date": "2026-09-27",
+    "place_id": "hotel-ff-quanyi",
+    "sequence": 3,
+    "planned_start": "18:00",
+    "planned_end": "19:00",
+    "optional": false,
+    "weather_ref": "2026-09-27",
+    "route_to_next": {
+      "to_place_id": "food-qianxi",
+      "mode": "taxi",
+      "distance_km": 2.2,
+      "duration_min": 5,
+      "source": "MAP-SLIM"
+    },
+    "activity": "打车到店约18:45–19:00；入住放行李",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-09-27-04-food-qianxi",
+    "date": "2026-09-27",
+    "place_id": "food-qianxi",
+    "sequence": 4,
+    "planned_start": "19:15",
+    "planned_end": "20:45",
+    "optional": false,
+    "weather_ref": "2026-09-27",
+    "route_to_next": null,
+    "activity": "抵达晚餐 DEFAULT；ALT顺味B0FFFPS96G可试",
+    "slot": "DINNER_PRIMARY"
+  },
+  {
+    "visit_id": "v-2026-09-28-01-hotel-ff-quanyi",
+    "date": "2026-09-28",
+    "place_id": "hotel-ff-quanyi",
+    "sequence": 1,
+    "planned_start": "09:00",
+    "planned_end": "09:05",
+    "optional": false,
+    "weather_ref": "2026-09-28",
+    "route_to_next": {
+      "to_place_id": "scenic-cizhouyao",
+      "mode": "taxi",
+      "distance_km": 2.1,
+      "duration_min": 5,
+      "source": "MAP-SLIM"
+    },
+    "activity": "出发",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-09-28-02-scenic-cizhouyao",
+    "date": "2026-09-28",
+    "place_id": "scenic-cizhouyao",
+    "sequence": 2,
+    "planned_start": "09:15",
+    "planned_end": "12:00",
+    "optional": false,
+    "weather_ref": "2026-09-28",
+    "route_to_next": {
+      "to_place_id": "food-laoma",
+      "mode": "taxi",
+      "distance_km": null,
+      "duration_min": 15,
+      "source": "INTERIM_跨片区估时，精测未做"
+    },
+    "activity": "街区逛+拍照",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-09-28-03-food-laoma",
+    "date": "2026-09-28",
+    "place_id": "food-laoma",
+    "sequence": 3,
+    "planned_start": "12:20",
+    "planned_end": "13:20",
+    "optional": false,
+    "weather_ref": "2026-09-28",
+    "route_to_next": {
+      "to_place_id": "scenic-cizhouyao",
+      "mode": "taxi",
+      "distance_km": null,
+      "duration_min": 15,
+      "source": "INTERIM"
+    },
+    "activity": "午餐",
+    "slot": "LUNCH_PRIMARY"
+  },
+  {
+    "visit_id": "v-2026-09-28-04-scenic-cizhouyao",
+    "date": "2026-09-28",
+    "place_id": "scenic-cizhouyao",
+    "sequence": 4,
+    "planned_start": "13:40",
+    "planned_end": "16:30",
+    "optional": false,
+    "weather_ref": "2026-09-28",
+    "route_to_next": {
+      "to_place_id": "food-qianxi",
+      "mode": "taxi",
+      "distance_km": 2.2,
+      "duration_min": 5,
+      "source": "MAP-SLIM"
+    },
+    "activity": "续逛或回全季休息",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-09-28-05-food-qianxi",
+    "date": "2026-09-28",
+    "place_id": "food-qianxi",
+    "sequence": 5,
+    "planned_start": "17:40",
+    "planned_end": "19:10",
+    "optional": false,
+    "weather_ref": "2026-09-28",
+    "route_to_next": null,
+    "activity": "晚餐同片",
+    "slot": "DINNER_PRIMARY"
+  },
+  {
+    "visit_id": "v-2026-09-29-01-hotel-ff-quanyi",
+    "date": "2026-09-29",
+    "place_id": "hotel-ff-quanyi",
+    "sequence": 1,
+    "planned_start": "09:00",
+    "planned_end": "09:10",
+    "optional": false,
+    "weather_ref": "2026-09-29",
+    "route_to_next": {
+      "to_place_id": "scenic-museum",
+      "mode": "taxi",
+      "distance_km": 3.2,
+      "duration_min": 7,
+      "source": "MAP-SLIM"
+    },
+    "activity": "出发",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-09-29-02-scenic-museum",
+    "date": "2026-09-29",
+    "place_id": "scenic-museum",
+    "sequence": 2,
+    "planned_start": "09:20",
+    "planned_end": "11:20",
+    "optional": false,
+    "weather_ref": "2026-09-29",
+    "route_to_next": {
+      "to_place_id": "food-laoma",
+      "mode": "taxi",
+      "distance_km": null,
+      "duration_min": 10,
+      "source": "INTERIM同城短接驳"
+    },
+    "activity": "上午开馆段参观（建议线上预约线索）",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-09-29-03-food-laoma",
+    "date": "2026-09-29",
+    "place_id": "food-laoma",
+    "sequence": 3,
+    "planned_start": "11:40",
+    "planned_end": "12:40",
+    "optional": false,
+    "weather_ref": "2026-09-29",
+    "route_to_next": {
+      "to_place_id": "hotel-ff-quanyi",
+      "mode": "taxi",
+      "distance_km": null,
+      "duration_min": 7,
+      "source": "MAP-SLIM"
+    },
+    "activity": "午餐",
+    "slot": "LUNCH_PRIMARY"
+  },
+  {
+    "visit_id": "v-2026-09-29-04-hotel-ff-quanyi",
+    "date": "2026-09-29",
+    "place_id": "hotel-ff-quanyi",
+    "sequence": 4,
+    "planned_start": "13:00",
+    "planned_end": "14:00",
+    "optional": false,
+    "weather_ref": "2026-09-29",
+    "route_to_next": {
+      "to_place_id": "scenic-qingquan",
+      "mode": "taxi",
+      "distance_km": 3.2,
+      "duration_min": 7,
+      "source": "MAP-SLIM"
+    },
+    "activity": "午休",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-09-29-05-scenic-qingquan",
+    "date": "2026-09-29",
+    "place_id": "scenic-qingquan",
+    "sequence": 5,
+    "planned_start": "14:40",
+    "planned_end": "16:40",
+    "optional": false,
+    "weather_ref": "2026-09-29",
+    "route_to_next": {
+      "to_place_id": "food-qianxi",
+      "mode": "taxi",
+      "distance_km": null,
+      "duration_min": 5,
+      "source": "MAP-SLIM"
+    },
+    "activity": "下午公园散步；可与博物馆同片串，若体力好可博物馆下午段14:30-17:30二选一",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-09-29-06-food-qianxi",
+    "date": "2026-09-29",
+    "place_id": "food-qianxi",
+    "sequence": 6,
+    "planned_start": "17:50",
+    "planned_end": "19:20",
+    "optional": false,
+    "weather_ref": "2026-09-29",
+    "route_to_next": null,
+    "activity": "晚餐",
+    "slot": "DINNER_PRIMARY"
+  },
+  {
+    "visit_id": "v-2026-09-30-01-hotel-ff-quanyi",
+    "date": "2026-09-30",
+    "place_id": "hotel-ff-quanyi",
+    "sequence": 1,
+    "planned_start": "07:50",
+    "planned_end": "08:10",
+    "optional": false,
+    "weather_ref": "2026-09-30",
+    "route_to_next": {
+      "to_place_id": "scenic-beixiangtang",
+      "mode": "taxi",
+      "distance_km": 14.5,
+      "duration_min": 18,
+      "source": "MAP-SLIM"
+    },
+    "activity": "早出发赶开园",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-09-30-02-scenic-beixiangtang",
+    "date": "2026-09-30",
+    "place_id": "scenic-beixiangtang",
+    "sequence": 2,
+    "planned_start": "08:30",
+    "planned_end": "12:00",
+    "optional": false,
+    "weather_ref": "2026-09-30",
+    "route_to_next": {
+      "to_place_id": "food-jufulou",
+      "mode": "taxi",
+      "distance_km": null,
+      "duration_min": 10,
+      "source": "INTERIM；店在和村16.9km/21min自酒店"
+    },
+    "activity": "北响堂半日 KEEP_WITH_CAUTION",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-09-30-03-food-jufulou",
+    "date": "2026-09-30",
+    "place_id": "food-jufulou",
+    "sequence": 3,
+    "planned_start": "12:30",
+    "planned_end": "13:30",
+    "optional": false,
+    "weather_ref": "2026-09-30",
+    "route_to_next": {
+      "to_place_id": "hotel-ff-quanyi",
+      "mode": "taxi",
+      "distance_km": null,
+      "duration_min": 21,
+      "source": "自聚福楼或北响堂回酒店≈18–21min"
+    },
+    "activity": "可选近北响堂午餐；不想远可回城老马",
+    "slot": "LUNCH_OPTIONAL"
+  },
+  {
+    "visit_id": "v-2026-09-30-04-hotel-ff-quanyi",
+    "date": "2026-09-30",
+    "place_id": "hotel-ff-quanyi",
+    "sequence": 4,
+    "planned_start": "14:00",
+    "planned_end": "15:00",
+    "optional": false,
+    "weather_ref": "2026-09-30",
+    "route_to_next": {
+      "to_place_id": "food-qianxi",
+      "mode": "taxi",
+      "distance_km": null,
+      "duration_min": 5,
+      "source": "MAP-SLIM"
+    },
+    "activity": "回程休整，下午不排新点",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-09-30-05-food-qianxi",
+    "date": "2026-09-30",
+    "place_id": "food-qianxi",
+    "sequence": 5,
+    "planned_start": "17:40",
+    "planned_end": "19:10",
+    "optional": false,
+    "weather_ref": "2026-09-30",
+    "route_to_next": null,
+    "activity": "晚餐回城片",
+    "slot": "DINNER_PRIMARY"
+  },
+  {
+    "visit_id": "v-2026-10-01-01-food-laoguai",
+    "date": "2026-10-01",
+    "place_id": "food-laoguai",
+    "sequence": 1,
+    "planned_start": "08:30",
+    "planned_end": "09:30",
+    "optional": false,
+    "weather_ref": "2026-10-01",
+    "route_to_next": {
+      "to_place_id": "scenic-qingquan",
+      "mode": "taxi",
+      "distance_km": null,
+      "duration_min": 7,
+      "source": "MAP-SLIM"
+    },
+    "activity": "早点/午前小吃（仅午前）",
+    "slot": "SNACK_AM"
+  },
+  {
+    "visit_id": "v-2026-10-01-02-scenic-qingquan",
+    "date": "2026-10-01",
+    "place_id": "scenic-qingquan",
+    "sequence": 2,
+    "planned_start": "10:00",
+    "planned_end": "12:00",
+    "optional": false,
+    "weather_ref": "2026-10-01",
+    "route_to_next": {
+      "to_place_id": "food-laoma",
+      "mode": "taxi",
+      "distance_km": null,
+      "duration_min": 10,
+      "source": "INTERIM"
+    },
+    "activity": "近点短逛；禁北响堂",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-10-01-03-food-laoma",
+    "date": "2026-10-01",
+    "place_id": "food-laoma",
+    "sequence": 3,
+    "planned_start": "12:20",
+    "planned_end": "13:20",
+    "optional": false,
+    "weather_ref": "2026-10-01",
+    "route_to_next": {
+      "to_place_id": "hotel-ff-quanyi",
+      "mode": "taxi",
+      "distance_km": null,
+      "duration_min": 7,
+      "source": "MAP-SLIM"
+    },
+    "activity": "午餐后回店收拾",
+    "slot": "LUNCH_PRIMARY"
+  },
+  {
+    "visit_id": "v-2026-10-01-04-hotel-ff-quanyi",
+    "date": "2026-10-01",
+    "place_id": "hotel-ff-quanyi",
+    "sequence": 4,
+    "planned_start": "14:00",
+    "planned_end": "17:30",
+    "optional": false,
+    "weather_ref": "2026-10-01",
+    "route_to_next": {
+      "to_place_id": "st-handandong",
+      "mode": "taxi",
+      "distance_km": 47.3,
+      "duration_min": 57,
+      "source": "管家接驳复核"
+    },
+    "activity": "收拾行李休息；17:30起身准备离店",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-10-01-05-st-handandong",
+    "date": "2026-10-01",
+    "place_id": "st-handandong",
+    "sequence": 5,
+    "planned_start": "18:00",
+    "planned_end": "19:10",
+    "optional": false,
+    "weather_ref": "2026-10-01",
+    "route_to_next": {
+      "to_place_id": "st-jinan-west",
+      "mode": "rail",
+      "distance_km": null,
+      "duration_min": 0,
+      "source": "ROUTE-FINAL transport_from_previous"
+    },
+    "activity": "打车赴站赶G1832 19:47→济南西22:27",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-10-01-06-st-jinan-west",
+    "date": "2026-10-01",
+    "place_id": "st-jinan-west",
+    "sequence": 6,
+    "planned_start": "19:47",
+    "planned_end": "22:27",
+    "optional": false,
+    "weather_ref": "2026-10-01",
+    "route_to_next": {
+      "to_place_id": "hotel-jn-hiex",
+      "mode": "taxi",
+      "distance_km": 29.1,
+      "duration_min": 42,
+      "source": "TRIP2609-FINAL-TICKETS door_to_door"
+    },
+    "activity": "乘车（已购；2人）",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-10-01-07-hotel-jn-hiex",
+    "date": "2026-10-01",
+    "place_id": "hotel-jn-hiex",
+    "sequence": 7,
+    "planned_start": "22:27",
+    "planned_end": "23:30",
+    "optional": false,
+    "weather_ref": "2026-10-01",
+    "route_to_next": {
+      "to_place_id": "food-hanyu-haidilao",
+      "mode": "taxi",
+      "distance_km": null,
+      "duration_min": 10,
+      "source": "近高新；INTERIM"
+    },
+    "activity": "济南西出站打车赴高新智选；国庆plan 55–70min（推荐42min/29.1km）",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-10-01-08-food-hanyu-haidilao",
+    "date": "2026-10-01",
+    "place_id": "food-hanyu-haidilao",
+    "sequence": 8,
+    "planned_start": "23:30",
+    "planned_end": "01:00",
+    "optional": false,
+    "weather_ref": "2026-10-01",
+    "route_to_next": null,
+    "activity": "到达夜正经晚餐 DEFAULT KEEP；明湖夜酌仅 soft 二选一勿强制",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-10-02-01-hotel-jn-hiex",
+    "date": "2026-10-02",
+    "place_id": "hotel-jn-hiex",
+    "sequence": 1,
+    "planned_start": "09:30",
+    "planned_end": "10:00",
+    "optional": false,
+    "weather_ref": "2026-10-02",
+    "route_to_next": {
+      "to_place_id": "photo-qst",
+      "mode": "taxi",
+      "distance_km": null,
+      "duration_min": null,
+      "source": "智选→曲水亭精测可后补 OPEN"
+    },
+    "activity": "出发；轻松节奏勿赶",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-10-02-02-photo-qst",
+    "date": "2026-10-02",
+    "place_id": "photo-qst",
+    "sequence": 2,
+    "planned_start": "10:20",
+    "planned_end": "11:40",
+    "optional": false,
+    "weather_ref": "2026-10-02",
+    "route_to_next": {
+      "to_place_id": "photo-bhz",
+      "mode": "walk",
+      "distance_km": null,
+      "duration_min": 10,
+      "source": "ROUTE-FINAL transport_from_previous"
+    },
+    "activity": "短逛+PRIMARY JN.QST.01_CANAL_DAY；勿排满；QST.02黄昏默认砍",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-10-02-03-photo-bhz",
+    "date": "2026-10-02",
+    "place_id": "photo-bhz",
+    "sequence": 3,
+    "planned_start": "11:40",
+    "planned_end": "12:30",
+    "optional": false,
+    "weather_ref": "2026-10-02",
+    "route_to_next": {
+      "to_place_id": "hotel-jn-hiex",
+      "mode": "taxi",
+      "distance_km": null,
+      "duration_min": null,
+      "source": "ROUTE-FINAL transport_from_previous"
+    },
+    "activity": "短逛+PRIMARY JN.BHZ.01_LAKE_WILLOW；同片串线；有余量再 OPTIONAL_CLUSTER",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-10-02-04-hotel-jn-hiex",
+    "date": "2026-10-02",
+    "place_id": "hotel-jn-hiex",
+    "sequence": 4,
+    "planned_start": "12:30",
+    "planned_end": "14:00",
+    "optional": false,
+    "weather_ref": "2026-10-02",
+    "route_to_next": {
+      "to_place_id": "food-mixc",
+      "mode": "taxi",
+      "distance_km": null,
+      "duration_min": null,
+      "source": "智选→万象城精测可后补；商场经十路11111号"
+    },
+    "activity": "午休/换装；缓慢赴万象城（云间ANNOUNCED有余量可短访勿硬锁）",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-10-02-05-food-mixc",
+    "date": "2026-10-02",
+    "place_id": "food-mixc",
+    "sequence": 5,
+    "planned_start": "14:40",
+    "planned_end": "15:00",
+    "optional": false,
+    "weather_ref": "2026-10-02",
+    "route_to_next": {
+      "to_place_id": "food-fengtian",
+      "mode": "walk",
+      "distance_km": null,
+      "duration_min": 5,
+      "source": "同商场L4近楼梯机位"
+    },
+    "activity": "短拍首选 JN.MIXC.03_L4_STAIR（近奉天L405）≤10–15min",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-10-02-06-food-fengtian",
+    "date": "2026-10-02",
+    "place_id": "food-fengtian",
+    "sequence": 6,
+    "planned_start": "15:00",
+    "planned_end": "16:20",
+    "optional": false,
+    "weather_ref": "2026-10-02",
+    "route_to_next": {
+      "to_place_id": "food-mixc",
+      "mode": "walk",
+      "distance_km": null,
+      "duration_min": 5,
+      "source": "ROUTE-FINAL transport_from_previous"
+    },
+    "activity": "演前PRIMARY晚餐；建议15:00前后入座；控时2–3道+主食；18:30前结账 redundant→本窗16:20前结账离席",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-10-02-07-food-mixc",
+    "date": "2026-10-02",
+    "place_id": "food-mixc",
+    "sequence": 7,
+    "planned_start": "16:20",
+    "planned_end": "16:35",
+    "optional": false,
+    "weather_ref": "2026-10-02",
+    "route_to_next": {
+      "to_place_id": "concert-otc",
+      "mode": "taxi",
+      "distance_km": 1.8,
+      "duration_min": 15,
+      "source": "万象城→奥体约1.8km；酒店→奥体2.2km/常态8min；演前plan 15–30；管制RECHECK"
+    },
+    "activity": "餐后余量短拍 PRIMARY JN.MIXC.01；总短拍仍≤30–45min；超时直接赴奥体",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-10-02-08-concert-otc",
+    "date": "2026-10-02",
+    "place_id": "concert-otc",
+    "sequence": 8,
+    "planned_start": "16:35",
+    "planned_end": "17:15",
+    "optional": false,
+    "weather_ref": "2026-10-02",
+    "route_to_next": {
+      "to_place_id": "concert-otc",
+      "mode": "walk",
+      "distance_km": null,
+      "duration_min": 0,
+      "source": "ROUTE-FINAL transport_from_previous"
+    },
+    "activity": "赴场安检入场；目标≈17:00–17:15到场（~120min pre-show PARTIAL指引）；西柳非东荷",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-10-02-09-concert-otc",
+    "date": "2026-10-02",
+    "place_id": "concert-otc",
+    "sequence": 9,
+    "planned_start": "19:00",
+    "planned_end": "22:00",
+    "optional": false,
+    "weather_ref": "2026-10-02",
+    "route_to_next": {
+      "to_place_id": "food-huanlian",
+      "mode": "taxi",
+      "distance_km": null,
+      "duration_min": null,
+      "source": "散场勿默认地铁末班；回酒店40–90+（CONCERT-OPS）"
+    },
+    "activity": "凤凰传奇「吉祥如意」济南站（结束约21:40–22:00二级线索RECHECK）",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-10-02-10-food-huanlian",
+    "date": "2026-10-02",
+    "place_id": "food-huanlian",
+    "sequence": 10,
+    "planned_start": "22:15",
+    "planned_end": "23:45",
+    "optional": false,
+    "weather_ref": "2026-10-02",
+    "route_to_next": null,
+    "activity": "散场夜宵A KEEP_WITH_CAUTION；DEFAULT_B 天街海底捞B0GKGA63N6（电话确认B馆夜间入口）；回酒店散场plan 40–90+",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-10-03-01-hotel-jn-hiex",
+    "date": "2026-10-03",
+    "place_id": "hotel-jn-hiex",
+    "sequence": 1,
+    "planned_start": "07:00",
+    "planned_end": "07:40",
+    "optional": false,
+    "weather_ref": "2026-10-03",
+    "route_to_next": {
+      "to_place_id": "hotel-jn-hiex",
+      "mode": "taxi",
+      "distance_km": 12.2,
+      "duration_min": 38,
+      "source": "ROUTE-FINAL transport_from_previous"
+    },
+    "activity": "早餐；行李可先寄存前台或客房保留至离店（晚退）；确认G2076票面",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-10-03-02-hotel-jn-hiex",
+    "date": "2026-10-03",
+    "place_id": "hotel-jn-hiex",
+    "sequence": 2,
+    "planned_start": "07:40",
+    "planned_end": "08:20",
+    "optional": false,
+    "weather_ref": "2026-10-03",
+    "route_to_next": {
+      "to_place_id": "scenic-baotu",
+      "mode": "walk",
+      "distance_km": null,
+      "duration_min": 0,
+      "source": "ROUTE-FINAL transport_from_previous"
+    },
+    "activity": "驾车赴趵突泉（≈12.2km/38min）",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-10-03-03-scenic-baotu",
+    "date": "2026-10-03",
+    "place_id": "scenic-baotu",
+    "sequence": 3,
+    "planned_start": "08:20",
+    "planned_end": "11:00",
+    "optional": false,
+    "weather_ref": "2026-10-03",
+    "route_to_next": {
+      "to_place_id": "jn-map-B021301E66",
+      "mode": "taxi",
+      "distance_km": null,
+      "duration_min": 20,
+      "source": "ROUTE-FINAL transport_from_previous"
+    },
+    "activity": "午前主游+PHOTO：JN.BAOTU.01_GATE_S→JN.BAOTU.03_MAIN_POND；有空 BAOTU.02；可蹭游园会白天；CF-BAOTU-HOURS仍OPEN用更严口径",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-10-03-04-jn-map-B021301E66",
+    "date": "2026-10-03",
+    "place_id": "jn-map-B021301E66",
+    "sequence": 4,
+    "planned_start": "13:20",
+    "planned_end": "15:30",
+    "optional": true,
+    "weather_ref": "2026-10-03",
+    "route_to_next": {
+      "to_place_id": "hotel-jn-hiex",
+      "mode": "taxi",
+      "distance_km": null,
+      "duration_min": 20,
+      "source": "ROUTE-FINAL transport_from_previous"
+    },
+    "activity": "午後弹性：省美插画展 FREE短访（B021301E66）优先；或五龙潭/游园会室内外；云间花鸟 ANNOUNCED 近高新可短访勿硬锁；超时砍此项保回店",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-10-03-05-hotel-jn-hiex",
+    "date": "2026-10-03",
+    "place_id": "hotel-jn-hiex",
+    "sequence": 5,
+    "planned_start": "15:40",
+    "planned_end": "17:15",
+    "optional": false,
+    "weather_ref": "2026-10-03",
+    "route_to_next": {
+      "to_place_id": "st-jinan-east",
+      "mode": "taxi",
+      "distance_km": 13.4,
+      "duration_min": 31,
+      "source": "TAXI-HOTEL-STATIONS + FINAL-TICKETS"
+    },
+    "activity": "回店取行李退房；傍晚轻食；17:20前准备出发（国庆晚高峰）",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-10-03-06-st-jinan-east",
+    "date": "2026-10-03",
+    "place_id": "st-jinan-east",
+    "sequence": 6,
+    "planned_start": "17:20",
+    "planned_end": "19:00",
+    "optional": false,
+    "weather_ref": "2026-10-03",
+    "route_to_next": {
+      "to_place_id": "st-handandong",
+      "mode": "rail",
+      "distance_km": null,
+      "duration_min": 0,
+      "source": "ROUTE-FINAL transport_from_previous"
+    },
+    "activity": "建议17:20–17:50离店；目标≈18:20–18:40到站；缓冲至G2076 19:11",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-10-03-07-st-handandong",
+    "date": "2026-10-03",
+    "place_id": "st-handandong",
+    "sequence": 7,
+    "planned_start": "19:11",
+    "planned_end": "21:54",
+    "optional": false,
+    "weather_ref": "2026-10-03",
+    "route_to_next": {
+      "to_place_id": "hotel-ff-quanyi",
+      "mode": "taxi",
+      "distance_km": 47.3,
+      "duration_min": 57,
+      "source": "ROUTE-FINAL transport_from_previous"
+    },
+    "activity": "乘车（已购）；站台看大屏",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-10-03-08-hotel-ff-quanyi",
+    "date": "2026-10-03",
+    "place_id": "hotel-ff-quanyi",
+    "sequence": 8,
+    "planned_start": "22:05",
+    "planned_end": "00:00",
+    "optional": false,
+    "weather_ref": "2026-10-03",
+    "route_to_next": null,
+    "activity": "出站打车；夜间门到门建议90–110min；到店约23:30–00:00；仅住；NAV POI-only",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-10-04-01-hotel-ff-quanyi",
+    "date": "2026-10-04",
+    "place_id": "hotel-ff-quanyi",
+    "sequence": 1,
+    "planned_start": "08:30",
+    "planned_end": "09:45",
+    "optional": false,
+    "weather_ref": "2026-10-04",
+    "route_to_next": {
+      "to_place_id": "st-handandong",
+      "mode": "taxi",
+      "distance_km": 47.3,
+      "duration_min": 57,
+      "source": "管家接驳复核"
+    },
+    "activity": "单人早餐+退房；收拾单人行李；最晚约10:00前出发；无双人节奏｜手册：昨夜晚到，今日早起赶车",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-10-04-02-st-handandong",
+    "date": "2026-10-04",
+    "place_id": "st-handandong",
+    "sequence": 2,
+    "planned_start": "10:00",
+    "planned_end": "11:20",
+    "optional": false,
+    "weather_ref": "2026-10-04",
+    "route_to_next": {
+      "to_place_id": "st-wuhan",
+      "mode": "walk",
+      "distance_km": null,
+      "duration_min": 21,
+      "source": "ROUTE-FINAL transport_from_previous"
+    },
+    "activity": "单人打车赴站赶G689 11:51（行李按1人）",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-10-04-03-st-wuhan",
+    "date": "2026-10-04",
+    "place_id": "st-wuhan",
+    "sequence": 3,
+    "planned_start": "14:58",
+    "planned_end": "15:19",
+    "optional": false,
+    "weather_ref": "2026-10-04",
+    "route_to_next": {
+      "to_place_id": "st-sz-north",
+      "mode": "rail",
+      "distance_km": null,
+      "duration_min": 0,
+      "source": "ROUTE-FINAL transport_from_previous"
+    },
+    "activity": "单人换G399；缓冲≈21min TIGHT_TRANSFER（无双人协同）",
+    "slot": null
+  },
+  {
+    "visit_id": "v-2026-10-04-04-st-sz-north",
+    "date": "2026-10-04",
+    "place_id": "st-sz-north",
+    "sequence": 4,
+    "planned_start": "15:19",
+    "planned_end": "19:30",
+    "optional": false,
+    "weather_ref": "2026-10-04",
+    "route_to_next": null,
+    "activity": "单人乘G399→深圳北≈19:30",
+    "slot": null
+  }
+]
