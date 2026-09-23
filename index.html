@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>旅行管家 · TRIP2609 Console (Proto)</title>
+  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css" />
+  <link rel="stylesheet" href="assets/vendor/leaflet.markercluster/MarkerCluster.css" />
+  <link rel="stylesheet" href="assets/vendor/leaflet.markercluster/MarkerCluster.Default.css" />
+  <link rel="stylesheet" href="css/console.css" />
+</head>
+<body>
+  <div id="app" class="app">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">旅</span>
+        <div>
+          <strong id="tripName">旅行管家 · TRIP2609</strong>
+          <div class="brand-sub" id="tripRoute">深圳→峰峰→济南→峰峰→深圳</div>
+        </div>
+      </div>
+      <div class="filters-wrap">
+        <div class="day-chips" id="dayChips" role="tablist" aria-label="日程筛选"></div>
+        <div class="cat-chips" id="catChips" aria-label="类别筛选"></div>
+        <div class="route-toggle">
+          <button type="button" class="chip active" id="btnRouteDay" data-route-scope="day">当日路线</button>
+          <button type="button" class="chip" id="btnRouteAll" data-route-scope="all">全程骨架</button>
+        </div>
+      </div>
+      <div class="provider-status" id="providerStatus" title="地图底图状态">地图初始化…</div>
+    </header>
+
+    <main class="desktop-layout">
+      <aside class="timeline-pane" id="timelinePane">
+        <h2 class="pane-title">行程时间线</h2>
+        <ol class="timeline" id="timeline"></ol>
+      </aside>
+      <section class="map-pane">
+        <div id="map" class="map" role="application" aria-label="行程地图"></div>
+        <div id="mapFallback" class="map-fallback" hidden>
+          <div class="map-fallback-card">
+            <strong>地图底图暂时不可用</strong>
+            <p id="mapFallbackMsg">已切换到列表模式，时间线与地点详情仍可用。</p>
+            <button type="button" id="btnRetryTiles" class="btn">重试底图</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="detail-card" id="detailCard" aria-live="polite">
+      <div class="detail-empty" id="detailEmpty">点击时间线或地图标记查看详情</div>
+      <div class="detail-body" id="detailBody" hidden>
+        <div class="detail-gallery" id="detailGallery"></div>
+        <div class="detail-main">
+          <div class="detail-kicker" id="detailCat"></div>
+          <h3 id="detailName"></h3>
+          <p class="detail-addr" id="detailAddr"></p>
+          <p class="detail-desc" id="detailDesc"></p>
+          <div class="detail-meta">
+            <span id="detailWeather"></span>
+            <span id="detailTime"></span>
+            <span id="detailPrice"></span>
+          </div>
+          <div class="detail-nav">
+            <button type="button" class="btn btn-ghost" id="btnPrevPlace">← 上一站</button>
+            <div class="detail-next" id="detailNext"></div>
+            <button type="button" class="btn btn-ghost" id="btnNextPlace">下一站 →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mobile shell -->
+    <div class="mobile-shell" id="mobileShell">
+      <div class="mobile-days" id="mobileDays"></div>
+      <div class="mobile-map-wrap">
+        <div id="mapMobileHost" class="map-mobile-host"></div>
+      </div>
+      <div class="bottom-sheet" id="bottomSheet">
+        <div class="sheet-handle"></div>
+        <div id="mobileSheetContent"></div>
+      </div>
+      <nav class="bottom-nav" id="bottomNav">
+        <button type="button" data-tab="map" class="active">地图</button>
+        <button type="button" data-tab="timeline">行程</button>
+        <button type="button" data-tab="places">地点</button>
+      </nav>
+    </div>
+  </div>
+
+  <div id="lightbox" class="lightbox" hidden>
+    <button type="button" class="lightbox-close" id="lightboxClose" aria-label="关闭">×</button>
+    <img id="lightboxImg" alt="" />
+    <div class="lightbox-cap" id="lightboxCap"></div>
+  </div>
+
+  <script src="assets/vendor/leaflet/leaflet.js"></script>
+  <script src="assets/vendor/leaflet.markercluster/leaflet.markercluster.js"></script>
+  <script src="js/coord.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

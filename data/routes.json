@@ -1,0 +1,1533 @@
+{
+  "trip_id": "TRIP2609",
+  "modes": [
+    "walk",
+    "taxi",
+    "高铁",
+    "rail",
+    "metro",
+    "plane"
+  ],
+  "mode_styles": {
+    "walk": {
+      "color": "#34d399",
+      "dash": null
+    },
+    "taxi": {
+      "color": "#fbbf24",
+      "dash": "6 8"
+    },
+    "高铁": {
+      "color": "#3d9cf0",
+      "dash": null
+    },
+    "rail": {
+      "color": "#3d9cf0",
+      "dash": null
+    },
+    "metro": {
+      "color": "#a78bfa",
+      "dash": "4 6"
+    },
+    "plane": {
+      "color": "#f472b6",
+      "dash": "2 6"
+    }
+  },
+  "segments": [
+    {
+      "id": "2026-09-27-st-handandong-hotel-ff-quanyi",
+      "day": "2026-09-27",
+      "from": "st-handandong",
+      "to": "hotel-ff-quanyi",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.537,
+            36.6258
+          ],
+          [
+            114.36996750000002,
+            36.529152499999995
+          ],
+          [
+            114.206935,
+            36.426505
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-09-27-hotel-ff-quanyi-food-qianxi",
+      "day": "2026-09-27",
+      "from": "hotel-ff-quanyi",
+      "to": "food-qianxi",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.206935,
+            36.426505
+          ],
+          [
+            114.19922749999999,
+            36.4209715
+          ],
+          [
+            114.18752,
+            36.421438
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-09-27-food-qianxi-st-sz-north",
+      "day": "2026-09-27",
+      "from": "food-qianxi",
+      "to": "st-sz-north",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.18752,
+            36.421438
+          ],
+          [
+            114.10646000000001,
+            29.518469000000003
+          ],
+          [
+            114.0294,
+            22.6095
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-09-27-st-sz-north-food-shunwei",
+      "day": "2026-09-27",
+      "from": "st-sz-north",
+      "to": "food-shunwei",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.0294,
+            22.6095
+          ],
+          [
+            114.111066,
+            29.5122175
+          ],
+          [
+            114.188732,
+            36.420935
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-09-28-hotel-ff-quanyi-scenic-cizhouyao",
+      "day": "2026-09-28",
+      "from": "hotel-ff-quanyi",
+      "to": "scenic-cizhouyao",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.206935,
+            36.426505
+          ],
+          [
+            114.19531500000001,
+            36.427462
+          ],
+          [
+            114.187695,
+            36.422419
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-09-28-scenic-cizhouyao-food-laoma",
+      "day": "2026-09-28",
+      "from": "scenic-cizhouyao",
+      "to": "food-laoma",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.187695,
+            36.422419
+          ],
+          [
+            114.20777199999999,
+            36.418713499999996
+          ],
+          [
+            114.223849,
+            36.421008
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-09-28-food-laoma-food-qianxi",
+      "day": "2026-09-28",
+      "from": "food-laoma",
+      "to": "food-qianxi",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.223849,
+            36.421008
+          ],
+          [
+            114.20368450000001,
+            36.424223
+          ],
+          [
+            114.18752,
+            36.421438
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-09-28-food-qianxi-scenic-pengdong",
+      "day": "2026-09-28",
+      "from": "food-qianxi",
+      "to": "scenic-pengdong",
+      "mode": "walk",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.18752,
+            36.421438
+          ],
+          [
+            114.191879,
+            36.420785
+          ],
+          [
+            114.192238,
+            36.426132
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#34d399",
+        "dash": null
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-09-29-hotel-ff-quanyi-scenic-museum",
+      "day": "2026-09-29",
+      "from": "hotel-ff-quanyi",
+      "to": "scenic-museum",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.206935,
+            36.426505
+          ],
+          [
+            114.2148505,
+            36.436032499999996
+          ],
+          [
+            114.226766,
+            36.43956
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-09-29-scenic-museum-food-laoma",
+      "day": "2026-09-29",
+      "from": "scenic-museum",
+      "to": "food-laoma",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.226766,
+            36.43956
+          ],
+          [
+            114.2273075,
+            36.427284
+          ],
+          [
+            114.223849,
+            36.421008
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-09-29-food-laoma-scenic-qingquan",
+      "day": "2026-09-29",
+      "from": "food-laoma",
+      "to": "scenic-qingquan",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.223849,
+            36.421008
+          ],
+          [
+            114.22388600000001,
+            36.4311635
+          ],
+          [
+            114.227923,
+            36.435319
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-09-29-scenic-qingquan-food-qianxi",
+      "day": "2026-09-29",
+      "from": "scenic-qingquan",
+      "to": "food-qianxi",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.227923,
+            36.435319
+          ],
+          [
+            114.2097215,
+            36.4253785
+          ],
+          [
+            114.18752,
+            36.421438
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-09-29-food-qianxi-scenic-pengdong",
+      "day": "2026-09-29",
+      "from": "food-qianxi",
+      "to": "scenic-pengdong",
+      "mode": "walk",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.18752,
+            36.421438
+          ],
+          [
+            114.18787900000001,
+            36.426785
+          ],
+          [
+            114.192238,
+            36.426132
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#34d399",
+        "dash": null
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-09-30-hotel-ff-quanyi-scenic-beixiangtang",
+      "day": "2026-09-30",
+      "from": "hotel-ff-quanyi",
+      "to": "scenic-beixiangtang",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.206935,
+            36.426505
+          ],
+          [
+            114.181195,
+            36.483076499999996
+          ],
+          [
+            114.159455,
+            36.533648
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-09-30-scenic-beixiangtang-food-jufulou",
+      "day": "2026-09-30",
+      "from": "scenic-beixiangtang",
+      "to": "food-jufulou",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.159455,
+            36.533648
+          ],
+          [
+            114.144863,
+            36.528506
+          ],
+          [
+            114.126271,
+            36.529364
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-09-30-food-jufulou-food-qianxi",
+      "day": "2026-09-30",
+      "from": "food-jufulou",
+      "to": "food-qianxi",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.126271,
+            36.529364
+          ],
+          [
+            114.15489550000001,
+            36.478401000000005
+          ],
+          [
+            114.18752,
+            36.421438
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-09-30-food-qianxi-scenic-nanxiangtang",
+      "day": "2026-09-30",
+      "from": "food-qianxi",
+      "to": "scenic-nanxiangtang",
+      "mode": "walk",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.18752,
+            36.421438
+          ],
+          [
+            114.19366050000001,
+            36.4210895
+          ],
+          [
+            114.195801,
+            36.426741
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#34d399",
+        "dash": null
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-09-30-scenic-nanxiangtang-scenic-pengdong",
+      "day": "2026-09-30",
+      "from": "scenic-nanxiangtang",
+      "to": "scenic-pengdong",
+      "mode": "walk",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.195801,
+            36.426741
+          ],
+          [
+            114.1920195,
+            36.4294365
+          ],
+          [
+            114.192238,
+            36.426132
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#34d399",
+        "dash": null
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-10-01-food-laoguai-scenic-qingquan",
+      "day": "2026-10-01",
+      "from": "food-laoguai",
+      "to": "scenic-qingquan",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.207108,
+            36.418322
+          ],
+          [
+            114.21551550000001,
+            36.429820500000005
+          ],
+          [
+            114.227923,
+            36.435319
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-10-01-scenic-qingquan-food-laoma",
+      "day": "2026-10-01",
+      "from": "scenic-qingquan",
+      "to": "food-laoma",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.227923,
+            36.435319
+          ],
+          [
+            114.227886,
+            36.4251635
+          ],
+          [
+            114.223849,
+            36.421008
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-10-01-food-laoma-hotel-ff-quanyi",
+      "day": "2026-10-01",
+      "from": "food-laoma",
+      "to": "hotel-ff-quanyi",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.223849,
+            36.421008
+          ],
+          [
+            114.21339200000001,
+            36.426756499999996
+          ],
+          [
+            114.206935,
+            36.426505
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-10-01-hotel-ff-quanyi-st-handandong",
+      "day": "2026-10-01",
+      "from": "hotel-ff-quanyi",
+      "to": "st-handandong",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.206935,
+            36.426505
+          ],
+          [
+            114.3739675,
+            36.523152499999995
+          ],
+          [
+            114.537,
+            36.6258
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-10-01-st-handandong-hotel-jn-hiex",
+      "day": "2026-10-01",
+      "from": "st-handandong",
+      "to": "hotel-jn-hiex",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.537,
+            36.6258
+          ],
+          [
+            115.833188,
+            36.645854
+          ],
+          [
+            117.133376,
+            36.659908
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-10-01-hotel-jn-hiex-food-hanyu-haidilao",
+      "day": "2026-10-01",
+      "from": "hotel-jn-hiex",
+      "to": "food-hanyu-haidilao",
+      "mode": "walk",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            117.133376,
+            36.659908
+          ],
+          [
+            117.14118799999999,
+            36.658204
+          ],
+          [
+            117.145,
+            36.6625
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#34d399",
+        "dash": null
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-10-01-food-hanyu-haidilao-st-jinan-west",
+      "day": "2026-10-01",
+      "from": "food-hanyu-haidilao",
+      "to": "st-jinan-west",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            117.145,
+            36.6625
+          ],
+          [
+            117.0161655,
+            36.668673
+          ],
+          [
+            116.891331,
+            36.668846
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-10-02-hotel-jn-hiex-photo-qst",
+      "day": "2026-10-02",
+      "from": "hotel-jn-hiex",
+      "to": "photo-qst",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            117.133376,
+            36.659908
+          ],
+          [
+            117.075688,
+            36.665704000000005
+          ],
+          [
+            117.022,
+            36.6655
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-10-02-photo-qst-photo-bhz",
+      "day": "2026-10-02",
+      "from": "photo-qst",
+      "to": "photo-bhz",
+      "mode": "walk",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            117.022,
+            36.6655
+          ],
+          [
+            117.02575,
+            36.66375
+          ],
+          [
+            117.0255,
+            36.668
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#34d399",
+        "dash": null
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-10-02-photo-bhz-food-mixc",
+      "day": "2026-10-02",
+      "from": "photo-bhz",
+      "to": "food-mixc",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            117.0255,
+            36.668
+          ],
+          [
+            117.06315,
+            36.66475
+          ],
+          [
+            117.1048,
+            36.6555
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-10-02-food-mixc-food-fengtian",
+      "day": "2026-10-02",
+      "from": "food-mixc",
+      "to": "food-fengtian",
+      "mode": "walk",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            117.1048,
+            36.6555
+          ],
+          [
+            117.10715,
+            36.65265
+          ],
+          [
+            117.1055,
+            36.6558
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#34d399",
+        "dash": null
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-10-02-food-fengtian-concert-otc",
+      "day": "2026-10-02",
+      "from": "food-fengtian",
+      "to": "concert-otc",
+      "mode": "walk",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            117.1055,
+            36.6558
+          ],
+          [
+            117.10892550000001,
+            36.659206
+          ],
+          [
+            117.116351,
+            36.656612
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#34d399",
+        "dash": null
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-10-02-concert-otc-food-huanlian",
+      "day": "2026-10-02",
+      "from": "concert-otc",
+      "to": "food-huanlian",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            117.116351,
+            36.656612
+          ],
+          [
+            117.1201755,
+            36.677806000000004
+          ],
+          [
+            117.12,
+            36.705
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-10-02-food-huanlian-food-tiantree-hdl",
+      "day": "2026-10-02",
+      "from": "food-huanlian",
+      "to": "food-tiantree-hdl",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            117.12,
+            36.705
+          ],
+          [
+            117.114,
+            36.684749999999994
+          ],
+          [
+            117.112,
+            36.6585
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-10-03-hotel-jn-hiex-scenic-baotu",
+      "day": "2026-10-03",
+      "from": "hotel-jn-hiex",
+      "to": "scenic-baotu",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            117.133376,
+            36.659908
+          ],
+          [
+            117.0726345,
+            36.663497500000005
+          ],
+          [
+            117.015893,
+            36.661087
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-10-03-scenic-baotu-st-jinan-east",
+      "day": "2026-10-03",
+      "from": "scenic-baotu",
+      "to": "st-jinan-east",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            117.015893,
+            36.661087
+          ],
+          [
+            117.0899055,
+            36.7014895
+          ],
+          [
+            117.159918,
+            36.747892
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-10-03-st-jinan-east-st-handandong",
+      "day": "2026-10-03",
+      "from": "st-jinan-east",
+      "to": "st-handandong",
+      "mode": "高铁",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            117.159918,
+            36.747892
+          ],
+          [
+            115.84645900000001,
+            36.689846
+          ],
+          [
+            114.537,
+            36.6258
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#3d9cf0",
+        "dash": null
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-10-03-st-handandong-hotel-ff-quanyi",
+      "day": "2026-10-03",
+      "from": "st-handandong",
+      "to": "hotel-ff-quanyi",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.537,
+            36.6258
+          ],
+          [
+            114.3739675,
+            36.523152499999995
+          ],
+          [
+            114.206935,
+            36.426505
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-10-04-hotel-ff-quanyi-st-handandong",
+      "day": "2026-10-04",
+      "from": "hotel-ff-quanyi",
+      "to": "st-handandong",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.206935,
+            36.426505
+          ],
+          [
+            114.36996750000002,
+            36.529152499999995
+          ],
+          [
+            114.537,
+            36.6258
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-10-04-st-handandong-st-wuhan",
+      "day": "2026-10-04",
+      "from": "st-handandong",
+      "to": "st-wuhan",
+      "mode": "高铁",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.537,
+            36.6258
+          ],
+          [
+            114.48075,
+            33.613299999999995
+          ],
+          [
+            114.4205,
+            30.6068
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#3d9cf0",
+        "dash": null
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "2026-10-04-st-wuhan-st-sz-north",
+      "day": "2026-10-04",
+      "from": "st-wuhan",
+      "to": "st-sz-north",
+      "mode": "高铁",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.4205,
+            30.6068
+          ],
+          [
+            114.22295000000001,
+            26.611150000000002
+          ],
+          [
+            114.0294,
+            22.6095
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#3d9cf0",
+        "dash": null
+      },
+      "note": "segmented polyline (proto routing)"
+    },
+    {
+      "id": "spine-0-st-sz-north-st-handandong",
+      "day": null,
+      "scope": "whole_trip",
+      "from": "st-sz-north",
+      "to": "st-handandong",
+      "mode": "高铁",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.0294,
+            22.6095
+          ],
+          [
+            114.537,
+            36.6258
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#3d9cf0",
+        "dash": null
+      },
+      "note": "whole-trip overview spine"
+    },
+    {
+      "id": "spine-1-st-handandong-hotel-ff-quanyi",
+      "day": null,
+      "scope": "whole_trip",
+      "from": "st-handandong",
+      "to": "hotel-ff-quanyi",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.537,
+            36.6258
+          ],
+          [
+            114.206935,
+            36.426505
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "whole-trip overview spine"
+    },
+    {
+      "id": "spine-2-hotel-ff-quanyi-st-handandong",
+      "day": null,
+      "scope": "whole_trip",
+      "from": "hotel-ff-quanyi",
+      "to": "st-handandong",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.206935,
+            36.426505
+          ],
+          [
+            114.537,
+            36.6258
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "whole-trip overview spine"
+    },
+    {
+      "id": "spine-3-st-handandong-st-jinan-west",
+      "day": null,
+      "scope": "whole_trip",
+      "from": "st-handandong",
+      "to": "st-jinan-west",
+      "mode": "高铁",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.537,
+            36.6258
+          ],
+          [
+            116.891331,
+            36.668846
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#3d9cf0",
+        "dash": null
+      },
+      "note": "whole-trip overview spine"
+    },
+    {
+      "id": "spine-4-st-jinan-west-hotel-jn-hiex",
+      "day": null,
+      "scope": "whole_trip",
+      "from": "st-jinan-west",
+      "to": "hotel-jn-hiex",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.891331,
+            36.668846
+          ],
+          [
+            117.133376,
+            36.659908
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "whole-trip overview spine"
+    },
+    {
+      "id": "spine-5-hotel-jn-hiex-concert-otc",
+      "day": null,
+      "scope": "whole_trip",
+      "from": "hotel-jn-hiex",
+      "to": "concert-otc",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            117.133376,
+            36.659908
+          ],
+          [
+            117.116351,
+            36.656612
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "whole-trip overview spine"
+    },
+    {
+      "id": "spine-6-concert-otc-st-jinan-east",
+      "day": null,
+      "scope": "whole_trip",
+      "from": "concert-otc",
+      "to": "st-jinan-east",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            117.116351,
+            36.656612
+          ],
+          [
+            117.159918,
+            36.747892
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "whole-trip overview spine"
+    },
+    {
+      "id": "spine-7-st-jinan-east-st-handandong",
+      "day": null,
+      "scope": "whole_trip",
+      "from": "st-jinan-east",
+      "to": "st-handandong",
+      "mode": "高铁",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            117.159918,
+            36.747892
+          ],
+          [
+            114.537,
+            36.6258
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#3d9cf0",
+        "dash": null
+      },
+      "note": "whole-trip overview spine"
+    },
+    {
+      "id": "spine-8-st-handandong-hotel-ff-quanyi",
+      "day": null,
+      "scope": "whole_trip",
+      "from": "st-handandong",
+      "to": "hotel-ff-quanyi",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.537,
+            36.6258
+          ],
+          [
+            114.206935,
+            36.426505
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "whole-trip overview spine"
+    },
+    {
+      "id": "spine-9-hotel-ff-quanyi-st-handandong",
+      "day": null,
+      "scope": "whole_trip",
+      "from": "hotel-ff-quanyi",
+      "to": "st-handandong",
+      "mode": "taxi",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.206935,
+            36.426505
+          ],
+          [
+            114.537,
+            36.6258
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#fbbf24",
+        "dash": "6 8"
+      },
+      "note": "whole-trip overview spine"
+    },
+    {
+      "id": "spine-10-st-handandong-st-wuhan",
+      "day": null,
+      "scope": "whole_trip",
+      "from": "st-handandong",
+      "to": "st-wuhan",
+      "mode": "高铁",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.537,
+            36.6258
+          ],
+          [
+            114.4205,
+            30.6068
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#3d9cf0",
+        "dash": null
+      },
+      "note": "whole-trip overview spine"
+    },
+    {
+      "id": "spine-11-st-wuhan-st-sz-north",
+      "day": null,
+      "scope": "whole_trip",
+      "from": "st-wuhan",
+      "to": "st-sz-north",
+      "mode": "高铁",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.4205,
+            30.6068
+          ],
+          [
+            114.0294,
+            22.6095
+          ]
+        ],
+        "coordinate_system": "GCJ-02"
+      },
+      "style": {
+        "color": "#3d9cf0",
+        "dash": null
+      },
+      "note": "whole-trip overview spine"
+    }
+  ]
+}

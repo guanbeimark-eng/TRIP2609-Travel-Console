@@ -1,0 +1,55 @@
+{
+  "trip_id": "TRIP2609",
+  "note": "Compiled for Travel Console V1; browser uses relative paths only",
+  "research_repos": [
+    {
+      "name": "Dobidop/easyItinerary",
+      "role": "PRIMARY base"
+    },
+    {
+      "name": "liketrek/TREK",
+      "role": "fallback + GCJ-02"
+    },
+    {
+      "name": "guralbrian/travel-photo-map",
+      "role": "photo/routes"
+    },
+    {
+      "name": "natcat38/trip-planner",
+      "role": "timeline sync"
+    }
+  ],
+  "data_origin": "TRIP2609 delivery package + ROUTE-FINAL + tickets (copied into relative data/)",
+  "public": [
+    {
+      "name": "12306 官方",
+      "url": "https://www.12306.cn/",
+      "use": "车次时刻出发当日核验"
+    },
+    {
+      "name": "高德地图",
+      "url": "https://www.amap.com/",
+      "use": "POI 导航（酒店/奥体以 POI 为准）"
+    },
+    {
+      "name": "中国天气网·峰峰",
+      "url": "https://www.weather.com.cn/weather/101091002.shtml",
+      "use": "峰峰近周预报"
+    },
+    {
+      "name": "中国天气网·济南",
+      "url": "https://www.weather.com.cn/weather/101120101.shtml",
+      "use": "济南近周预报"
+    },
+    {
+      "name": "大麦/票夹",
+      "url": "https://www.damai.cn/",
+      "use": "演唱会入场规则与电子票"
+    },
+    {
+      "name": "Open-Meteo",
+      "url": "https://open-meteo.com/",
+      "use": "长程趋势交叉参考"
+    }
+  ]
+}
