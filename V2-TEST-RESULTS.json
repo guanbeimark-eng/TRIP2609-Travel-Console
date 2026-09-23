@@ -1,0 +1,104 @@
+{
+  "checks": [
+    {
+      "id": "P0-boot-day",
+      "result": "PASS",
+      "notes": "dayId=d-2026-09-27 default=d-2026-09-27"
+    },
+    {
+      "id": "P0-never-d-all",
+      "result": "PASS",
+      "notes": "d-2026-09-27"
+    },
+    {
+      "id": "P0-default-tab-today",
+      "result": "PASS",
+      "notes": "tab=today"
+    },
+    {
+      "id": "P0-tabs-ia",
+      "result": "PASS",
+      "notes": "overview,today,itinerary,discover"
+    },
+    {
+      "id": "P0-no-permanent-detail-bar",
+      "result": "PASS",
+      "notes": "detailCard absent"
+    },
+    {
+      "id": "P0-today-fields",
+      "result": "PASS",
+      "notes": "{\"date\":\"09-27 · 抵达日 G904→全季→千禧晚饭 · 邯郸·峰峰\",\"weather\":\"天气：多云转雷阵雨 29/19℃ · 折叠伞/薄雨衣；短袖+傍晚薄外套可选\",\"where\":\"出发前 · 尚未开始本日\",\"next\":\"深圳北\",\"depart\":\"09:41\",\"transit\":\"按时刻表前往首站\",\"doWhat\":\"乘车（时刻RECHECK_12306）\",\"navCount\":2}"
+    },
+    {
+      "id": "P0-today-nav-btns",
+      "result": "PASS",
+      "notes": "nav=2"
+    },
+    {
+      "id": "P0-no-candidates-main",
+      "result": "PASS",
+      "notes": "overlap="
+    },
+    {
+      "id": "P0-thumbs-full-paths",
+      "result": "PASS",
+      "notes": "{\"t\":\"assets/thumb/hotel_ff_quanyi_001_facade.webp\",\"f\":\"assets/full/hotel_ff_quanyi_001_facade.jpg\"}"
+    },
+    {
+      "id": "P0-map-engine",
+      "result": "PASS",
+      "notes": "engine=amap; status=底图：高德 JS API 2.0 · GCJ-02"
+    },
+    {
+      "id": "P0-amap-preferred-if-keyed",
+      "result": "PASS",
+      "notes": "keyed=true engine=amap"
+    },
+    {
+      "id": "P0-drawer-open",
+      "result": "PASS",
+      "notes": "{\"open\":true,\"hasNav\":true,\"hasWhy\":true,\"hasNext\":true}"
+    },
+    {
+      "id": "P1-drawer-nav",
+      "result": "PASS",
+      "notes": "{\"open\":true,\"hasNav\":true,\"hasWhy\":true,\"hasNext\":true}"
+    },
+    {
+      "id": "P0-discover-candidates-only",
+      "result": "PASS",
+      "notes": "{\"n\":10,\"cands\":10}"
+    },
+    {
+      "id": "P0-itinerary-day-pick",
+      "result": "PASS",
+      "notes": "{\"dayChips\":8,\"noCatChips\":true,\"noRouteToggle\":true,\"tl\":4}"
+    },
+    {
+      "id": "P1-mobile-bottom-nav",
+      "result": "PASS",
+      "notes": "{\"display\":\"flex\",\"labels\":[\"地图\",\"行程\",\"发现\"]}"
+    },
+    {
+      "id": "P0-no-pageerror",
+      "result": "PASS",
+      "notes": ""
+    }
+  ],
+  "pass": 17,
+  "fail": 0,
+  "engine": "amap",
+  "todaySample": {
+    "date": "09-27 · 抵达日 G904→全季→千禧晚饭 · 邯郸·峰峰",
+    "weather": "天气：多云转雷阵雨 29/19℃ · 折叠伞/薄雨衣；短袖+傍晚薄外套可选",
+    "where": "出发前 · 尚未开始本日",
+    "next": "深圳北",
+    "depart": "09:41",
+    "transit": "按时刻表前往首站",
+    "doWhat": "乘车（时刻RECHECK_12306）",
+    "navCount": 2
+  },
+  "keyWired": true,
+  "summary": "PASS"
+}

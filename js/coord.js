@@ -35,3 +35,5 @@ const Coord = (() => {
   }
   return { gcj02ToWgs84 };
 })();
+
+window.Coord = Coord;

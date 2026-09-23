@@ -1,0 +1,1 @@
+Handbook PDF is not shipped inside Travel Console Pages site (size). See packaging / TRIP2609 delivery.

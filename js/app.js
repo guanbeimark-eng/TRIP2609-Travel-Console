@@ -2,35 +2,24 @@
   try {
     const data = await TripData.loadAll();
     UI.initChrome(data.trip);
+    // Default day already set inside initChrome via TripData.defaultDayId() — never d-all
     try {
-      MapModule.init('map', (placeId) => UI.selectPlace(placeId, 'map'));
-      UI.refreshMap();
+      await MapModule.init('map', (placeId) => UI.openPlace(placeId, 'map'));
+      UI.refreshTodayMap();
     } catch (mapErr) {
       console.error('Map init failed', mapErr);
       const st = document.getElementById('providerStatus');
       if (st) {
-        st.textContent = '地图初始化失败：' + (mapErr && mapErr.message ? mapErr.message : mapErr);
+        st.textContent = '地图初始化失败';
         st.className = 'provider-status err';
       }
       const box = document.getElementById('mapFallback');
-      const msg = document.getElementById('mapFallbackMsg');
-      if (msg) msg.textContent = '地图引擎异常，已保留时间线/详情。可点重试或检查 Leaflet/cluster 资源。';
       if (box) { box.hidden = false; box.removeAttribute('hidden'); }
     }
-    // P0-02: boot selects first place of default filter (d-all → first visit of trip), NOT hardcoded Jinan hotel
-    const filter = UI.filter || 'd-all';
-    const firstVisits = TripData.visitsForFilter(filter);
-    let firstPlace = null;
-    if (firstVisits.length) {
-      firstPlace = TripData.placeById(firstVisits[0].place_id);
-    }
-    if (!firstPlace) {
-      const list = TripData.placesForFilter(filter);
-      firstPlace = list[0] || data.places[0];
-    }
-    if (firstPlace) UI.selectPlace(firstPlace.place_id, 'boot');
+    // Slim first paint: stay on Today; no discover / all-day render
+    UI.setTab('today');
     setTimeout(() => MapModule.invalidateSize && MapModule.invalidateSize(), 200);
-    setTimeout(() => MapModule.invalidateSize && MapModule.invalidateSize(), 1000);
+    setTimeout(() => MapModule.invalidateSize && MapModule.invalidateSize(), 800);
   } catch (err) {
     console.error(err);
     const st = document.getElementById('providerStatus');

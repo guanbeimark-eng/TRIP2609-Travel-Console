@@ -45,8 +45,8 @@
     },
     "images": [
       {
-        "image_file": "assets/hotel/ff_quanyi_001_facade.jpg",
-        "thumbnail_file": "assets/hotel/ff_quanyi_001_facade.jpg",
+        "image_file": "assets/full/hotel_ff_quanyi_001_facade.jpg",
+        "thumbnail_file": "assets/thumb/hotel_ff_quanyi_001_facade.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -54,8 +54,8 @@
         "caption": "门头/外观素材"
       },
       {
-        "image_file": "assets/hotel/ff_quanyi_002_interior.jpg",
-        "thumbnail_file": "assets/hotel/ff_quanyi_002_interior.jpg",
+        "image_file": "assets/full/hotel_ff_quanyi_002_interior.jpg",
+        "thumbnail_file": "assets/thumb/hotel_ff_quanyi_002_interior.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -63,8 +63,8 @@
         "caption": "大堂"
       },
       {
-        "image_file": "assets/hotel/ff_quanyi_003_interior.jpg",
-        "thumbnail_file": "assets/hotel/ff_quanyi_003_interior.jpg",
+        "image_file": "assets/full/hotel_ff_quanyi_003_interior.jpg",
+        "thumbnail_file": "assets/thumb/hotel_ff_quanyi_003_interior.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -72,8 +72,8 @@
         "caption": "客房"
       },
       {
-        "image_file": "assets/hotel/ff_quanyi_004_interior.jpg",
-        "thumbnail_file": "assets/hotel/ff_quanyi_004_interior.jpg",
+        "image_file": "assets/full/hotel_ff_quanyi_004_interior.jpg",
+        "thumbnail_file": "assets/thumb/hotel_ff_quanyi_004_interior.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -81,8 +81,8 @@
         "caption": "卫浴"
       },
       {
-        "image_file": "assets/hotel/ff_quanyi_005_dish.jpg",
-        "thumbnail_file": "assets/hotel/ff_quanyi_005_dish.jpg",
+        "image_file": "assets/full/hotel_ff_quanyi_005_dish.jpg",
+        "thumbnail_file": "assets/thumb/hotel_ff_quanyi_005_dish.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -121,8 +121,8 @@
     },
     "images": [
       {
-        "image_file": "assets/food/qianxi_001_facade.jpg",
-        "thumbnail_file": "assets/food/qianxi_001_facade.jpg",
+        "image_file": "assets/full/food_qianxi_001_facade.jpg",
+        "thumbnail_file": "assets/thumb/food_qianxi_001_facade.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -130,8 +130,8 @@
         "caption": "千禧三下锅 · 门头"
       },
       {
-        "image_file": "assets/food/qianxi_002_interior.jpg",
-        "thumbnail_file": "assets/food/qianxi_002_interior.jpg",
+        "image_file": "assets/full/food_qianxi_002_interior.jpg",
+        "thumbnail_file": "assets/thumb/food_qianxi_002_interior.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -139,8 +139,8 @@
         "caption": "千禧三下锅 · 厅堂"
       },
       {
-        "image_file": "assets/food/qianxi_003_dish.jpg",
-        "thumbnail_file": "assets/food/qianxi_003_dish.jpg",
+        "image_file": "assets/full/food_qianxi_003_dish.jpg",
+        "thumbnail_file": "assets/thumb/food_qianxi_003_dish.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -148,8 +148,8 @@
         "caption": "千禧三下锅 · 菜品"
       },
       {
-        "image_file": "assets/food/qianxi_004_dish.jpg",
-        "thumbnail_file": "assets/food/qianxi_004_dish.jpg",
+        "image_file": "assets/full/food_qianxi_004_dish.jpg",
+        "thumbnail_file": "assets/thumb/food_qianxi_004_dish.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -218,8 +218,8 @@
     },
     "images": [
       {
-        "image_file": "assets/food/shunwei_001_facade.jpg",
-        "thumbnail_file": "assets/food/shunwei_001_facade.jpg",
+        "image_file": "assets/full/food_shunwei_001_facade.jpg",
+        "thumbnail_file": "assets/thumb/food_shunwei_001_facade.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -258,8 +258,8 @@
     },
     "images": [
       {
-        "image_file": "assets/attraction/cizhouyao_001_img.jpg",
-        "thumbnail_file": "assets/attraction/cizhouyao_001_img.jpg",
+        "image_file": "assets/full/attraction_cizhouyao_001_img.jpg",
+        "thumbnail_file": "assets/thumb/attraction_cizhouyao_001_img.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -267,8 +267,8 @@
         "caption": "艺术坊入口"
       },
       {
-        "image_file": "assets/attraction/cizhouyao_002_img.jpg",
-        "thumbnail_file": "assets/attraction/cizhouyao_002_img.jpg",
+        "image_file": "assets/full/attraction_cizhouyao_002_img.jpg",
+        "thumbnail_file": "assets/thumb/attraction_cizhouyao_002_img.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -276,8 +276,8 @@
         "caption": "笼盔墙巷道"
       },
       {
-        "image_file": "assets/attraction/cizhouyao_003_night.jpg",
-        "thumbnail_file": "assets/attraction/cizhouyao_003_night.jpg",
+        "image_file": "assets/full/attraction_cizhouyao_003_night.jpg",
+        "thumbnail_file": "assets/thumb/attraction_cizhouyao_003_night.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -316,8 +316,8 @@
     },
     "images": [
       {
-        "image_file": "assets/food/laoma_001_facade.jpg",
-        "thumbnail_file": "assets/food/laoma_001_facade.jpg",
+        "image_file": "assets/full/food_laoma_001_facade.jpg",
+        "thumbnail_file": "assets/thumb/food_laoma_001_facade.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -325,8 +325,8 @@
         "caption": "老马羊汤 · 门头"
       },
       {
-        "image_file": "assets/food/laoma_002_dish.jpg",
-        "thumbnail_file": "assets/food/laoma_002_dish.jpg",
+        "image_file": "assets/full/food_laoma_002_dish.jpg",
+        "thumbnail_file": "assets/thumb/food_laoma_002_dish.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -334,8 +334,8 @@
         "caption": "老马羊汤 · 菜品"
       },
       {
-        "image_file": "assets/food/laoma_003_dish.jpg",
-        "thumbnail_file": "assets/food/laoma_003_dish.jpg",
+        "image_file": "assets/full/food_laoma_003_dish.jpg",
+        "thumbnail_file": "assets/thumb/food_laoma_003_dish.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -343,22 +343,13 @@
         "caption": "老马羊汤 · 菜品"
       },
       {
-        "image_file": "assets/food/laoma_004_dish.jpg",
-        "thumbnail_file": "assets/food/laoma_004_dish.jpg",
+        "image_file": "assets/full/food_laoma_004_dish.jpg",
+        "thumbnail_file": "assets/thumb/food_laoma_004_dish.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
         "source_url": null,
         "caption": "老马羊汤 · 菜品"
-      },
-      {
-        "image_file": "assets/food/laoma_005_interior.jpg",
-        "thumbnail_file": "assets/food/laoma_005_interior.jpg",
-        "image_type": "photo",
-        "source_status": "IMAGE_UNCERTAIN",
-        "source_name": "TRIP2609 delivery assets",
-        "source_url": null,
-        "caption": "老马羊汤 · 店内"
       }
     ],
     "poi_id": "B0FFGX5DJC",
@@ -422,8 +413,8 @@
     },
     "images": [
       {
-        "image_file": "assets/attraction/ff_museum_001_facade.jpg",
-        "thumbnail_file": "assets/attraction/ff_museum_001_facade.jpg",
+        "image_file": "assets/full/attraction_ff_museum_001_facade.jpg",
+        "thumbnail_file": "assets/thumb/attraction_ff_museum_001_facade.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -431,8 +422,8 @@
         "caption": "博物馆门厅"
       },
       {
-        "image_file": "assets/attraction/ff_museum_002_img.jpg",
-        "thumbnail_file": "assets/attraction/ff_museum_002_img.jpg",
+        "image_file": "assets/full/attraction_ff_museum_002_img.jpg",
+        "thumbnail_file": "assets/thumb/attraction_ff_museum_002_img.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -501,8 +492,8 @@
     },
     "images": [
       {
-        "image_file": "assets/attraction/beixiangtang_001_img.jpg",
-        "thumbnail_file": "assets/attraction/beixiangtang_001_img.jpg",
+        "image_file": "assets/full/attraction_beixiangtang_001_img.jpg",
+        "thumbnail_file": "assets/thumb/attraction_beixiangtang_001_img.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -510,8 +501,8 @@
         "caption": "北响堂外观"
       },
       {
-        "image_file": "assets/attraction/beixiangtang_002_img.jpg",
-        "thumbnail_file": "assets/attraction/beixiangtang_002_img.jpg",
+        "image_file": "assets/full/attraction_beixiangtang_002_img.jpg",
+        "thumbnail_file": "assets/thumb/attraction_beixiangtang_002_img.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -550,8 +541,8 @@
     },
     "images": [
       {
-        "image_file": "assets/food/jufulou_001_interior.jpg",
-        "thumbnail_file": "assets/food/jufulou_001_interior.jpg",
+        "image_file": "assets/full/food_jufulou_001_interior.jpg",
+        "thumbnail_file": "assets/thumb/food_jufulou_001_interior.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -620,8 +611,8 @@
     },
     "images": [
       {
-        "image_file": "assets/food/laoguai_001_facade.jpg",
-        "thumbnail_file": "assets/food/laoguai_001_facade.jpg",
+        "image_file": "assets/full/food_laoguai_001_facade.jpg",
+        "thumbnail_file": "assets/thumb/food_laoguai_001_facade.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -629,8 +620,8 @@
         "caption": "老怪扁粉菜 · 门头"
       },
       {
-        "image_file": "assets/food/laoguai_002_dish.jpg",
-        "thumbnail_file": "assets/food/laoguai_002_dish.jpg",
+        "image_file": "assets/full/food_laoguai_002_dish.jpg",
+        "thumbnail_file": "assets/thumb/food_laoguai_002_dish.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -638,8 +629,8 @@
         "caption": "老怪扁粉菜 · 菜品"
       },
       {
-        "image_file": "assets/food/laoguai_003_dish.jpg",
-        "thumbnail_file": "assets/food/laoguai_003_dish.jpg",
+        "image_file": "assets/full/food_laoguai_003_dish.jpg",
+        "thumbnail_file": "assets/thumb/food_laoguai_003_dish.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -647,8 +638,8 @@
         "caption": "老怪扁粉菜 · 菜品"
       },
       {
-        "image_file": "assets/food/laoguai_004_interior.jpg",
-        "thumbnail_file": "assets/food/laoguai_004_interior.jpg",
+        "image_file": "assets/full/food_laoguai_004_interior.jpg",
+        "thumbnail_file": "assets/thumb/food_laoguai_004_interior.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -690,8 +681,8 @@
     },
     "images": [
       {
-        "image_file": "assets/hotel/jn_hiex_001_facade.jpg",
-        "thumbnail_file": "assets/hotel/jn_hiex_001_facade.jpg",
+        "image_file": "assets/full/hotel_jn_hiex_001_facade.jpg",
+        "thumbnail_file": "assets/thumb/hotel_jn_hiex_001_facade.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -699,8 +690,8 @@
         "caption": "外观夜景"
       },
       {
-        "image_file": "assets/hotel/jn_hiex_002_interior.jpg",
-        "thumbnail_file": "assets/hotel/jn_hiex_002_interior.jpg",
+        "image_file": "assets/full/hotel_jn_hiex_002_interior.jpg",
+        "thumbnail_file": "assets/thumb/hotel_jn_hiex_002_interior.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -708,8 +699,8 @@
         "caption": "大床房示意"
       },
       {
-        "image_file": "assets/hotel/jn_hiex_003_interior.jpg",
-        "thumbnail_file": "assets/hotel/jn_hiex_003_interior.jpg",
+        "image_file": "assets/full/hotel_jn_hiex_003_interior.jpg",
+        "thumbnail_file": "assets/thumb/hotel_jn_hiex_003_interior.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -717,8 +708,8 @@
         "caption": "客房卫浴"
       },
       {
-        "image_file": "assets/hotel/jn_hiex_004_dish.jpg",
-        "thumbnail_file": "assets/hotel/jn_hiex_004_dish.jpg",
+        "image_file": "assets/full/hotel_jn_hiex_004_dish.jpg",
+        "thumbnail_file": "assets/thumb/hotel_jn_hiex_004_dish.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -760,8 +751,8 @@
     },
     "images": [
       {
-        "image_file": "assets/food/hanyu_hdl_001_facade.jpg",
-        "thumbnail_file": "assets/food/hanyu_hdl_001_facade.jpg",
+        "image_file": "assets/full/food_hanyu_hdl_001_facade.jpg",
+        "thumbnail_file": "assets/thumb/food_hanyu_hdl_001_facade.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -769,8 +760,8 @@
         "caption": "汉峪海底捞 · 门头"
       },
       {
-        "image_file": "assets/food/hanyu_hdl_002_dish.jpg",
-        "thumbnail_file": "assets/food/hanyu_hdl_002_dish.jpg",
+        "image_file": "assets/full/food_hanyu_hdl_002_dish.jpg",
+        "thumbnail_file": "assets/thumb/food_hanyu_hdl_002_dish.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -778,8 +769,8 @@
         "caption": "汉峪海底捞 · 菜品"
       },
       {
-        "image_file": "assets/food/hanyu_hdl_003_dish.jpg",
-        "thumbnail_file": "assets/food/hanyu_hdl_003_dish.jpg",
+        "image_file": "assets/full/food_hanyu_hdl_003_dish.jpg",
+        "thumbnail_file": "assets/thumb/food_hanyu_hdl_003_dish.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -787,8 +778,8 @@
         "caption": "汉峪海底捞 · 菜品"
       },
       {
-        "image_file": "assets/food/hanyu_hdl_004_interior.jpg",
-        "thumbnail_file": "assets/food/hanyu_hdl_004_interior.jpg",
+        "image_file": "assets/full/food_hanyu_hdl_004_interior.jpg",
+        "thumbnail_file": "assets/thumb/food_hanyu_hdl_004_interior.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -857,8 +848,8 @@
     },
     "images": [
       {
-        "image_file": "assets/photo/qushuiting_001_img.jpg",
-        "thumbnail_file": "assets/photo/qushuiting_001_img.jpg",
+        "image_file": "assets/full/photo_qushuiting_001_img.jpg",
+        "thumbnail_file": "assets/thumb/photo_qushuiting_001_img.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -900,8 +891,8 @@
     },
     "images": [
       {
-        "image_file": "assets/photo/baihuazhou_001_img.jpg",
-        "thumbnail_file": "assets/photo/baihuazhou_001_img.jpg",
+        "image_file": "assets/full/photo_baihuazhou_001_img.jpg",
+        "thumbnail_file": "assets/thumb/photo_baihuazhou_001_img.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -940,8 +931,8 @@
     },
     "images": [
       {
-        "image_file": "assets/photo/mixc_001_img.jpg",
-        "thumbnail_file": "assets/photo/mixc_001_img.jpg",
+        "image_file": "assets/full/photo_mixc_001_img.jpg",
+        "thumbnail_file": "assets/thumb/photo_mixc_001_img.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -949,8 +940,8 @@
         "caption": "万象城中庭"
       },
       {
-        "image_file": "assets/photo/mixc_002_facade.jpg",
-        "thumbnail_file": "assets/photo/mixc_002_facade.jpg",
+        "image_file": "assets/full/photo_mixc_002_facade.jpg",
+        "thumbnail_file": "assets/thumb/photo_mixc_002_facade.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -992,8 +983,8 @@
     },
     "images": [
       {
-        "image_file": "assets/food/fengtian_001_facade.jpg",
-        "thumbnail_file": "assets/food/fengtian_001_facade.jpg",
+        "image_file": "assets/full/food_fengtian_001_facade.jpg",
+        "thumbnail_file": "assets/thumb/food_fengtian_001_facade.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -1001,8 +992,8 @@
         "caption": "奉天小馆 · 门头"
       },
       {
-        "image_file": "assets/food/fengtian_002_facade.jpg",
-        "thumbnail_file": "assets/food/fengtian_002_facade.jpg",
+        "image_file": "assets/full/food_fengtian_002_facade.jpg",
+        "thumbnail_file": "assets/thumb/food_fengtian_002_facade.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -1010,8 +1001,8 @@
         "caption": "奉天小馆 · 外观"
       },
       {
-        "image_file": "assets/food/fengtian_003_dish.jpg",
-        "thumbnail_file": "assets/food/fengtian_003_dish.jpg",
+        "image_file": "assets/full/food_fengtian_003_dish.jpg",
+        "thumbnail_file": "assets/thumb/food_fengtian_003_dish.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -1019,8 +1010,8 @@
         "caption": "奉天小馆 · 菜品"
       },
       {
-        "image_file": "assets/food/fengtian_004_interior.jpg",
-        "thumbnail_file": "assets/food/fengtian_004_interior.jpg",
+        "image_file": "assets/full/food_fengtian_004_interior.jpg",
+        "thumbnail_file": "assets/thumb/food_fengtian_004_interior.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -1095,8 +1086,8 @@
     },
     "images": [
       {
-        "image_file": "assets/food/huanlian_001_facade.jpg",
-        "thumbnail_file": "assets/food/huanlian_001_facade.jpg",
+        "image_file": "assets/full/food_huanlian_001_facade.jpg",
+        "thumbnail_file": "assets/thumb/food_huanlian_001_facade.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -1104,8 +1095,8 @@
         "caption": "环联1904 · 门头"
       },
       {
-        "image_file": "assets/food/huanlian_002_night.jpg",
-        "thumbnail_file": "assets/food/huanlian_002_night.jpg",
+        "image_file": "assets/full/food_huanlian_002_night.jpg",
+        "thumbnail_file": "assets/thumb/food_huanlian_002_night.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -1147,8 +1138,8 @@
     },
     "images": [
       {
-        "image_file": "assets/food/tiantree_hdl_001_facade.jpg",
-        "thumbnail_file": "assets/food/tiantree_hdl_001_facade.jpg",
+        "image_file": "assets/full/food_tiantree_hdl_001_facade.jpg",
+        "thumbnail_file": "assets/thumb/food_tiantree_hdl_001_facade.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -1156,8 +1147,8 @@
         "caption": "天街海底捞 · 天街海底捞门头"
       },
       {
-        "image_file": "assets/food/tiantree_hdl_002_interior.jpg",
-        "thumbnail_file": "assets/food/tiantree_hdl_002_interior.jpg",
+        "image_file": "assets/full/food_tiantree_hdl_002_interior.jpg",
+        "thumbnail_file": "assets/thumb/food_tiantree_hdl_002_interior.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -1199,8 +1190,8 @@
     },
     "images": [
       {
-        "image_file": "assets/attraction/baotu_001_img.jpg",
-        "thumbnail_file": "assets/attraction/baotu_001_img.jpg",
+        "image_file": "assets/full/attraction_baotu_001_img.jpg",
+        "thumbnail_file": "assets/thumb/attraction_baotu_001_img.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
@@ -1208,8 +1199,8 @@
         "caption": "趵突泉南门"
       },
       {
-        "image_file": "assets/attraction/baotu_002_img.jpg",
-        "thumbnail_file": "assets/attraction/baotu_002_img.jpg",
+        "image_file": "assets/full/attraction_baotu_002_img.jpg",
+        "thumbnail_file": "assets/thumb/attraction_baotu_002_img.webp",
         "image_type": "photo",
         "source_status": "IMAGE_UNCERTAIN",
         "source_name": "TRIP2609 delivery assets",
