@@ -1,365 +1,303 @@
-const UI = (() => {
-  let tab = 'today';
-  let dayId = null;
-  let selectedId = null;
-  let discoverReady = false;
+/** Today / Itinerary / Discover / Overview — Place vs Visit separated. */
+const TripUI = (() => {
+  let data = null;
+  let placeById = {};
+  let activeKey = null;
 
-  function catLabel(c) {
-    return ({
-      HOTEL: '酒店', FOOD: '美食', PHOTO: '拍照', ACTIVITY: '活动', CONCERT: '演唱会',
-      ATTRACTION: '景点', COFFEE: '咖啡', BAR: '酒吧', SHOPPING: '购物', TRANSPORT: '交通'
-    })[c] || c;
+  function esc(s) {
+    return String(s || '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
   }
 
-  function setTab(name) {
-    tab = name;
-    document.querySelectorAll('#primaryTabs [data-tab]').forEach(btn => {
-      const on = btn.dataset.tab === name;
-      btn.classList.toggle('active', on);
-      btn.setAttribute('aria-selected', on ? 'true' : 'false');
-    });
-    document.querySelectorAll('#bottomNav [data-mtab]').forEach(btn => {
-      btn.classList.toggle('active', btn.dataset.mtab === name);
-    });
-    ['overview', 'today', 'itinerary', 'discover'].forEach(v => {
-      const el = document.getElementById('view' + v.charAt(0).toUpperCase() + v.slice(1));
-      if (el) el.hidden = v !== name;
-    });
-    // Map host remount
-    const mapEl = document.getElementById('map');
-    if (name === 'today') {
-      const pane = document.querySelector('#viewToday .map-pane');
-      if (pane && mapEl && mapEl.parentElement !== pane) {
-        pane.insertBefore(mapEl, pane.querySelector('.map-fallback') || null);
-        if (!pane.contains(mapEl)) pane.appendChild(mapEl);
-      }
-      renderToday();
-      refreshTodayMap();
-    } else if (name === 'itinerary') {
-      MapModule.remount(document.getElementById('mapItinHost'));
-      renderItinerary();
-      refreshItinMap();
-    } else if (name === 'discover') {
-      ensureDiscover().then(() => {
-        MapModule.remount(document.getElementById('mapDiscoverHost'));
-        renderDiscover();
-        refreshDiscoverMap();
-      });
-    } else if (name === 'overview') {
-      renderOverview();
-    }
-    setTimeout(() => MapModule.invalidateSize(), 80);
+  function thumbOf(place) {
+    const im = (place.images && place.images[0]) || null;
+    return im ? im.thumb : null;
   }
 
-  function setDay(id) {
-    if (!id || id === 'd-all') {
-      id = TripData.defaultDayId();
-    }
-    dayId = id;
-    closeDrawer();
-    if (tab === 'today') {
-      renderToday();
-      refreshTodayMap();
-    } else if (tab === 'itinerary') {
-      renderItinerary();
-      refreshItinMap();
-    }
+  function fullOf(place) {
+    const im = (place.images && place.images[0]) || null;
+    return im ? { src: im.full || im.thumb, caption: im.caption || place.short_name || place.name } : null;
   }
 
-  /* ---------- Overview ---------- */
-  function renderOverview() {
-    const t = TripData.trip || {};
-    document.getElementById('ovRoute').textContent = t.route || '';
-    const d = t.dates || {};
-    document.getElementById('ovDates').textContent = (d.start || '') + ' → ' + (d.end || '') + ' · Asia/Shanghai';
-    const party = t.party || {};
-    document.getElementById('ovParty').textContent =
-      '同行：' + (party.through_2026_10_03_overnight || party['through_2026-10-03_overnight'] || '') +
-      '；返程 ' + (party['2026-10-04_return'] || '');
-    document.getElementById('ovAxis').textContent = t.axis_note || '';
-    const nodes = [];
-    (t.locked_trains || []).forEach(tr => nodes.push({ kind: '列车', text: tr }));
-    (t.hotels || []).forEach(h => nodes.push({ kind: '酒店', text: h.name + (h.poi_id ? ' · ' + h.poi_id : '') }));
-    if (t.concert) nodes.push({ kind: '演唱会', text: (t.concert.venue || '') + ' · ' + (t.concert.datetime || '') });
-    document.getElementById('ovHardNodes').innerHTML = nodes.map(n =>
-      `<li><span class="hn-kind">${n.kind}</span>${n.text}</li>`
-    ).join('');
+  function visitKey(v, idx) {
+    return `visit-${v.visit_id || idx}`;
   }
 
-  /* ---------- Today ---------- */
-  function renderToday() {
-    const st = TripData.todayStatus(dayId);
-    const day = st.day;
-    const label = document.getElementById('todayDateLabel');
-    if (label) {
-      label.textContent = (day && day.label ? day.label : '') +
-        (day && day.theme ? ' · ' + day.theme : '') +
-        (day && day.city ? ' · ' + day.city : '');
-    }
-    const wEl = document.getElementById('todayWeather');
-    if (wEl) {
-      const w = st.weather;
-      wEl.textContent = w
-        ? ('天气：' + (w.condition || w.summary || '—') + (w.gear ? ' · ' + w.gear : ''))
-        : '天气：—';
-    }
-    document.getElementById('todayWhere').textContent = st.whereLabel || '—';
-    const nextName = st.next ? (st.next.short_name || st.next.name) : (st.phase === 'done' ? '本日结束' : '—');
-    document.getElementById('todayNext').textContent = nextName;
-    document.getElementById('todayNextWhy').textContent = st.next
-      ? (st.next.description || catLabel(st.next.category))
-      : '';
-    document.getElementById('todayDepart').textContent = st.depart;
-    document.getElementById('todayTransit').textContent = st.transit;
-    document.getElementById('todayDo').textContent = st.doWhat;
-    const navHost = document.getElementById('todayNav');
-    if (navHost) {
-      const target = st.next || st.current;
-      navHost.innerHTML = target ? NavLinks.buttonsHtml(target) : '';
-    }
-    const chip = document.getElementById('mapTopChip');
-    if (chip) {
-      chip.innerHTML = `<span>${day && day.label ? day.label : ''}</span>` +
-        `<span>${(st.weather && (st.weather.condition || '')) || ''}</span>`;
-    }
-    // transport
-    const strip = document.getElementById('todayTransport');
-    if (strip) {
-      const legs = TripData.transportForDate(day && day.date);
-      if (!legs.length) strip.innerHTML = '<strong>今日无跨城交通</strong>';
-      else strip.innerHTML = legs.map(l =>
-        `<div><strong>${l.train}</strong> ${l.from}→${l.to} ${l.dep || ''}-${l.arr || ''} · ${l.pax || '?'}人</div>`
-      ).join('');
-    }
+  function plannedVisits() {
+    return (data.visits || []).filter((v) => !v.optional).sort((a, b) => (a.sequence || 0) - (b.sequence || 0));
   }
 
-  function refreshTodayMap() {
-    const st = TripData.todayStatus(dayId);
-    const places = [];
-    if (st.current) places.push(st.current);
-    if (st.next && (!st.current || st.next.place_id !== st.current.place_id)) places.push(st.next);
-    // If before day start, show first stop only (next)
-    if (!places.length) {
-      const list = TripData.placesForDay(dayId);
-      if (list[0]) places.push(list[0]);
-    }
-    const fromId = (st.current && st.current.place_id) || (places[0] && places[0].place_id);
-    const segs = fromId ? TripData.nextSegment(fromId, dayId) : [];
-    MapModule.update(places, segs);
-    const focusId = (st.next && st.next.place_id) || (st.current && st.current.place_id);
-    if (focusId) MapModule.select(focusId, false);
-  }
-
-  /* ---------- Itinerary ---------- */
-  function renderItinerary() {
-    const host = document.getElementById('dayPick');
-    if (host) {
-      host.innerHTML = TripData.travelDays().map(d =>
-        `<button type="button" class="chip ${d.day_id === dayId ? 'active' : ''}" data-day="${d.day_id}">${d.label}<span class="chip-sub">${d.city || ''}</span></button>`
-      ).join('');
-      host.querySelectorAll('.chip').forEach(btn => {
-        btn.addEventListener('click', () => setDay(btn.dataset.day));
-      });
-    }
-    const day = TripData.dayById(dayId);
-    const strip = document.getElementById('itinTransport');
-    if (strip) {
-      const legs = TripData.transportForDate(day && day.date);
-      if (!legs.length) strip.innerHTML = '<strong>今日无跨城交通</strong>';
-      else strip.innerHTML = legs.map(l =>
-        `<div><strong>${l.train}</strong> ${l.from}→${l.to} ${l.dep || ''}-${l.arr || ''}</div>`
-      ).join('');
-    }
-    const list = document.getElementById('timeline');
-    if (!list) return;
-    const vs = TripData.visitsForDayId(dayId);
-    const color = {
-      HOTEL: '#6aa8ff', FOOD: '#ff8f5a', PHOTO: '#c084fc', CONCERT: '#f472b6',
-      ATTRACTION: '#22d3ee', TRANSPORT: '#94a3b8', ACTIVITY: '#34d399'
-    };
-    list.innerHTML = vs.map((v, idx) => {
-      const p = TripData.placeById(v.place_id);
-      if (!p || TripData.isCandidate(p)) return '';
-      return `<li class="tl-item ${p.place_id === selectedId ? 'active' : ''}" data-id="${p.place_id}">
-        <div class="tl-ord" style="background:${color[p.category] || '#64748b'}">${idx + 1}</div>
-        <div>
-          <div class="tl-name">${p.short_name || p.name}${v.optional ? ' <span class="opt">可选</span>' : ''}</div>
-          <div class="tl-meta">${catLabel(p.category)}${v.planned_start ? ' · ' + v.planned_start : ''}</div>
-        </div>
-      </li>`;
-    }).join('') || '<li class="tl-meta">本日无行程点</li>';
-    list.querySelectorAll('.tl-item').forEach(el => {
-      el.addEventListener('click', () => openPlace(el.dataset.id, 'timeline'));
-    });
-  }
-
-  function refreshItinMap() {
-    const places = TripData.placesForDay(dayId);
-    // Slim: full day markers OK on itinerary tab; geometry = day segments
-    const segs = TripData.daySegments(dayId);
-    MapModule.update(places, segs);
-    if (selectedId) MapModule.select(selectedId, false);
-  }
-
-  /* ---------- Discover (deferred) ---------- */
-  async function ensureDiscover() {
-    if (discoverReady) return;
-    discoverReady = true;
-    TripData.markDiscoverLoaded();
-  }
-
-  function renderDiscover() {
-    const list = document.getElementById('discoverList');
-    if (!list) return;
-    const cands = TripData.candidatePlaces();
-    list.innerHTML = cands.map((p, idx) =>
-      `<li class="tl-item ${p.place_id === selectedId ? 'active' : ''}" data-id="${p.place_id}">
-        <div class="tl-ord" style="background:#94a3b8">${idx + 1}</div>
-        <div>
-          <div class="tl-name">${p.short_name || p.name}</div>
-          <div class="tl-meta">${catLabel(p.category)} · 候选</div>
-        </div>
-      </li>`
-    ).join('') || '<li class="tl-meta">暂无候选</li>';
-    list.querySelectorAll('.tl-item').forEach(el => {
-      el.addEventListener('click', () => openPlace(el.dataset.id, 'discover'));
-    });
-  }
-
-  function refreshDiscoverMap() {
-    const cands = TripData.candidatePlaces();
-    MapModule.update(cands, []);
-  }
-
-  /* ---------- Drawer ---------- */
-  function openPlace(id, source) {
-    selectedId = id;
-    const place = TripData.placeById(id);
-    if (!place) return;
-    MapModule.focus(id);
-    openDrawer(place);
-    if (tab === 'itinerary') renderItinerary();
-    if (tab === 'discover') renderDiscover();
-  }
-
-  function openDrawer(place) {
-    const drawer = document.getElementById('drawer');
-    const backdrop = document.getElementById('drawerBackdrop');
-    const body = document.getElementById('drawerBody');
-    if (!drawer || !body) return;
-
-    const visit = TripData.activeVisit(place.place_id, dayId);
-    const day = TripData.dayById(dayId);
-    const wDate = (visit && visit.weather_ref) || (day && day.date);
-    const dayW = TripData.weatherForDate(wDate);
-    let timeText = '—';
-    if (visit && (visit.planned_start || visit.planned_end)) {
-      timeText = [visit.planned_start, visit.planned_end].filter(Boolean).join('–');
-    }
-    let nextPlace = null;
-    if (visit && visit.route_to_next && visit.route_to_next.to_place_id) {
-      nextPlace = TripData.placeById(visit.route_to_next.to_place_id);
-    }
-    if (!nextPlace) {
-      const n = TripData.neighbors(place.place_id, dayId);
-      nextPlace = n.next;
-    }
-
-    // Images: thumb in list strip; full on open (use full paths here)
-    const imgs = (place.images || []).filter(i => i.image_file);
-    let gal = '';
-    if (imgs.length) {
-      gal = '<div class="drawer-gal">' + imgs.map(im =>
-        `<img data-full="${im.image_file}" src="${im.image_file}" alt="${im.caption || place.name}" loading="lazy"/>`
-      ).join('') + '</div>';
-    } else {
-      gal = `<div class="img-fallback">${catLabel(place.category)} · ${place.short_name || place.name}</div>`;
-    }
-
-    const why = place.description || (visit && visit.activity) || '行程推荐点';
-    body.innerHTML = `
-      ${gal}
-      <div class="detail-kicker">${catLabel(place.category)}${TripData.isCandidate(place) ? ' · 候选' : ''}</div>
-      <h3>${place.name}</h3>
-      <p class="detail-addr">${place.address || ''}</p>
-      <p class="detail-desc"><strong>为何推荐：</strong>${why}</p>
-      <div class="detail-meta">
-        <span>时间：${timeText}</span>
-        <span>天气：${(dayW && (dayW.condition || dayW.summary)) || '—'}</span>
-        <span>评分：${place.rating_summary || '—'}</span>
-        <span>费用：${place.price || '—'}</span>
-      </div>
-      <div class="detail-next">下一站 → ${nextPlace ? (nextPlace.short_name || nextPlace.name) : '本日结束'}</div>
-      ${NavLinks.buttonsHtml(place)}
-    `;
-    body.querySelectorAll('.drawer-gal img').forEach(img => {
-      img.addEventListener('click', () => openLightbox(img.dataset.full || img.src, img.alt));
-    });
-
-    drawer.hidden = false;
-    drawer.setAttribute('aria-hidden', 'false');
-    drawer.classList.add('open');
-    if (backdrop) { backdrop.hidden = false; backdrop.classList.add('open'); }
-  }
-
-  function closeDrawer() {
-    const drawer = document.getElementById('drawer');
-    const backdrop = document.getElementById('drawerBackdrop');
-    if (drawer) {
-      drawer.classList.remove('open');
-      drawer.hidden = true;
-      drawer.setAttribute('aria-hidden', 'true');
-    }
-    if (backdrop) {
-      backdrop.classList.remove('open');
-      backdrop.hidden = true;
-    }
-  }
-
-  function openLightbox(src, cap) {
+  function openLightbox(full) {
+    if (!full || !full.src) return;
     const box = document.getElementById('lightbox');
-    document.getElementById('lightboxImg').src = src;
-    document.getElementById('lightboxCap').textContent = cap || '';
+    const img = document.getElementById('lightboxImg');
+    const cap = document.getElementById('lightboxCap');
+    img.src = full.src;
+    img.alt = full.caption || '';
+    cap.textContent = full.caption || '';
     box.hidden = false;
   }
 
-  function bindChrome() {
-    document.querySelectorAll('#primaryTabs [data-tab]').forEach(btn => {
-      btn.addEventListener('click', () => setTab(btn.dataset.tab));
-    });
-    document.querySelectorAll('#bottomNav [data-mtab]').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const t = btn.dataset.mtab;
-        // Mobile: 地图 = today
-        setTab(t === 'map' ? 'today' : t);
-      });
-    });
-    document.getElementById('drawerClose')?.addEventListener('click', closeDrawer);
-    document.getElementById('drawerBackdrop')?.addEventListener('click', closeDrawer);
+  function bindLightbox() {
     document.getElementById('lightboxClose')?.addEventListener('click', () => {
       document.getElementById('lightbox').hidden = true;
+      document.getElementById('lightboxImg').removeAttribute('src');
     });
     document.getElementById('lightbox')?.addEventListener('click', (e) => {
-      if (e.target.id === 'lightbox') e.currentTarget.hidden = true;
+      if (e.target.id === 'lightbox') {
+        document.getElementById('lightbox').hidden = true;
+      }
     });
   }
 
-  function initChrome(trip) {
-    const nameEl = document.getElementById('tripName');
-    const routeEl = document.getElementById('tripRoute');
-    if (nameEl) nameEl.textContent = trip.name || 'TRIP2609';
-    if (routeEl) routeEl.textContent = trip.route || '';
-    dayId = TripData.defaultDayId();
-    bindChrome();
-    renderOverview();
-    renderToday();
-    // Do NOT render discover or all-day markers on boot
+  function cardHtml(place, visit, opts = {}) {
+    const key = opts.key;
+    const thumb = thumbOf(place);
+    const time = visit
+      ? `${visit.planned_start || ''}${visit.planned_end ? ' – ' + visit.planned_end : ''}`
+      : '';
+    const title = place.short_name || place.name;
+    const desc = visit?.activity || place.description || place.address || '';
+    return `
+      <article class="card" data-key="${esc(key)}" data-place="${esc(place.place_id)}">
+        <div class="card-row">
+          ${thumb ? `<img class="thumb" src="${esc(thumb)}" alt="" loading="lazy" decoding="async" data-enlarge="${esc(place.place_id)}" />` : '<div class="thumb"></div>'}
+          <div class="meta">
+            <div class="time">${esc(time)}</div>
+            <h3>${esc(title)}</h3>
+            <div class="desc">${esc(desc)}</div>
+          </div>
+        </div>
+        ${NavLinks.buttonsHtml(place)}
+      </article>`;
   }
 
-  return {
-    initChrome, setTab, setDay, openPlace, closeDrawer, renderToday, refreshTodayMap,
-    get tab(){return tab;}, get dayId(){return dayId;}, get selectedId(){return selectedId;}
-  };
-})();
+  function renderToday() {
+    const el = document.getElementById('view-today');
+    const w = data.weather || {};
+    const visits = plannedVisits();
+    const nowLabel = visits[0] ? (placeById[visits[0].place_id]?.short_name || '') : '';
+    const next = visits[1];
+    const nextLabel = next ? (placeById[next.place_id]?.short_name || '') : '—';
+    el.innerHTML = `
+      <div class="hero">
+        <h2>${esc(data.label || data.day)}</h2>
+        <div class="muted">${esc(data.city || '')} · ${esc(data.day)}</div>
+        <div class="chip-row">
+          <span class="chip">${esc(w.condition || '天气待定')}</span>
+          ${(w.tags || []).slice(0, 3).map((t) => `<span class="chip">${esc(t)}</span>`).join('')}
+        </div>
+        <p class="desc" style="margin:10px 0 0;font-size:13px;color:var(--muted)">${esc(w.gear || '')}${w.impact?.outdoor ? ' · ' + esc(w.impact.outdoor) : ''}</p>
+        <p style="margin:10px 0 0;font-size:13px"><strong>当前/首站</strong> ${esc(nowLabel)} → <strong>下一站</strong> ${esc(nextLabel)}</p>
+      </div>
+      ${visits.map((v, i) => {
+        const p = placeById[v.place_id];
+        if (!p) return '';
+        return cardHtml(p, v, { key: visitKey(v, i) });
+      }).join('')}`;
+  }
 
-window.UI = UI;
+  function renderItinerary() {
+    const el = document.getElementById('view-itinerary');
+    const visits = plannedVisits();
+    const segs = data.routes || [];
+    let html = '<div class="timeline">';
+    visits.forEach((v, i) => {
+      const p = placeById[v.place_id];
+      if (!p) return;
+      const key = visitKey(v, i);
+      const thumb = thumbOf(p);
+      html += `
+        <div class="timeline-item" data-key="${esc(key)}" data-num="${i + 1}">
+          <div class="card-row">
+            ${thumb ? `<img class="thumb" src="${esc(thumb)}" alt="" loading="lazy" data-enlarge="${esc(p.place_id)}" />` : ''}
+            <div class="meta">
+              <div class="time">${esc(v.planned_start || '')} – ${esc(v.planned_end || '')}</div>
+              <h3>${esc(p.short_name || p.name)}</h3>
+              <div class="desc">${esc(v.activity || '')}</div>
+            </div>
+          </div>
+          ${NavLinks.buttonsHtml(p)}
+        </div>`;
+      if (i < visits.length - 1) {
+        const from = v.place_id;
+        const to = visits[i + 1].place_id;
+        const seg = segs.find((s) => s.from === from && s.to === to);
+        if (seg) {
+          html += `<div class="route-gap">${esc(seg.mode || '前往')} · ${seg.duration != null ? seg.duration + ' 分钟' : ''}${seg.distance != null ? ' · ' + seg.distance + ' km' : ''}</div>`;
+        } else {
+          html += `<div class="route-gap">前往下一站</div>`;
+        }
+      }
+    });
+    html += '</div>';
+    el.innerHTML = html;
+  }
+
+  function renderDiscover() {
+    const el = document.getElementById('view-discover');
+    const ids = data.discover_place_ids || [];
+    if (!ids.length) {
+      el.innerHTML = '<p class="muted">暂无候选</p>';
+      return;
+    }
+    el.innerHTML = `
+      <p class="muted" style="margin-top:0">候选（未排进今天行程）· 雨天室内备选</p>
+      ${ids.map((id) => {
+        const p = placeById[id];
+        if (!p) return '';
+        return cardHtml(p, null, { key: `discover-${id}` });
+      }).join('')}`;
+  }
+
+  function renderOverview() {
+    const el = document.getElementById('view-overview');
+    const w = data.weather || {};
+    el.innerHTML = `
+      <div class="card">
+        <h3 style="margin-top:0">总览 · ${esc(data.day)}</h3>
+        <p>${esc(data.label)}</p>
+        <p class="muted">计划停靠 ${plannedVisits().length} · 发现候选 ${(data.discover_place_ids || []).length}</p>
+        <p class="muted">天气：${esc(w.condition || '')}</p>
+        <p class="muted" style="font-size:12px">Place / Visit 分离；首屏仅当日数据。地图异步，失败不阻塞行程。</p>
+      </div>`;
+  }
+
+  function setActiveKey(key, { fromMap = false } = {}) {
+    activeKey = key;
+    document.querySelectorAll('[data-key]').forEach((n) => {
+      n.classList.toggle('active', n.getAttribute('data-key') === key);
+    });
+    if (!fromMap && key) {
+      TripMap.focus(key);
+    } else if (fromMap && key) {
+      TripMap.highlight(key, { openPopup: true });
+      const node = document.querySelector(`[data-key="${CSS.escape(key)}"]`);
+      if (node) {
+        node.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        // ensure parent tab shows timeline/today
+        const tab = node.closest('.view')?.id?.replace('view-', '');
+        if (tab) switchTab(tab);
+      }
+    }
+  }
+
+  function bindPanelClicks() {
+    document.getElementById('panel')?.addEventListener('click', (e) => {
+      const enlarge = e.target.closest('[data-enlarge]');
+      if (enlarge) {
+        e.stopPropagation();
+        const place = placeById[enlarge.getAttribute('data-enlarge')];
+        if (place) openLightbox(fullOf(place));
+        return;
+      }
+      if (e.target.closest('a.btn')) return;
+      const item = e.target.closest('[data-key]');
+      if (!item) return;
+      setActiveKey(item.getAttribute('data-key'));
+    });
+  }
+
+  function switchTab(name) {
+    document.querySelectorAll('.tab').forEach((t) => {
+      const on = t.dataset.tab === name;
+      t.classList.toggle('active', on);
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+    document.querySelectorAll('.view').forEach((v) => {
+      const on = v.id === `view-${name}`;
+      v.classList.toggle('active', on);
+      v.hidden = !on;
+    });
+    TripMap.invalidateSize();
+  }
+
+  function bindTabs() {
+    document.querySelectorAll('.tab').forEach((t) => {
+      t.addEventListener('click', () => switchTab(t.dataset.tab));
+    });
+  }
+
+  function pushMapLayers() {
+    const visits = plannedVisits();
+    const stops = [];
+    visits.forEach((v, i) => {
+      const p = placeById[v.place_id];
+      if (!p || !p.coordinates) return;
+      stops.push({
+        key: visitKey(v, i),
+        lat: p.coordinates.lat,
+        lng: p.coordinates.lng,
+        title: p.short_name || p.name,
+        subtitle: `${v.planned_start || ''} ${v.activity || ''}`.trim(),
+        thumb: thumbOf(p),
+        num: i + 1,
+      });
+    });
+    // Discover markers deferred — only show when Discover tab? Spec: defer candidates.
+    // Still allow discover focus when user opens card; add lightly with lower emphasis when on discover tab only.
+    TripMap.setStops(stops);
+
+    // Route: use segment geometries (GCJ-02 [lng,lat] → Leaflet [lat,lng])
+    const latlngs = [];
+    const segs = data.routes || [];
+    visits.forEach((v, i) => {
+      if (i >= visits.length - 1) return;
+      const seg = segs.find((s) => s.from === v.place_id && s.to === visits[i + 1].place_id);
+      if (seg?.geometry?.coordinates?.length) {
+        seg.geometry.coordinates.forEach((c) => latlngs.push([c[1], c[0]]));
+      } else {
+        const a = placeById[v.place_id]?.coordinates;
+        const b = placeById[visits[i + 1].place_id]?.coordinates;
+        if (a && b) {
+          if (!latlngs.length) latlngs.push([a.lat, a.lng]);
+          latlngs.push([b.lat, b.lng]);
+        }
+      }
+    });
+    TripMap.setRoute(latlngs);
+  }
+
+  function mount(bundle) {
+    data = bundle;
+    placeById = {};
+    (bundle.places || []).forEach((p) => { placeById[p.place_id] = p; });
+
+    document.getElementById('dayLabel').textContent = `${bundle.day} · ${bundle.city || ''}`;
+    const w = bundle.weather || {};
+    document.getElementById('weatherChip').textContent = w.condition || '天气';
+
+    renderToday();
+    renderItinerary();
+    renderDiscover();
+    renderOverview();
+    bindTabs();
+    bindPanelClicks();
+    bindLightbox();
+
+    // Map async — does not block UI
+    requestAnimationFrame(() => {
+      const first = plannedVisits()[0];
+      const c = first && placeById[first.place_id]?.coordinates;
+      TripMap.init({
+        center: c ? [c.lat, c.lng] : [36.422, 114.20],
+        zoom: 13,
+        onSelect: (key) => setActiveKey(key, { fromMap: true }),
+      });
+      pushMapLayers();
+    });
+  }
+
+  function addDiscoverMarkers() {
+    // optional: call when switching to discover
+    const ids = data.discover_place_ids || [];
+    // For v1 day slice we keep map focused on planned stops only (perf).
+    return ids;
+  }
+
+  return { mount, switchTab, setActiveKey, addDiscoverMarkers };
+})();
+window.TripUI = TripUI;

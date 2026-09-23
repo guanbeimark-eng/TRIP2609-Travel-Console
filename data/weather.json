@@ -1,180 +1,20 @@
 {
-  "trip_id": "TRIP2609",
-  "produced_at": "2026-09-23T14:32:30+08:00",
-  "summary_zh": "深圳09-27上午出发：多云为主、偶发毛毛雨，备伞赶G904即可。峰峰09-27/28仍CMA雷阵雨 vs OM偏干冲突，户外上午优先+室内Plan B，不改住宿主题。09-29转凉大风，加防风外套。济南10-02演唱会趋势偏干，主提醒夜场风寒衣物；标RECHECK_REQUIRED+SAME_DAY，勿大幅重排。｜已对齐摄影师雨备 JJTL.01/02+WLT.01 与相对日落窗绝对化；10-02标 PHOTO_WINDOW_CONFLICT（日落长拍 vs 19:00演唱会）；济南段 PRE_TRIP+SAME_DAY。",
-  "do_not_replan": true,
-  "days": [
-    {
-      "date": "2026-09-26",
-      "city": null,
-      "weekday": null,
-      "condition": "多云 约32/25℃，微风<3级",
-      "gear": "折叠伞；短袖+防晒；闷热注意补水",
-      "tags": [],
-      "impact": null,
-      "concert": null,
-      "status": "ACTIONABLE"
-    },
-    {
-      "date": "2026-09-27",
-      "city": "深圳出发→邯郸东→峰峰",
-      "weekday": "周日",
-      "condition": "多云转雷阵雨 29/19℃",
-      "gear": "折叠伞/薄雨衣；短袖+傍晚薄外套可选",
-      "tags": [],
-      "impact": null,
-      "concert": null,
-      "status": "SOFT"
-    },
-    {
-      "date": "2026-09-28",
-      "city": "邯郸·峰峰",
-      "weekday": "周一",
-      "condition": "雷阵雨转多云 28/19℃",
-      "gear": "雨具全日随身",
-      "tags": [
-        "WEATHER_SENSITIVE",
-        "INDOOR_FALLBACK",
-        "AVOID_TIME_WINDOW",
-        "WEATHER_CONFLICT"
-      ],
-      "impact": {
-        "outdoor": "陶瓷/市集优先上午；午后对流抬头改室内馆",
-        "photo": "阴天柔光可；雨改室内展陈；PHOTO_WEATHER_RISK",
-        "walk": "短时暴雨避空旷长走"
-      },
-      "concert": null,
-      "status": "SOFT"
-    },
-    {
-      "date": "2026-09-29",
-      "city": "邯郸·峰峰",
-      "weekday": "周二",
-      "condition": "多云 26/15℃",
-      "gear": "防风薄外套",
-      "tags": [
-        "WEATHER_SENSITIVE",
-        "AVOID_TIME_WINDOW"
-      ],
-      "impact": {
-        "outdoor": "宜户外但防风；缩短空旷制高点驻留",
-        "photo": "光线尚可；风大乱发/伞面",
-        "walk": "风寒，薄防风外套"
-      },
-      "concert": null,
-      "status": "SOFT"
-    },
-    {
-      "date": "2026-09-30",
-      "city": "邯郸·峰峰",
-      "weekday": "周三",
-      "condition": "超出峰峰7天窗末端→UNKNOWN定性",
-      "gear": "早晚薄外套",
-      "tags": [
-        "WEATHER_SAFE",
-        "RECHECK_REQUIRED"
-      ],
-      "impact": {
-        "outdoor": "适宜；早晚凉",
-        "photo": "晴好利于外拍"
-      },
-      "concert": null,
-      "status": "SOFT"
-    },
-    {
-      "date": "2026-10-01",
-      "city": "峰峰→济南",
-      "weekday": "周四",
-      "condition": null,
-      "gear": "长袖+薄外套上车可减衣",
-      "tags": [
-        "WEATHER_SAFE",
-        "RECHECK_REQUIRED",
-        "SAME_DAY"
-      ],
-      "impact": {
-        "rail_transfer": "天气非误点主因；早凉穿着",
-        "outdoor": "离店短户外OK"
-      },
-      "concert": null,
-      "status": "TREND"
-    },
-    {
-      "date": "2026-10-02",
-      "city": "济南",
-      "weekday": "周五",
-      "condition": "晴间多云 25.0/15.5℃，降水0，POP_max≈5%",
-      "gear": "防风薄外套必带；折叠伞备份",
-      "tags": [
-        "WEATHER_SENSITIVE",
-        "RECHECK_REQUIRED",
-        "SAME_DAY"
-      ],
-      "impact": {
-        "outdoor": "上午曲水亭/百花洲干爽可短逛",
-        "photo": "垂柳/街巷可拍；避强风乱发；日落窗17:24–17:54",
-        "concert": "露天演场当前不被雨威胁；主约束=风寒衣物",
-        "walk": "下午商场不受影响"
-      },
-      "concert": {
-        "primary": "夜间持续偏南风约21km/h + 体感约17℃ → 防风薄外套/披肩；雨威胁低但仍保留Rain Plan B触发条件",
-        "rain_threat": "LOW_TREND",
-        "hours_sample": [
-          {
-            "t": "15:00",
-            "temp_c": 24.9,
-            "feels_c": 20.2,
-            "pop": 4,
-            "wind_kmh": 20.3,
-            "gust_kmh": 8.3
-          },
-          {
-            "t": "17:00",
-            "temp_c": 23.5,
-            "feels_c": 19.0,
-            "pop": 4,
-            "wind_kmh": 21.0,
-            "gust_kmh": 8.6
-          },
-          {
-            "t": "19:00",
-            "temp_c": 21.4,
-            "feels_c": 17.4,
-            "pop": 4,
-            "wind_kmh": 21.2,
-            "gust_kmh": 14.8
-          },
-          {
-            "t": "21:00",
-            "temp_c": 20.2,
-            "feels_c": 16.7,
-            "pop": 4,
-            "wind_kmh": 21.1,
-            "gust_kmh": 16.6
-          }
-        ]
-      },
-      "status": "TREND"
-    },
-    {
-      "date": "2026-10-03",
-      "city": "济南",
-      "weekday": "周六",
-      "condition": "晴 23.0/16.0℃，POP_max≈10%；上午风速可偏大",
-      "gear": "清晨长袖+薄外套",
-      "tags": [
-        "WEATHER_SAFE",
-        "TRANSPORT_WEATHER_RISK",
-        "RECHECK_REQUIRED",
-        "SAME_DAY"
-      ],
-      "impact": {
-        "outdoor": "趵突泉早访可行；风大时拍照抖",
-        "rail_transfer": "G2076晚班天气非主风险；主风险是傍晚赴站时间余量（非早班）",
-        "photo": "可压缩园内拍摄，不改车次"
-      },
-      "concert": null,
-      "status": "TREND"
-    }
-  ]
+  "date": "2026-09-28",
+  "city": "邯郸·峰峰",
+  "weekday": "周一",
+  "condition": "雷阵雨转多云 28/19℃",
+  "gear": "雨具全日随身",
+  "tags": [
+    "WEATHER_SENSITIVE",
+    "INDOOR_FALLBACK",
+    "AVOID_TIME_WINDOW",
+    "WEATHER_CONFLICT"
+  ],
+  "impact": {
+    "outdoor": "陶瓷/市集优先上午；午后对流抬头改室内馆",
+    "photo": "阴天柔光可；雨改室内展陈；PHOTO_WEATHER_RISK",
+    "walk": "短时暴雨避空旷长走"
+  },
+  "concert": null,
+  "status": "SOFT"
 }

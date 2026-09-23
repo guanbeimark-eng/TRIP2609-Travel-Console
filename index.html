@@ -2,150 +2,59 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>旅行管家 · TRIP2609</title>
-  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css" />
-  <link rel="stylesheet" href="css/console.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0f172a" />
+  <title>TRIP2609 · 09-28 峰峰</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" integrity="sha384-c6Rcwz4e4CITMbu/NBmnNS8yN2sC3cUElMEMfP3vqqKFp7GOYaaBBCqmaWBjmkjb" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/trip.css" />
 </head>
 <body>
-  <div id="app" class="app">
+  <div id="app">
     <header class="topbar">
       <div class="brand">
-        <span class="brand-mark">旅</span>
-        <div>
-          <strong id="tripName">TRIP2609</strong>
-          <div class="brand-sub" id="tripRoute">深圳→峰峰→济南→峰峰→深圳</div>
-        </div>
+        <strong>TRIP2609</strong>
+        <span id="dayLabel" class="muted">加载中…</span>
       </div>
-      <nav class="primary-tabs" id="primaryTabs" role="tablist" aria-label="主导航">
-        <button type="button" role="tab" data-tab="overview">总览</button>
-        <button type="button" role="tab" data-tab="today" class="active" aria-selected="true">今天</button>
-        <button type="button" role="tab" data-tab="itinerary">行程</button>
-        <button type="button" role="tab" data-tab="discover">发现</button>
-      </nav>
-      <div class="provider-status" id="providerStatus">地图初始化…</div>
+      <div id="weatherChip" class="weather-chip" aria-live="polite"></div>
     </header>
 
-    <!-- 总览 -->
-    <section class="view view-overview" id="viewOverview" hidden>
-      <div class="overview-card">
-        <h2>行程摘要</h2>
-        <p id="ovRoute" class="ov-route"></p>
-        <p id="ovDates" class="ov-muted"></p>
-        <p id="ovParty" class="ov-muted"></p>
-        <h3>硬节点</h3>
-        <ul id="ovHardNodes" class="hard-nodes"></ul>
-        <p id="ovAxis" class="ov-note"></p>
-      </div>
-    </section>
+    <main class="layout">
+      <section id="panel" class="panel" aria-label="行程面板">
+        <nav class="tabs" role="tablist">
+          <button class="tab active" data-tab="today" role="tab" aria-selected="true">今天</button>
+          <button class="tab" data-tab="itinerary" role="tab">行程</button>
+          <button class="tab" data-tab="discover" role="tab">发现</button>
+          <button class="tab tab-light" data-tab="overview" role="tab">总览</button>
+        </nav>
 
-    <!-- 今天（默认） -->
-    <section class="view view-today" id="viewToday">
-      <div class="today-layout">
-        <aside class="today-status" id="todayStatus">
-          <div class="status-date" id="todayDateLabel"></div>
-          <div class="status-weather" id="todayWeather"></div>
-          <div class="status-block">
-            <div class="status-kicker">当前位置 / 阶段</div>
-            <div class="status-value" id="todayWhere">—</div>
-          </div>
-          <div class="status-block next-block">
-            <div class="status-kicker">下一站</div>
-            <div class="status-value" id="todayNext">—</div>
-            <div class="status-sub" id="todayNextWhy"></div>
-          </div>
-          <div class="status-row">
-            <div class="status-block">
-              <div class="status-kicker">何时出发</div>
-              <div class="status-value sm" id="todayDepart">—</div>
-            </div>
-            <div class="status-block">
-              <div class="status-kicker">怎么去</div>
-              <div class="status-value sm" id="todayTransit">—</div>
-            </div>
-          </div>
-          <div class="status-block">
-            <div class="status-kicker">到了做什么</div>
-            <div class="status-value sm" id="todayDo">—</div>
-          </div>
-          <div id="todayNav" class="today-nav"></div>
-          <div class="transport-strip" id="todayTransport"></div>
-        </aside>
-        <section class="map-pane">
-          <div class="map-top-chip" id="mapTopChip"></div>
-          <div id="map" class="map" role="application" aria-label="行程地图"></div>
-          <div id="mapFallback" class="map-fallback" hidden>
-            <div class="map-fallback-card">
-              <strong>地图暂时不可用</strong>
-              <p id="mapFallbackMsg">已切换到列表安全模式，状态卡与抽屉仍可用。</p>
-              <button type="button" id="btnRetryMap" class="btn">重试地图</button>
-            </div>
-          </div>
-        </section>
-      </div>
-    </section>
+        <div id="view-today" class="view active" role="tabpanel"></div>
+        <div id="view-itinerary" class="view" role="tabpanel" hidden></div>
+        <div id="view-discover" class="view" role="tabpanel" hidden></div>
+        <div id="view-overview" class="view" role="tabpanel" hidden></div>
+      </section>
 
-    <!-- 行程：先选日期再看时间线 -->
-    <section class="view view-itinerary" id="viewItinerary" hidden>
-      <div class="itinerary-layout">
-        <aside class="itinerary-side">
-          <h2 class="pane-title">选择日期</h2>
-          <div class="day-pick" id="dayPick"></div>
-          <div class="transport-strip" id="itinTransport"></div>
-          <h2 class="pane-title">当日时间线</h2>
-          <ol class="timeline" id="timeline"></ol>
-        </aside>
-        <section class="map-pane map-pane-itin">
-          <div id="mapItinHost" class="map-host"></div>
-        </section>
-      </div>
-    </section>
+      <section class="map-wrap" aria-label="地图">
+        <div id="map" role="application"></div>
+        <div id="mapStatus" class="map-status">地图加载中…</div>
+        <button type="button" id="mapRetry" class="map-retry" hidden>重试地图</button>
+      </section>
+    </main>
 
-    <!-- 发现：仅 map_candidate -->
-    <section class="view view-discover" id="viewDiscover" hidden>
-      <div class="discover-layout">
-        <aside class="discover-list-pane">
-          <h2 class="pane-title">候选地点（未入主行程）</h2>
-          <p class="ov-muted">仅 role=map_candidate / jn-map-*，不上主路线地图。</p>
-          <ol class="timeline" id="discoverList"></ol>
-        </aside>
-        <section class="map-pane">
-          <div id="mapDiscoverHost" class="map-host"></div>
-        </section>
-      </div>
-    </section>
-
-    <!-- Closable drawer / bottom sheet -->
-    <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
-    <aside class="drawer" id="drawer" hidden aria-hidden="true">
-      <div class="drawer-handle" id="drawerHandle"></div>
-      <button type="button" class="drawer-close" id="drawerClose" aria-label="关闭">×</button>
-      <div class="drawer-body" id="drawerBody"></div>
-    </aside>
-
-    <!-- Mobile bottom nav: 地图 | 行程 | 发现 -->
-    <nav class="bottom-nav" id="bottomNav" aria-label="移动导航">
-      <button type="button" data-mtab="today" class="active">地图</button>
-      <button type="button" data-mtab="itinerary">行程</button>
-      <button type="button" data-mtab="discover">发现</button>
-    </nav>
+    <footer class="footer muted">
+      EasyItinerary MIT map patterns · TRIP2609 data · Leaflet · 高德/GeoQ tiles
+    </footer>
   </div>
 
   <div id="lightbox" class="lightbox" hidden>
     <button type="button" class="lightbox-close" id="lightboxClose" aria-label="关闭">×</button>
     <img id="lightboxImg" alt="" />
-    <div class="lightbox-cap" id="lightboxCap"></div>
+    <p id="lightboxCap" class="muted"></p>
   </div>
 
-  <!-- Key before AMapLoader; Leaflet vendor only used on fallback -->
-  <script src="data/amap-config.js"></script>
-  <script src="https://webapi.amap.com/loader.js"></script>
-  <script src="assets/vendor/leaflet/leaflet.js"></script>
-  <script src="js/coord.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" integrity="sha384-NElt3Op+9NBMCYaef5HxeJmU4Xeard/Lku8ek6hoPTvYkQPh3zLIrJP7KiRocsxO" crossorigin="anonymous"></script>
   <script src="js/nav.js"></script>
-  <script src="js/data.js"></script>
   <script src="js/map.js"></script>
   <script src="js/ui.js"></script>
-  <script src="js/app.js"></script>
+  <script src="js/boot.js"></script>
 </body>
 </html>
